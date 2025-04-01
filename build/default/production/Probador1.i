@@ -1872,15 +1872,22 @@ extern __bank0 __bit __timeout;
 
 
 
+void blink (void);
 
 void main(void){
-
-    PORTB = 0;
+    TRISA = 0b0000000;
     while(1){
-        RA1 = 1;
-        _delay((unsigned long)((500)*(4000000UL/4000.0)));
-        RA1 = 0;
-        _delay((unsigned long)((500)*(4000000UL/4000.0)));
-    }
+        for (char i=0;i<7;i++){
+            PORTA = (1 << i);
+            _delay((unsigned long)((500)*(4000000UL/4000.0)));
 
+        }
+    }
+}
+
+void blink (void){
+        RA0 = 1;
+        _delay((unsigned long)((500)*(4000000UL/4000.0)));
+        RA0 = 0;
+        _delay((unsigned long)((500)*(4000000UL/4000.0)));
 }
