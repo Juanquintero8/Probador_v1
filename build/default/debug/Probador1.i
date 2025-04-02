@@ -1855,6 +1855,9 @@ extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
 # 1 "Probador1.c" 2
 
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdbool.h" 1 3
+# 2 "Probador1.c" 2
+
 
 
 #pragma config FOSC = XT
@@ -1865,29 +1868,57 @@ extern __bank0 __bit __timeout;
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-
-
-
-
-
-
-
-void blink (void);
+# 30 "Probador1.c"
+char puerto;
+_Bool xx = 0;
 
 void main(void){
+    puerto = 0;
     TRISA = 0b0000000;
+    TRISB = 0b0000000;
+    TRISD0 = 1;
+    TRISD1 = 1;
+    PORTB = 0;
+
+
     while(1){
-        for (char i=0;i<7;i++){
-            PORTA = (1 << i);
-            _delay((unsigned long)((500)*(4000000UL/4000.0)));
 
+        while(RD0 == 0){
+            if (xx ==1){
+                break;
+            }
+            continue;
+            }
+        xx = 1;
+
+        switch (puerto) {
+            case 0:
+                for (char i = 0; i < 7;i++){
+                    PORTA = (1 << i);
+                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    }
+                while(1){
+                    if (RD1 == 1){
+                        puerto = 0;
+                        break;
+                        }
+                        if (RD0 == 1){
+                            puerto = 1;
+                            break;
+                        }
+
+                    }
+
+
+                break;
+
+            case 1:
+                for (char i = 0; i < 8;i++){
+                    PORTB = (1 << i);
+                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    }
+                break;
+              }
         }
-    }
-}
-
-void blink (void){
-        RA0 = 1;
         _delay((unsigned long)((500)*(4000000UL/4000.0)));
-        RA0 = 0;
-        _delay((unsigned long)((500)*(4000000UL/4000.0)));
-}
+        }
