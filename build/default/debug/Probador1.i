@@ -1877,10 +1877,12 @@ void main(void) {
     TRISA = 0b0000000;
     TRISB = 0b0000000;
     TRISC = 0b0000000;
+    TRISD = 0b0000000;
     TRISE = 0b00000111;
     ADCON1 = 0b00000111;
     PORTB = 0;
     PORTC = 0;
+    PORTD = 0;
 
 
     while (1) {
@@ -1939,7 +1941,24 @@ void main(void) {
                         break;
                     }
                     if (RE0 == 1) {
-                        puerto = 2;
+                        puerto = 3;
+                        break;
+                    }
+                }
+                break;
+
+            case 3:
+                for (char i = 0; i < 9; i++) {
+                    PORTD = (1 << i);
+                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                }
+                while (1) {
+                    if (RE1 == 1) {
+                        puerto = 3;
+                        break;
+                    }
+                    if (RE0 == 1) {
+                        puerto = 3;
                         break;
                     }
                 }
