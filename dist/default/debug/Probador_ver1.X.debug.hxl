@@ -9,11 +9,11 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 5h		(dist/default/debug\Probador_ver1.X.debug.hex)
-  ECAh - FFFh		(dist/default/debug\Probador_ver1.X.debug.hex)
+  EB4h - FFFh		(dist/default/debug\Probador_ver1.X.debug.hex)
   4000h - 4007h		(dist/default/debug\Probador_ver1.X.debug.hex)
   400Eh - 400Fh		(dist/default/debug\Probador_ver1.X.debug.hex)
  Unused ranges:
-  6h - EC9h
+  6h - EB3h
   1000h - 3FFFh
   4008h - 400Dh
 
@@ -26,7 +26,8 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-00000EC0 | -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1
+00000EB0 | -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000EC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000ED0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000EE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000EF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

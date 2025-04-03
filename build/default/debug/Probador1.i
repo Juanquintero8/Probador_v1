@@ -1868,57 +1868,64 @@ extern __bank0 __bit __timeout;
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-# 30 "Probador1.c"
+# 29 "Probador1.c"
 char puerto;
 _Bool xx = 0;
 
-void main(void){
+void main(void) {
     puerto = 0;
     TRISA = 0b0000000;
     TRISB = 0b0000000;
-    TRISD0 = 1;
-    TRISD1 = 1;
+    TRISE = 0b00000111;
+    ADCON1 = 0b00000111;
     PORTB = 0;
 
 
-    while(1){
+    while (1) {
 
-        while(RD0 == 0){
-            if (xx ==1){
+        while (RE0 == 0) {
+            if (xx == 1) {
                 break;
             }
             continue;
-            }
+        }
         xx = 1;
 
         switch (puerto) {
             case 0:
-                for (char i = 0; i < 7;i++){
+                for (char i = 0; i < 7; i++) {
                     PORTA = (1 << i);
                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-                    }
-                while(1){
-                    if (RD1 == 1){
+                }
+                while (1) {
+                    if (RE1 == 1) {
                         puerto = 0;
                         break;
-                        }
-                        if (RD0 == 1){
-                            puerto = 1;
-                            break;
-                        }
-
                     }
-
-
+                    if (RE0 == 1) {
+                        puerto = 1;
+                        break;
+                    }
+                }
                 break;
 
             case 1:
-                for (char i = 0; i < 8;i++){
+                for (char i = 0; i < 9; i++) {
                     PORTB = (1 << i);
                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                }
+                while (1) {
+                    if (RE1 == 1) {
+                        puerto = 1;
+                        break;
                     }
+                    if (RE0 == 1) {
+                        puerto = 1;
+                        break;
+                    }
+                }
                 break;
-              }
         }
-        _delay((unsigned long)((500)*(4000000UL/4000.0)));
-        }
+    }
+    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+}

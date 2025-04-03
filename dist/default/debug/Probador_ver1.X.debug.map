@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.36\pic\dat\en_msgs.txt -cn \
   -h+dist/default/debug\Probador_ver1.X.debug.sym \
   --cmf=dist/default/debug\Probador_ver1.X.debug.cmf -z -Q16F877A \
-  -oC:\Users\kada9\AppData\Local\Temp\xcAs8g0.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\kada9\AppData\Local\Temp\xcAs3sc.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/debug/Probador_ver1.X.debug.map \
-  --md=C:\Users\kada9\AppData\Local\Temp\xcAs8g0.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\kada9\AppData\Local\Temp\xcAs3sc.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
   -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
@@ -18,7 +18,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\kada9\AppData\Local\Temp\xcAs8g0.o \
+  -pfunctab=ENTRY -k C:\Users\kada9\AppData\Local\Temp\xcAs3sc.o \
   dist/default/debug\Probador_ver1.X.debug.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\kada9\AppData\Local\Temp\xcAs8g0.o
+C:\Users\kada9\AppData\Local\Temp\xcAs3sc.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1        0       4
                 idloc                              2000     2000        4        0       5
@@ -36,7 +36,7 @@ dist/default/debug\Probador_ver1.X.debug.o
                 cinit                               7FA      7FA        6      FF4       0
                 config                             2007     2007        1        0       4
                 idloc                              2000     2000        4        0       5
-                maintext                            765      765       95      ECA       0
+                maintext                            75A      75A       A0      EB4       0
                 cstackCOMMON                         70       70        5       70       1
                 bssCOMMON                            75       75        2       70       1
 
@@ -44,7 +44,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 end_init                              0        0        3         0
                 cinit                               7FA      7FA        6         0
-                maintext                            765      765       95         0
+                maintext                            75A      75A       A0         0
 
         CLASS   STRCODE        
 
@@ -95,7 +95,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
                 cstackCOMMON                   000070  000007  000077        70       1  COMMON      1
-                maintext                       000765  000095  0007FA       ECA       0  CODE        2
+                maintext                       00075A  0000A0  0007FA       EB4       0  CODE        2
                 cinit                          0007FA  000006  000800       FF4       0  CODE        2
 
 
@@ -106,13 +106,13 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0003-0764            762           2
+        CODE             0003-0759            757           2
                          0800-1FFF            800
         COMMON           0077-007D              7           1
-        CONST            0003-0764            100           2
+        CONST            0003-0759            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0003-0764            100           2
+        ENTRY            0003-0759            100           2
                          0800-1FFF            100
         RAM              0020-006F             50           1
                          00A0-00EF             50
@@ -122,21 +122,21 @@ UNUSED ADDRESS RANGES
         SFR1             0080-009F             20           1
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
-        STRCODE          0003-0764            762           2
+        STRCODE          0003-0759            757           2
                          0800-1FFF           1800
-        STRING           0003-0764            100           2
+        STRING           0003-0759            100           2
                          0800-1FFF            100
 
                                   Symbol Table
 
+_ADCON1                  (abs)        009F
 _PORTA                   (abs)        0005
 _PORTB                   (abs)        0006
-_RD0                     (abs)        0040
-_RD1                     (abs)        0041
+_RE0                     (abs)        0048
+_RE1                     (abs)        0049
 _TRISA                   (abs)        0085
 _TRISB                   (abs)        0086
-_TRISD0                  (abs)        0440
-_TRISD1                  (abs)        0441
+_TRISE                   (abs)        0089
 __Habs1                  abs1         0000
 __Hbank0                 bank0        0000
 __Hbank1                 bank1        0000
@@ -218,8 +218,8 @@ __end_of_main            maintext     07FA
 __initialization         cinit        07FA
 __pbssCOMMON             bssCOMMON    0075
 __pcstackCOMMON          cstackCOMMON 0070
-__pmaintext              maintext     0765
-_main                    maintext     0765
+__pmaintext              maintext     075A
+_main                    maintext     075A
 _puerto                  bssCOMMON    0076
 _xx                      bssCOMMON    0075
 btemp                    (abs)        007E
@@ -242,9 +242,9 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 Probador1.c
-		_main          		CODE           	0765	0000	149
+		_main          		CODE           	075A	0000	160
 
-Probador1.c estimated size: 149
+Probador1.c estimated size: 160
 
 shared
 		__initialization		CODE           	07FA	0000	2
