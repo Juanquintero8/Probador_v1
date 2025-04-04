@@ -11,17 +11,19 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
+$C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
 idloc IDLOC 5 2000 2000 4 2 1
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
 $dist/default/debug\Probador_ver1.X.debug.o
 cinit CODE 0 7FA 7FA 6 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 6D0 6D0 10 2 1
-maintext CODE 0 6E0 6E0 11A 2 1
-cstackCOMMON COMMON 1 70 70 7 1 1
-bssCOMMON COMMON 1 77 77 2 1 1
+text1 CODE 0 67A 67A 4 2 1
+text2 CODE 0 67E 67E 5 2 1
+text3 CODE 0 683 683 10 2 1
+maintext CODE 0 693 693 167 2 1
+cstackCOMMON COMMON 1 70 70 8 1 1
+bssCOMMON COMMON 1 78 78 2 1 1
 config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -37,21 +39,21 @@ BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-6CF 2
+CONST 3-679 2
 CONST 800-1FFF 2
-ENTRY 3-6CF 2
+ENTRY 3-679 2
 ENTRY 800-1FFF 2
-CODE 3-6CF 2
+CODE 3-679 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
-COMMON 79-7D 1
+COMMON 7A-7D 1
 EEDATA 2100-21FF 2
-STRCODE 3-6CF 2
+STRCODE 3-679 2
 STRCODE 800-1FFF 2
-STRING 3-6CF 2
+STRING 3-679 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -67,94 +69,117 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\Probador_ver1.X.debug.o
-7FA cinit CODE >375:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-7FA cinit CODE >378:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-7FA cinit CODE >392:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-7FB cinit CODE >393:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-7FC cinit CODE >399:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-7FC cinit CODE >401:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-7FD cinit CODE >402:C:\Users\kada9\AppData\Local\Temp\xcAs5uc.s
-6D0 text1 CODE >123:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6D0 text1 CODE >124:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6D3 text1 CODE >125:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6D4 text1 CODE >126:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6D5 text1 CODE >127:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6D6 text1 CODE >128:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6D8 text1 CODE >129:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6DA text1 CODE >130:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6DD text1 CODE >131:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6DE text1 CODE >132:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6DF text1 CODE >133:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6E0 maintext CODE >34:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6E0 maintext CODE >35:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6E1 maintext CODE >36:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6E7 maintext CODE >43:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6ED maintext CODE >42:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6ED maintext CODE >47:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6F3 maintext CODE >48:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6F5 maintext CODE >50:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6F6 maintext CODE >52:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6F9 maintext CODE >52:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-6FE maintext CODE >53:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-702 maintext CODE >53:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-705 maintext CODE >53:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-70B maintext CODE >54:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-718 maintext CODE >55:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-71E maintext CODE >55:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-722 maintext CODE >56:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-722 maintext CODE >57:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-728 maintext CODE >58:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-729 maintext CODE >59:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-72A maintext CODE >60:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-72A maintext CODE >61:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-72E maintext CODE >62:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-730 maintext CODE >63:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-731 maintext CODE >69:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-734 maintext CODE >69:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-739 maintext CODE >70:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-73D maintext CODE >70:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-740 maintext CODE >70:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-746 maintext CODE >71:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-753 maintext CODE >72:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-759 maintext CODE >72:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-75D maintext CODE >73:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-75D maintext CODE >74:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-764 maintext CODE >77:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-764 maintext CODE >78:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-768 maintext CODE >79:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-76C maintext CODE >80:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-76D maintext CODE >86:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-770 maintext CODE >86:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-775 maintext CODE >87:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-779 maintext CODE >87:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-77C maintext CODE >87:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-782 maintext CODE >88:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-78F maintext CODE >89:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-795 maintext CODE >89:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-799 maintext CODE >90:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-799 maintext CODE >91:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7A0 maintext CODE >94:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7A0 maintext CODE >95:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7A4 maintext CODE >96:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7A8 maintext CODE >97:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7A9 maintext CODE >103:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7AC maintext CODE >103:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7B1 maintext CODE >104:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7B5 maintext CODE >104:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7B8 maintext CODE >104:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7BE maintext CODE >105:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7CB maintext CODE >106:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7D1 maintext CODE >106:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7D5 maintext CODE >107:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7D5 maintext CODE >108:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7DC maintext CODE >111:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7DC maintext CODE >112:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7E1 maintext CODE >118:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7E6 maintext CODE >118:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7EB maintext CODE >118:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7EE maintext CODE >118:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7F1 maintext CODE >118:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
-7F4 maintext CODE >118:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7FA cinit CODE >379:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+7FA cinit CODE >382:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+7FA cinit CODE >396:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+7FB cinit CODE >397:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+7FC cinit CODE >403:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+7FC cinit CODE >405:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+7FD cinit CODE >406:C:\Users\kada9\AppData\Local\Temp\xcAscj4.s
+683 text3 CODE >143:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+683 text3 CODE >144:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+684 text3 CODE >145:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+687 text3 CODE >146:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+688 text3 CODE >147:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+689 text3 CODE >148:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+68A text3 CODE >149:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+68C text3 CODE >150:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+68F text3 CODE >151:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+690 text3 CODE >152:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+691 text3 CODE >153:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+692 text3 CODE >154:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+67E text2 CODE >156:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+67E text2 CODE >157:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+682 text2 CODE >158:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+67A text1 CODE >160:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+67A text1 CODE >161:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+67D text1 CODE >162:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+693 maintext CODE >36:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+693 maintext CODE >37:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+698 maintext CODE >38:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+69E maintext CODE >43:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6A4 maintext CODE >42:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6A4 maintext CODE >47:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6AA maintext CODE >48:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6AC maintext CODE >50:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6AD maintext CODE >52:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6B0 maintext CODE >52:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6B5 maintext CODE >53:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6B9 maintext CODE >53:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6BC maintext CODE >53:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6C2 maintext CODE >54:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6CF maintext CODE >55:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6D5 maintext CODE >55:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6D9 maintext CODE >56:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6D9 maintext CODE >57:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6DF maintext CODE >58:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6E0 maintext CODE >59:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6E1 maintext CODE >60:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6E1 maintext CODE >61:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6E5 maintext CODE >62:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6E7 maintext CODE >63:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6E8 maintext CODE >69:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6EB maintext CODE >69:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6F0 maintext CODE >70:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6F4 maintext CODE >70:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6F7 maintext CODE >70:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+6FD maintext CODE >71:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+70A maintext CODE >72:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+710 maintext CODE >72:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+714 maintext CODE >73:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+714 maintext CODE >74:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+71B maintext CODE >77:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+71B maintext CODE >78:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+71F maintext CODE >79:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+723 maintext CODE >80:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+724 maintext CODE >86:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+727 maintext CODE >86:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+72C maintext CODE >87:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+730 maintext CODE >87:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+733 maintext CODE >87:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+739 maintext CODE >88:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+746 maintext CODE >89:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+74C maintext CODE >89:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+750 maintext CODE >90:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+750 maintext CODE >91:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+757 maintext CODE >94:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+757 maintext CODE >95:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+75B maintext CODE >96:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+75F maintext CODE >97:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+760 maintext CODE >103:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+763 maintext CODE >103:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+768 maintext CODE >104:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+76C maintext CODE >104:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+76F maintext CODE >104:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+775 maintext CODE >105:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+782 maintext CODE >106:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+788 maintext CODE >106:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+78C maintext CODE >107:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+78C maintext CODE >108:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+793 maintext CODE >111:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+793 maintext CODE >112:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+797 maintext CODE >113:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+79B maintext CODE >114:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7A0 maintext CODE >115:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7A1 maintext CODE >121:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7A4 maintext CODE >121:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7A9 maintext CODE >122:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7AD maintext CODE >122:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7B0 maintext CODE >122:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7B6 maintext CODE >123:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7C3 maintext CODE >124:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7C9 maintext CODE >124:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7CD maintext CODE >125:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7D2 maintext CODE >127:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7D9 maintext CODE >131:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7D9 maintext CODE >132:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7DE maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7E3 maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7E8 maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7EB maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7EE maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7F1 maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+7F4 maintext CODE >138:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -169,37 +194,36 @@ $dist/default/debug\Probador_ver1.X.debug.o
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 __Hspace_0 800 0 ABS 0 - -
-__Hspace_1 79 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_xx 77 0 COMMON 1 bssCOMMON dist/default/debug\Probador_ver1.X.debug.o
+_xx 78 0 COMMON 1 bssCOMMON dist/default/debug\Probador_ver1.X.debug.o
 main@i 73 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-_main DC0 0 CODE 0 maintext dist/default/debug\Probador_ver1.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+_main D26 0 CODE 0 maintext dist/default/debug\Probador_ver1.X.debug.o
 btemp 7E 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
-start 0 0 CODE 0 init C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
+start 0 0 CODE 0 init C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ADCON1 9F 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-___stacklo 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
+___stackhi 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+___stacklo 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
 start_initialization FF4 0 CODE 0 cinit dist/default/debug\Probador_ver1.X.debug.o
-_Port_config DA0 0 CODE 0 text1 dist/default/debug\Probador_ver1.X.debug.o
-___int_sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
+___int_sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -207,6 +231,9 @@ __Hbank3 0 0 ABS 0 bank3 -
 __Hcinit 1000 0 CODE 0 cinit -
 __Hidloc 4008 0 IDLOC 5 idloc -
 __Hstack 0 0 STACK 2 stack -
+__end_of_port_conf D26 0 CODE 0 text3 dist/default/debug\Probador_ver1.X.debug.o
+__end_of_porte_ent D06 0 CODE 0 text2 dist/default/debug\Probador_ver1.X.debug.o
+__end_of_porte_sal CFC 0 CODE 0 text1 dist/default/debug\Probador_ver1.X.debug.o
 __Hmaintext 0 0 ABS 0 maintext -
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4010 0 CONFIG 4 config -
@@ -233,35 +260,40 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
+_port_conf D06 0 CODE 0 text3 dist/default/debug\Probador_ver1.X.debug.o
+_porte_ent CFC 0 CODE 0 text2 dist/default/debug\Probador_ver1.X.debug.o
+_porte_sal CF4 0 CODE 0 text1 dist/default/debug\Probador_ver1.X.debug.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _RE0 48 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _RE1 49 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 __S0 800 0 ABS 0 - -
-__S1 79 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
-__pmaintext DC0 0 CODE 0 maintext dist/default/debug\Probador_ver1.X.debug.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\kada9\AppData\Local\Temp\xcAscj4.o
+__pmaintext D26 0 CODE 0 maintext dist/default/debug\Probador_ver1.X.debug.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_puerto 78 0 COMMON 1 bssCOMMON dist/default/debug\Probador_ver1.X.debug.o
-main@i_52 74 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
-main@i_53 75 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
-main@i_54 76 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
+_puerto 79 0 COMMON 1 bssCOMMON dist/default/debug\Probador_ver1.X.debug.o
+main@i_61 74 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
+main@i_62 75 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
+main@i_63 76 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
+main@i_64 77 0 COMMON 1 cstackCOMMON dist/default/debug\Probador_ver1.X.debug.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/debug\Probador_ver1.X.debug.o
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/debug\Probador_ver1.X.debug.o
 __Lend_init 0 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FF8 0 CODE 0 cinit dist/default/debug\Probador_ver1.X.debug.o
 __Hintentry 0 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 0 0 CODE 0 reset_vec -
-__end_of_Port_config DC0 0 CODE 0 text1 dist/default/debug\Probador_ver1.X.debug.o
-__ptext1 DA0 0 CODE 0 text1 dist/default/debug\Probador_ver1.X.debug.o
+__ptext1 CF4 0 CODE 0 text1 dist/default/debug\Probador_ver1.X.debug.o
+__ptext2 CFC 0 CODE 0 text2 dist/default/debug\Probador_ver1.X.debug.o
+__ptext3 D06 0 CODE 0 text3 dist/default/debug\Probador_ver1.X.debug.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -275,6 +307,7 @@ _PORTA 5 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _PORTB 6 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _PORTC 7 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _PORTD 8 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
+_PORTE 9 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _TRISA 85 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _TRISB 86 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
 _TRISC 87 0 ABS 0 - dist/default/debug\Probador_ver1.X.debug.o
@@ -309,9 +342,11 @@ __initialization FF4 0 CODE 0 cinit dist/default/debug\Probador_ver1.X.debug.o
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FA FF4 6 2
-text1 0 6D0 DA0 10 2
-maintext 0 6E0 DC0 11A 2
-cstackCOMMON 1 70 70 9 1
+text1 0 67A CF4 4 2
+text2 0 67E CFC 5 2
+text3 0 683 D06 10 2
+maintext 0 693 D26 167 2
+cstackCOMMON 1 70 70 A 1
 reset_vec 0 0 0 3 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
