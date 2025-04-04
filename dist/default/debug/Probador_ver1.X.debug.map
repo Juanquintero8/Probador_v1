@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.36\pic\dat\en_msgs.txt -cn \
   -h+dist/default/debug\Probador_ver1.X.debug.sym \
   --cmf=dist/default/debug\Probador_ver1.X.debug.cmf -z -Q16F877A \
-  -oC:\Users\kada9\AppData\Local\Temp\xcAs4n4.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\kada9\AppData\Local\Temp\xcAs5uc.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/debug/Probador_ver1.X.debug.map \
-  --md=C:\Users\kada9\AppData\Local\Temp\xcAs4n4.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\kada9\AppData\Local\Temp\xcAs5uc.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
   -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
@@ -18,7 +18,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\kada9\AppData\Local\Temp\xcAs4n4.o \
+  -pfunctab=ENTRY -k C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o \
   dist/default/debug\Probador_ver1.X.debug.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\kada9\AppData\Local\Temp\xcAs4n4.o
+C:\Users\kada9\AppData\Local\Temp\xcAs5uc.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1        0       4
                 idloc                              2000     2000        4        0       5
@@ -36,7 +36,8 @@ dist/default/debug\Probador_ver1.X.debug.o
                 cinit                               7FA      7FA        6      FF4       0
                 config                             2007     2007        1        0       4
                 idloc                              2000     2000        4        0       5
-                maintext                            6D8      6D8      122      DB0       0
+                text1                               6D0      6D0       10      DA0       0
+                maintext                            6E0      6E0      11A      DC0       0
                 cstackCOMMON                         70       70        7       70       1
                 bssCOMMON                            77       77        2       70       1
 
@@ -44,7 +45,8 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 end_init                              0        0        3         0
                 cinit                               7FA      7FA        6         0
-                maintext                            6D8      6D8      122         0
+                text1                               6D0      6D0       10         0
+                maintext                            6E0      6E0      11A         0
 
         CLASS   STRCODE        
 
@@ -95,7 +97,8 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
                 cstackCOMMON                   000070  000009  000079        70       1  COMMON      1
-                maintext                       0006D8  000122  0007FA       DB0       0  CODE        2
+                text1                          0006D0  000010  0006E0       DA0       0  CODE        2
+                maintext                       0006E0  00011A  0007FA       DC0       0  CODE        2
                 cinit                          0007FA  000006  000800       FF4       0  CODE        2
 
 
@@ -106,13 +109,13 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0003-06D7            6D5           2
+        CODE             0003-06CF            6CD           2
                          0800-1FFF            800
         COMMON           0079-007D              5           1
-        CONST            0003-06D7            100           2
+        CONST            0003-06CF            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0003-06D7            100           2
+        ENTRY            0003-06CF            100           2
                          0800-1FFF            100
         RAM              0020-006F             50           1
                          00A0-00EF             50
@@ -122,9 +125,9 @@ UNUSED ADDRESS RANGES
         SFR1             0080-009F             20           1
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
-        STRCODE          0003-06D7            6D5           2
+        STRCODE          0003-06CF            6CD           2
                          0800-1FFF           1800
-        STRING           0003-06D7            100           2
+        STRING           0003-06CF            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -134,6 +137,7 @@ _PORTA                   (abs)        0005
 _PORTB                   (abs)        0006
 _PORTC                   (abs)        0007
 _PORTD                   (abs)        0008
+_Port_config             text1        06D0
 _RE0                     (abs)        0048
 _RE1                     (abs)        0049
 _TRISA                   (abs)        0085
@@ -217,13 +221,15 @@ ___latbits               (abs)        0002
 ___sp                    stack        0000
 ___stackhi               (abs)        0000
 ___stacklo               (abs)        0000
+__end_of_Port_config     text1        06E0
 __end_of__initialization cinit        07FC
 __end_of_main            maintext     07FA
 __initialization         cinit        07FA
 __pbssCOMMON             bssCOMMON    0077
 __pcstackCOMMON          cstackCOMMON 0070
-__pmaintext              maintext     06D8
-_main                    maintext     06D8
+__pmaintext              maintext     06E0
+__ptext1                 text1        06D0
+_main                    maintext     06E0
 _puerto                  bssCOMMON    0078
 _xx                      bssCOMMON    0077
 btemp                    (abs)        007E
@@ -235,9 +241,9 @@ intlevel3                functab      0000
 intlevel4                functab      0000
 intlevel5                functab      0000
 main@i                   cstackCOMMON 0073
-main@i_48                cstackCOMMON 0074
-main@i_49                cstackCOMMON 0075
-main@i_50                cstackCOMMON 0076
+main@i_52                cstackCOMMON 0074
+main@i_53                cstackCOMMON 0075
+main@i_54                cstackCOMMON 0076
 reset_vec                reset_vec    0000
 start                    init         0000
 start_initialization     cinit        07FA
@@ -248,9 +254,10 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 Probador1.c
-		_main          		CODE           	06D8	0000	290
+		_main          		CODE           	06E0	0000	282
+		_Port_config   		CODE           	06D0	0000	16
 
-Probador1.c estimated size: 290
+Probador1.c estimated size: 298
 
 shared
 		__initialization		CODE           	07FA	0000	2

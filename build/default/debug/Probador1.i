@@ -1872,17 +1872,12 @@ extern __bank0 __bit __timeout;
 char puerto;
 _Bool xx = 0;
 
+void Port_config(void);
+
 void main(void) {
     puerto = 0;
-    TRISA = 0b0000000;
-    TRISB = 0b0000000;
-    TRISC = 0b0000000;
-    TRISD = 0b0000000;
-    TRISE = 0b00000111;
-    ADCON1 = 0b00000111;
-    PORTB = 0;
-    PORTC = 0;
-    PORTD = 0;
+    Port_config();
+
 
 
     while (1) {
@@ -1966,4 +1961,16 @@ void main(void) {
         }
     }
     _delay((unsigned long)((500)*(4000000UL/4000.0)));
+}
+
+void Port_config(void) {
+    TRISA = 0b0000000;
+    TRISB = 0b0000000;
+    TRISC = 0b0000000;
+    TRISD = 0b0000000;
+    TRISE = 0b00000111;
+    ADCON1 = 0b00000111;
+    PORTB = 0;
+    PORTC = 0;
+    PORTD = 0;
 }
