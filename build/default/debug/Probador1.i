@@ -1869,15 +1869,15 @@ extern __bank0 __bit __timeout;
 #pragma config WRT = OFF
 #pragma config CP = OFF
 # 31 "Probador1.c"
-unsigned char puerto;
-_Bool xx = 0;
+unsigned char puerto, mask;
+_Bool xx = 0, prueba = 1;
 
-void port_conf(void);
+void port_conf_r1(void);
 void porte_ent(void);
 void porte_sal(void);
 
 void main(void) {
-    port_conf();
+    port_conf_r1();
     porte_ent();
 
     while (1) {
@@ -1889,101 +1889,119 @@ void main(void) {
             continue;
         }
         xx = 1;
+        if (prueba == 0) {
+            switch (puerto) {
+                case 0:
+                    for (unsigned char i = 0; i < 7; i++) {
+                        PORTA = (1 << i);
+                        _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    }
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 0;
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 1;
+                            break;
+                        }
+                    }
+                    break;
 
-        switch (puerto) {
-            case 0:
-                for (unsigned char i = 0; i < 7; i++) {
-                    PORTA = (1 << i);
-                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
-                }
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 0;
-                        break;
+                case 1:
+                    for (unsigned char i = 0; i < 9; i++) {
+                        PORTB = (1 << i);
+                        _delay((unsigned long)((500)*(4000000UL/4000.0)));
                     }
-                    if (RE0 == 1) {
-                        puerto = 1;
-                        break;
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 1;
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 2;
+                            break;
+                        }
                     }
-                }
-                break;
+                    break;
 
-            case 1:
-                for (unsigned char i = 0; i < 9; i++) {
-                    PORTB = (1 << i);
-                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
-                }
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 1;
-                        break;
+                case 2:
+                    for (unsigned char i = 0; i < 9; i++) {
+                        PORTC = (1 << i);
+                        _delay((unsigned long)((500)*(4000000UL/4000.0)));
                     }
-                    if (RE0 == 1) {
-                        puerto = 2;
-                        break;
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 2;
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 3;
+                            break;
+                        }
                     }
-                }
-                break;
+                    break;
 
-            case 2:
-                for (unsigned char i = 0; i < 9; i++) {
-                    PORTC = (1 << i);
-                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
-                }
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 2;
-                        break;
+                case 3:
+                    for (unsigned char i = 0; i < 9; i++) {
+                        PORTD = (1 << i);
+                        _delay((unsigned long)((500)*(4000000UL/4000.0)));
                     }
-                    if (RE0 == 1) {
-                        puerto = 3;
-                        break;
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 3;
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 4;
+                            porte_sal();
+                            break;
+                        }
                     }
-                }
-                break;
+                    break;
 
-            case 3:
-                for (unsigned char i = 0; i < 9; i++) {
-                    PORTD = (1 << i);
-                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
-                }
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 3;
-                        break;
+                case 4:
+                    for (unsigned char i = 0; i < 4; i++) {
+                        PORTE = (1 << i);
+                        _delay((unsigned long)((500)*(4000000UL/4000.0)));
                     }
-                    if (RE0 == 1) {
-                        puerto = 4;
-                        porte_sal();
-                        break;
+                    porte_ent();
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 4;
+                            porte_sal();
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 0;
+                            break;
+                        }
                     }
-                }
-                break;
+                    break;
+            }
+            _delay((unsigned long)((500)*(4000000UL/4000.0)));
+        } else {
+            TRISA = 0b11111111;
+            PORTD = 0x00;
 
-            case 4:
-                for (unsigned char i = 0; i < 4; i++) {
-                    PORTE = (1 << i);
-                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
+            for (unsigned char i = 0; i < 6; i++) {
+                mask = (1 << i);
+
+                if (PORTA & mask) {
+                    RD0 = 1;
+                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                } else {
+                    RD0 = 0;
                 }
-                porte_ent();
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 4;
-                        porte_sal();
-                        break;
-                    }
-                    if (RE0 == 1) {
-                        puerto = 0;
-                        break;
-                    }
-                }
-                break;
+
+                _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            }
+
         }
     }
-    _delay((unsigned long)((500)*(4000000UL/4000.0)));
 }
 
-void port_conf(void) {
+void port_conf_r1(void) {
     puerto = 0;
     TRISA = 0b00000000;
     TRISB = 0b00000000;
