@@ -11,13 +11,13 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"36 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+"38 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 [v _main main `(v  1 e 1 0 ]
-"143
+"145
 [v _port_conf port_conf `(v  1 e 1 0 ]
-"156
+"158
 [v _porte_ent porte_ent `(v  1 e 1 0 ]
-"160
+"162
 [v _porte_sal porte_sal `(v  1 e 1 0 ]
 "167 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -45,37 +45,37 @@
 [v _RE0 RE0 `VEb  1 e 0 @72 ]
 "2781
 [v _RE1 RE1 `VEb  1 e 0 @73 ]
-"29 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+"31 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 [v _puerto puerto `uc  1 e 1 0 ]
-"30
+"32
 [v _xx xx `a  1 e 1 0 ]
-"36
+"38
 [v _main main `(v  1 e 1 0 ]
 {
-"121
+"123
 [v main@i_64 i `uc  1 a 1 7 ]
-"103
+"105
 [v main@i_63 i `uc  1 a 1 6 ]
-"86
+"88
 [v main@i_62 i `uc  1 a 1 5 ]
-"69
+"71
 [v main@i_61 i `uc  1 a 1 4 ]
-"52
+"54
 [v main@i i `uc  1 a 1 3 ]
-"141
+"143
 } 0
-"160
+"162
 [v _porte_sal porte_sal `(v  1 e 1 0 ]
 {
-"162
+"164
 } 0
-"156
+"158
 [v _porte_ent porte_ent `(v  1 e 1 0 ]
 {
-"158
+"160
 } 0
-"143
+"145
 [v _port_conf port_conf `(v  1 e 1 0 ]
 {
-"154
+"156
 } 0

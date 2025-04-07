@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.36 build 20220127204148 
-                                                                                               Fri Apr 04 19:49:32 2025
+                                                                                               Fri Apr 04 20:08:47 2025
 
 Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1 
      1                           	processor	16F877A
@@ -273,7 +273,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    259 ;;
    260 ;; *************** function _main *****************
    261 ;; Defined at:
-   262 ;;		line 36 in file "Probador1.c"
+   262 ;;		line 38 in file "Probador1.c"
    263 ;; Parameters:    Size  Location     Type
    264 ;;		None
    265 ;; Auto vars:     Size  Location     Type
@@ -314,15 +314,15 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    300                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
    301                           
    302                           
-   303                           ;Probador1.c: 37:     port_conf();
+   303                           ;Probador1.c: 39:     port_conf();
    304  0693  120A  118A  2683  120A  118A  	fcall	_port_conf
    305                           
-   306                           ;Probador1.c: 38:     porte_ent();
+   306                           ;Probador1.c: 40:     porte_ent();
    307  0698  120A  118A  267E  120A  118A  	fcall	_porte_ent
    308  069D  2EA4               	goto	l44
    309  069E                     l711:
    310                           
-   311                           ;Probador1.c: 43:             if (xx == 1) {
+   311                           ;Probador1.c: 45:             if (xx == 1) {
    312  069E  0378               	decf	_xx,w
    313  069F  1D03               	btfss	3,2
    314  06A0  2EA2               	goto	u11
@@ -332,10 +332,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    318  06A3                     u10:
    319  06A3  2EAA               	goto	l47
    320  06A4                     l44:	
-   321                           ;Probador1.c: 47:         }
+   321                           ;Probador1.c: 49:         }
    322                           
    323                           
-   324                           ;Probador1.c: 42:         while (RE0 == 0) {
+   324                           ;Probador1.c: 44:         while (RE0 == 0) {
    325  06A4  1283               	bcf	3,5	;RP0=0, select bank0
    326  06A5  1303               	bcf	3,6	;RP1=0, select bank0
    327  06A6  1C09               	btfss	9,0	;volatile
@@ -346,15 +346,15 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    332  06AA                     u20:
    333  06AA                     l47:
    334                           
-   335                           ;Probador1.c: 48:         xx = 1;
+   335                           ;Probador1.c: 50:         xx = 1;
    336  06AA  01F8               	clrf	_xx
    337  06AB  0AF8               	incf	_xx,f
    338                           
-   339                           ;Probador1.c: 50:         switch (puerto) {
+   339                           ;Probador1.c: 52:         switch (puerto) {
    340  06AC  2FDE               	goto	l805
    341  06AD                     l715:
    342                           
-   343                           ;Probador1.c: 52:                 for (char i = 0; i < 7; i++) {
+   343                           ;Probador1.c: 54:                 for (unsigned char i = 0; i < 7; i++) {
    344  06AD  01F3               	clrf	main@i
    345  06AE                     l717:
    346  06AE  3007               	movlw	7
@@ -368,7 +368,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    354  06B4  2ED9               	goto	l52
    355  06B5                     l721:
    356                           
-   357                           ;Probador1.c: 53:                     PORTA = (1 << i);
+   357                           ;Probador1.c: 55:                     PORTA = (1 << i);
    358  06B5  3001               	movlw	1
    359  06B6  00F0               	movwf	??_main
    360  06B7  0A73               	incf	main@i,w
@@ -386,12 +386,12 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    372  06C1  0085               	movwf	5	;volatile
    373  06C2                     l723:
    374                           
-   375                           ;Probador1.c: 54:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-   376  06C2  3003               	movlw	3
+   375                           ;Probador1.c: 56:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+   376  06C2  3002               	movlw	2
    377  06C3  00F2               	movwf	??_main+2
-   378  06C4  308A               	movlw	138
+   378  06C4  3045               	movlw	69
    379  06C5  00F1               	movwf	??_main+1
-   380  06C6  3055               	movlw	85
+   380  06C6  30A9               	movlw	169
    381  06C7  00F0               	movwf	??_main
    382  06C8                     u287:
    383  06C8  0BF0               	decfsz	??_main,f
@@ -403,7 +403,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    389  06CE  2ECF               	nop2
    390  06CF                     l725:
    391                           
-   392                           ;Probador1.c: 55:                 }
+   392                           ;Probador1.c: 57:                 }
    393  06CF  3001               	movlw	1
    394  06D0  00F0               	movwf	??_main
    395  06D1  0870               	movf	??_main,w
@@ -417,10 +417,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    403  06D8  2EB5               	goto	l721
    404  06D9                     u50:
    405  06D9                     l52:	
-   406                           ;Probador1.c: 56:                 while (1) {
+   406                           ;Probador1.c: 58:                 while (1) {
    407                           
    408                           
-   409                           ;Probador1.c: 57:                     if (RE1 == 1) {
+   409                           ;Probador1.c: 59:                     if (RE1 == 1) {
    410  06D9  1283               	bcf	3,5	;RP0=0, select bank0
    411  06DA  1303               	bcf	3,6	;RP1=0, select bank0
    412  06DB  1C89               	btfss	9,1	;volatile
@@ -431,16 +431,16 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    417  06DF                     u60:
    418  06DF                     l727:
    419                           
-   420                           ;Probador1.c: 58:                         puerto = 0;
+   420                           ;Probador1.c: 60:                         puerto = 0;
    421  06DF  01F9               	clrf	_puerto
    422                           
-   423                           ;Probador1.c: 59:                         break;
+   423                           ;Probador1.c: 61:                         break;
    424  06E0  2EA4               	goto	l44
    425  06E1                     l53:	
-   426                           ;Probador1.c: 60:                     }
+   426                           ;Probador1.c: 62:                     }
    427                           
    428                           
-   429                           ;Probador1.c: 61:                     if (RE0 == 1) {
+   429                           ;Probador1.c: 63:                     if (RE0 == 1) {
    430  06E1  1C09               	btfss	9,0	;volatile
    431  06E2  2EE4               	goto	u71
    432  06E3  2EE5               	goto	u70
@@ -449,15 +449,15 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    435  06E5                     u70:
    436  06E5                     l729:
    437                           
-   438                           ;Probador1.c: 62:                         puerto = 1;
+   438                           ;Probador1.c: 64:                         puerto = 1;
    439  06E5  01F9               	clrf	_puerto
    440  06E6  0AF9               	incf	_puerto,f
    441                           
-   442                           ;Probador1.c: 63:                         break;
+   442                           ;Probador1.c: 65:                         break;
    443  06E7  2EA4               	goto	l44
    444  06E8                     l731:
    445                           
-   446                           ;Probador1.c: 69:                 for (char i = 0; i < 9; i++) {
+   446                           ;Probador1.c: 71:                 for (unsigned char i = 0; i < 9; i++) {
    447  06E8  01F4               	clrf	main@i_61
    448  06E9                     l733:
    449  06E9  3009               	movlw	9
@@ -471,7 +471,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    457  06EF  2F14               	goto	l61
    458  06F0                     l737:
    459                           
-   460                           ;Probador1.c: 70:                     PORTB = (1 << i);
+   460                           ;Probador1.c: 72:                     PORTB = (1 << i);
    461  06F0  3001               	movlw	1
    462  06F1  00F0               	movwf	??_main
    463  06F2  0A74               	incf	main@i_61,w
@@ -489,12 +489,12 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    475  06FC  0086               	movwf	6	;volatile
    476  06FD                     l739:
    477                           
-   478                           ;Probador1.c: 71:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-   479  06FD  3003               	movlw	3
+   478                           ;Probador1.c: 73:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+   479  06FD  3002               	movlw	2
    480  06FE  00F2               	movwf	??_main+2
-   481  06FF  308A               	movlw	138
+   481  06FF  3045               	movlw	69
    482  0700  00F1               	movwf	??_main+1
-   483  0701  3055               	movlw	85
+   483  0701  30A9               	movlw	169
    484  0702  00F0               	movwf	??_main
    485  0703                     u297:
    486  0703  0BF0               	decfsz	??_main,f
@@ -506,7 +506,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    492  0709  2F0A               	nop2
    493  070A                     l741:
    494                           
-   495                           ;Probador1.c: 72:                 }
+   495                           ;Probador1.c: 74:                 }
    496  070A  3001               	movlw	1
    497  070B  00F0               	movwf	??_main
    498  070C  0870               	movf	??_main,w
@@ -520,10 +520,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    506  0713  2EF0               	goto	l737
    507  0714                     u100:
    508  0714                     l61:	
-   509                           ;Probador1.c: 73:                 while (1) {
+   509                           ;Probador1.c: 75:                 while (1) {
    510                           
    511                           
-   512                           ;Probador1.c: 74:                     if (RE1 == 1) {
+   512                           ;Probador1.c: 76:                     if (RE1 == 1) {
    513  0714  1283               	bcf	3,5	;RP0=0, select bank0
    514  0715  1303               	bcf	3,6	;RP1=0, select bank0
    515  0716  1C89               	btfss	9,1	;volatile
@@ -534,10 +534,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    520  071A                     u110:
    521  071A  2EE5               	goto	l729
    522  071B                     l62:	
-   523                           ;Probador1.c: 77:                     }
+   523                           ;Probador1.c: 79:                     }
    524                           
    525                           
-   526                           ;Probador1.c: 78:                     if (RE0 == 1) {
+   526                           ;Probador1.c: 80:                     if (RE0 == 1) {
    527  071B  1C09               	btfss	9,0	;volatile
    528  071C  2F1E               	goto	u121
    529  071D  2F1F               	goto	u120
@@ -546,17 +546,17 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    532  071F                     u120:
    533  071F                     l745:
    534                           
-   535                           ;Probador1.c: 79:                         puerto = 2;
+   535                           ;Probador1.c: 81:                         puerto = 2;
    536  071F  3002               	movlw	2
    537  0720  00F0               	movwf	??_main
    538  0721  0870               	movf	??_main,w
    539  0722  00F9               	movwf	_puerto
    540                           
-   541                           ;Probador1.c: 80:                         break;
+   541                           ;Probador1.c: 82:                         break;
    542  0723  2EA4               	goto	l44
    543  0724                     l747:
    544                           
-   545                           ;Probador1.c: 86:                 for (char i = 0; i < 9; i++) {
+   545                           ;Probador1.c: 88:                 for (unsigned char i = 0; i < 9; i++) {
    546  0724  01F5               	clrf	main@i_62
    547  0725                     l749:
    548  0725  3009               	movlw	9
@@ -570,7 +570,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    556  072B  2F50               	goto	l69
    557  072C                     l753:
    558                           
-   559                           ;Probador1.c: 87:                     PORTC = (1 << i);
+   559                           ;Probador1.c: 89:                     PORTC = (1 << i);
    560  072C  3001               	movlw	1
    561  072D  00F0               	movwf	??_main
    562  072E  0A75               	incf	main@i_62,w
@@ -588,12 +588,12 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    574  0738  0087               	movwf	7	;volatile
    575  0739                     l755:
    576                           
-   577                           ;Probador1.c: 88:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-   578  0739  3003               	movlw	3
+   577                           ;Probador1.c: 90:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+   578  0739  3002               	movlw	2
    579  073A  00F2               	movwf	??_main+2
-   580  073B  308A               	movlw	138
+   580  073B  3045               	movlw	69
    581  073C  00F1               	movwf	??_main+1
-   582  073D  3055               	movlw	85
+   582  073D  30A9               	movlw	169
    583  073E  00F0               	movwf	??_main
    584  073F                     u307:
    585  073F  0BF0               	decfsz	??_main,f
@@ -605,7 +605,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    591  0745  2F46               	nop2
    592  0746                     l757:
    593                           
-   594                           ;Probador1.c: 89:                 }
+   594                           ;Probador1.c: 91:                 }
    595  0746  3001               	movlw	1
    596  0747  00F0               	movwf	??_main
    597  0748  0870               	movf	??_main,w
@@ -619,10 +619,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    605  074F  2F2C               	goto	l753
    606  0750                     u150:
    607  0750                     l69:	
-   608                           ;Probador1.c: 90:                 while (1) {
+   608                           ;Probador1.c: 92:                 while (1) {
    609                           
    610                           
-   611                           ;Probador1.c: 91:                     if (RE1 == 1) {
+   611                           ;Probador1.c: 93:                     if (RE1 == 1) {
    612  0750  1283               	bcf	3,5	;RP0=0, select bank0
    613  0751  1303               	bcf	3,6	;RP1=0, select bank0
    614  0752  1C89               	btfss	9,1	;volatile
@@ -633,10 +633,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    619  0756                     u160:
    620  0756  2F1F               	goto	l745
    621  0757                     l70:	
-   622                           ;Probador1.c: 94:                     }
+   622                           ;Probador1.c: 96:                     }
    623                           
    624                           
-   625                           ;Probador1.c: 95:                     if (RE0 == 1) {
+   625                           ;Probador1.c: 97:                     if (RE0 == 1) {
    626  0757  1C09               	btfss	9,0	;volatile
    627  0758  2F5A               	goto	u171
    628  0759  2F5B               	goto	u170
@@ -645,17 +645,17 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    631  075B                     u170:
    632  075B                     l761:
    633                           
-   634                           ;Probador1.c: 96:                         puerto = 3;
+   634                           ;Probador1.c: 98:                         puerto = 3;
    635  075B  3003               	movlw	3
    636  075C  00F0               	movwf	??_main
    637  075D  0870               	movf	??_main,w
    638  075E  00F9               	movwf	_puerto
    639                           
-   640                           ;Probador1.c: 97:                         break;
+   640                           ;Probador1.c: 99:                         break;
    641  075F  2EA4               	goto	l44
    642  0760                     l763:
    643                           
-   644                           ;Probador1.c: 103:                 for (char i = 0; i < 9; i++) {
+   644                           ;Probador1.c: 105:                 for (unsigned char i = 0; i < 9; i++) {
    645  0760  01F6               	clrf	main@i_63
    646  0761                     l765:
    647  0761  3009               	movlw	9
@@ -669,7 +669,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    655  0767  2F8C               	goto	l77
    656  0768                     l769:
    657                           
-   658                           ;Probador1.c: 104:                     PORTD = (1 << i);
+   658                           ;Probador1.c: 106:                     PORTD = (1 << i);
    659  0768  3001               	movlw	1
    660  0769  00F0               	movwf	??_main
    661  076A  0A76               	incf	main@i_63,w
@@ -687,13 +687,13 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    673  0774  0088               	movwf	8	;volatile
    674  0775                     l771:
    675                           
-   676                           ;Probador1.c: 105:                     _delay((unsigned long)((500)*(4000000UL/4000.0)))
+   676                           ;Probador1.c: 107:                     _delay((unsigned long)((250)*(4000000UL/4000.0)))
       +                          ;
-   677  0775  3003               	movlw	3
+   677  0775  3002               	movlw	2
    678  0776  00F2               	movwf	??_main+2
-   679  0777  308A               	movlw	138
+   679  0777  3045               	movlw	69
    680  0778  00F1               	movwf	??_main+1
-   681  0779  3055               	movlw	85
+   681  0779  30A9               	movlw	169
    682  077A  00F0               	movwf	??_main
    683  077B                     u317:
    684  077B  0BF0               	decfsz	??_main,f
@@ -705,7 +705,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    690  0781  2F82               	nop2
    691  0782                     l773:
    692                           
-   693                           ;Probador1.c: 106:                 }
+   693                           ;Probador1.c: 108:                 }
    694  0782  3001               	movlw	1
    695  0783  00F0               	movwf	??_main
    696  0784  0870               	movf	??_main,w
@@ -719,10 +719,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    704  078B  2F68               	goto	l769
    705  078C                     u200:
    706  078C                     l77:	
-   707                           ;Probador1.c: 107:                 while (1) {
+   707                           ;Probador1.c: 109:                 while (1) {
    708                           
    709                           
-   710                           ;Probador1.c: 108:                     if (RE1 == 1) {
+   710                           ;Probador1.c: 110:                     if (RE1 == 1) {
    711  078C  1283               	bcf	3,5	;RP0=0, select bank0
    712  078D  1303               	bcf	3,6	;RP1=0, select bank0
    713  078E  1C89               	btfss	9,1	;volatile
@@ -733,10 +733,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    718  0792                     u210:
    719  0792  2F5B               	goto	l761
    720  0793                     l78:	
-   721                           ;Probador1.c: 111:                     }
+   721                           ;Probador1.c: 113:                     }
    722                           
    723                           
-   724                           ;Probador1.c: 112:                     if (RE0 == 1) {
+   724                           ;Probador1.c: 114:                     if (RE0 == 1) {
    725  0793  1C09               	btfss	9,0	;volatile
    726  0794  2F96               	goto	u221
    727  0795  2F97               	goto	u220
@@ -745,21 +745,21 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    730  0797                     u220:
    731  0797                     l777:
    732                           
-   733                           ;Probador1.c: 113:                         puerto = 4;
+   733                           ;Probador1.c: 115:                         puerto = 4;
    734  0797  3004               	movlw	4
    735  0798  00F0               	movwf	??_main
    736  0799  0870               	movf	??_main,w
    737  079A  00F9               	movwf	_puerto
    738  079B                     l779:
    739                           
-   740                           ;Probador1.c: 114:                         porte_sal();
+   740                           ;Probador1.c: 116:                         porte_sal();
    741  079B  120A  118A  267A  120A  118A  	fcall	_porte_sal
    742                           
-   743                           ;Probador1.c: 115:                         break;
+   743                           ;Probador1.c: 117:                         break;
    744  07A0  2EA4               	goto	l44
    745  07A1                     l781:
    746                           
-   747                           ;Probador1.c: 121:                 for (char i = 0; i < 4; i++) {
+   747                           ;Probador1.c: 123:                 for (unsigned char i = 0; i < 4; i++) {
    748  07A1  01F7               	clrf	main@i_64
    749  07A2                     l783:
    750  07A2  3004               	movlw	4
@@ -773,7 +773,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    758  07A8  2FCD               	goto	l793
    759  07A9                     l787:
    760                           
-   761                           ;Probador1.c: 122:                     PORTE = (1 << i);
+   761                           ;Probador1.c: 124:                     PORTE = (1 << i);
    762  07A9  3001               	movlw	1
    763  07AA  00F0               	movwf	??_main
    764  07AB  0A77               	incf	main@i_64,w
@@ -791,13 +791,13 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    776  07B5  0089               	movwf	9	;volatile
    777  07B6                     l789:
    778                           
-   779                           ;Probador1.c: 123:                     _delay((unsigned long)((500)*(4000000UL/4000.0)))
+   779                           ;Probador1.c: 125:                     _delay((unsigned long)((250)*(4000000UL/4000.0)))
       +                          ;
-   780  07B6  3003               	movlw	3
+   780  07B6  3002               	movlw	2
    781  07B7  00F2               	movwf	??_main+2
-   782  07B8  308A               	movlw	138
+   782  07B8  3045               	movlw	69
    783  07B9  00F1               	movwf	??_main+1
-   784  07BA  3055               	movlw	85
+   784  07BA  30A9               	movlw	169
    785  07BB  00F0               	movwf	??_main
    786  07BC                     u327:
    787  07BC  0BF0               	decfsz	??_main,f
@@ -809,7 +809,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    793  07C2  2FC3               	nop2
    794  07C3                     l791:
    795                           
-   796                           ;Probador1.c: 124:                 }
+   796                           ;Probador1.c: 126:                 }
    797  07C3  3001               	movlw	1
    798  07C4  00F0               	movwf	??_main
    799  07C5  0870               	movf	??_main,w
@@ -824,11 +824,11 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    808  07CD                     u250:
    809  07CD                     l793:
    810                           
-   811                           ;Probador1.c: 125:                 porte_ent();
+   811                           ;Probador1.c: 127:                 porte_ent();
    812  07CD  120A  118A  267E  120A  118A  	fcall	_porte_ent
    813  07D2                     l795:
    814                           
-   815                           ;Probador1.c: 127:                     if (RE1 == 1) {
+   815                           ;Probador1.c: 129:                     if (RE1 == 1) {
    816  07D2  1283               	bcf	3,5	;RP0=0, select bank0
    817  07D3  1303               	bcf	3,6	;RP1=0, select bank0
    818  07D4  1C89               	btfss	9,1	;volatile
@@ -839,10 +839,10 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    823  07D8                     u260:
    824  07D8  2F97               	goto	l777
    825  07D9                     l86:	
-   826                           ;Probador1.c: 131:                     }
+   826                           ;Probador1.c: 133:                     }
    827                           
    828                           
-   829                           ;Probador1.c: 132:                     if (RE0 == 1) {
+   829                           ;Probador1.c: 134:                     if (RE0 == 1) {
    830  07D9  1C09               	btfss	9,0	;volatile
    831  07DA  2FDC               	goto	u271
    832  07DB  2FDD               	goto	u270
@@ -904,7 +904,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    887  067A                     __ptext1:	
    888 ;; *************** function _porte_sal *****************
    889 ;; Defined at:
-   890 ;;		line 160 in file "Probador1.c"
+   890 ;;		line 162 in file "Probador1.c"
    891 ;; Parameters:    Size  Location     Type
    892 ;;		None
    893 ;; Auto vars:     Size  Location     Type
@@ -939,7 +939,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    922                           ; Regs used in _porte_sal: [status,2]
    923                           
    924                           
-   925                           ;Probador1.c: 161:     TRISE = 0b00000000;
+   925                           ;Probador1.c: 163:     TRISE = 0b00000000;
    926  067A  1683               	bsf	3,5	;RP0=1, select bank1
    927  067B  1303               	bcf	3,6	;RP1=0, select bank1
    928  067C  0189               	clrf	9	;volatile
@@ -951,7 +951,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    934  067E                     __ptext2:	
    935 ;; *************** function _porte_ent *****************
    936 ;; Defined at:
-   937 ;;		line 156 in file "Probador1.c"
+   937 ;;		line 158 in file "Probador1.c"
    938 ;; Parameters:    Size  Location     Type
    939 ;;		None
    940 ;; Auto vars:     Size  Location     Type
@@ -986,7 +986,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    969                           ; Regs used in _porte_ent: [wreg]
    970                           
    971                           
-   972                           ;Probador1.c: 157:     TRISE = 0b00000011;
+   972                           ;Probador1.c: 159:     TRISE = 0b00000011;
    973  067E  3003               	movlw	3
    974  067F  1683               	bsf	3,5	;RP0=1, select bank1
    975  0680  1303               	bcf	3,6	;RP1=0, select bank1
@@ -999,7 +999,7 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
    982  0683                     __ptext3:	
    983 ;; *************** function _port_conf *****************
    984 ;; Defined at:
-   985 ;;		line 143 in file "Probador1.c"
+   985 ;;		line 145 in file "Probador1.c"
    986 ;; Parameters:    Size  Location     Type
    987 ;;		None
    988 ;; Auto vars:     Size  Location     Type
@@ -1034,44 +1034,44 @@ Microchip MPLAB XC8 C Compiler v2.36 (Free license) build 20220127204148 Og1
   1017                           ; Regs used in _port_conf: [wreg+status,2]
   1018                           
   1019                           
-  1020                           ;Probador1.c: 144:     puerto = 0;
+  1020                           ;Probador1.c: 146:     puerto = 0;
   1021  0683  01F9               	clrf	_puerto
   1022                           
-  1023                           ;Probador1.c: 145:     TRISA = 0b00000000;
+  1023                           ;Probador1.c: 147:     TRISA = 0b00000000;
   1024  0684  1683               	bsf	3,5	;RP0=1, select bank1
   1025  0685  1303               	bcf	3,6	;RP1=0, select bank1
   1026  0686  0185               	clrf	5	;volatile
   1027                           
-  1028                           ;Probador1.c: 146:     TRISB = 0b00000000;
+  1028                           ;Probador1.c: 148:     TRISB = 0b00000000;
   1029  0687  0186               	clrf	6	;volatile
   1030                           
-  1031                           ;Probador1.c: 147:     TRISC = 0b00000000;
+  1031                           ;Probador1.c: 149:     TRISC = 0b00000000;
   1032  0688  0187               	clrf	7	;volatile
   1033                           
-  1034                           ;Probador1.c: 148:     TRISD = 0b00000000;
+  1034                           ;Probador1.c: 150:     TRISD = 0b00000000;
   1035  0689  0188               	clrf	8	;volatile
   1036  068A                     l695:
   1037                           
-  1038                           ;Probador1.c: 149:     ADCON1 = 0b00000111;
+  1038                           ;Probador1.c: 151:     ADCON1 = 0b00000111;
   1039  068A  3007               	movlw	7
   1040  068B  009F               	movwf	31	;volatile
   1041  068C                     l697:
   1042                           
-  1043                           ;Probador1.c: 150:     PORTB = 0;
+  1043                           ;Probador1.c: 152:     PORTB = 0;
   1044  068C  1283               	bcf	3,5	;RP0=0, select bank0
   1045  068D  1303               	bcf	3,6	;RP1=0, select bank0
   1046  068E  0186               	clrf	6	;volatile
   1047  068F                     l699:
   1048                           
-  1049                           ;Probador1.c: 151:     PORTC = 0;
+  1049                           ;Probador1.c: 153:     PORTC = 0;
   1050  068F  0187               	clrf	7	;volatile
   1051  0690                     l701:
   1052                           
-  1053                           ;Probador1.c: 152:     PORTD = 0;
+  1053                           ;Probador1.c: 154:     PORTD = 0;
   1054  0690  0188               	clrf	8	;volatile
   1055  0691                     l703:
   1056                           
-  1057                           ;Probador1.c: 153:     PORTE = 0;
+  1057                           ;Probador1.c: 155:     PORTE = 0;
   1058  0691  0189               	clrf	9	;volatile
   1059  0692                     l95:
   1060  0692  0008               	return
@@ -1221,7 +1221,7 @@ DATA                 0      0       A      12        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.36 build 20220127204148 
-Symbol Table                                                                                   Fri Apr 04 19:49:32 2025
+Symbol Table                                                                                   Fri Apr 04 20:08:47 2025
 
                      l52 06D9                       l44 06A4                       l61 0714  
                      l53 06E1                       l70 0757                       l62 071B  

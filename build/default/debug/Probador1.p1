@@ -1,10 +1,10 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"32 Probador1.c
-[; ;Probador1.c: 32: void port_conf(void);
+"34 Probador1.c
+[; ;Probador1.c: 34: void port_conf(void);
 [v _port_conf `(v ~T0 @X0 0 ef ]
-"33
-[; ;Probador1.c: 33: void porte_ent(void);
+"35
+[; ;Probador1.c: 35: void porte_ent(void);
 [v _porte_ent `(v ~T0 @X0 0 ef ]
 "2778 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h: 2778: extern volatile __bit RE0 __attribute__((address(0x48)));
@@ -28,8 +28,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "341
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h: 341: extern volatile unsigned char PORTD __attribute__((address(0x008)));
 [v _PORTD `Vuc ~T0 @X0 0 e@8 ]
-"34 Probador1.c
-[; ;Probador1.c: 34: void porte_sal(void);
+"36 Probador1.c
+[; ;Probador1.c: 36: void porte_sal(void);
 [v _porte_sal `(v ~T0 @X0 0 ef ]
 "403 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h: 403: extern volatile unsigned char PORTE __attribute__((address(0x009)));
@@ -248,71 +248,71 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x WRT  =  OFF      ]
 "12
 [p x CP  =  OFF       ]
-"29
-[; ;Probador1.c: 29: char puerto;
+"31
+[; ;Probador1.c: 31: unsigned char puerto;
 [v _puerto `uc ~T0 @X0 1 e ]
-"30
-[; ;Probador1.c: 30: _Bool xx = 0;
+"32
+[; ;Probador1.c: 32: _Bool xx = 0;
 [v _xx `a ~T0 @X0 1 e ]
 [i _xx
 -> -> 0 `i `a
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"36
-[; ;Probador1.c: 36: void main(void) {
+"38
+[; ;Probador1.c: 38: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"37
-[; ;Probador1.c: 37:     port_conf();
+"39
+[; ;Probador1.c: 39:     port_conf();
 [e ( _port_conf ..  ]
-"38
-[; ;Probador1.c: 38:     porte_ent();
-[e ( _porte_ent ..  ]
 "40
-[; ;Probador1.c: 40:     while (1) {
+[; ;Probador1.c: 40:     porte_ent();
+[e ( _porte_ent ..  ]
+"42
+[; ;Probador1.c: 42:     while (1) {
 [e :U 97 ]
 {
-"42
-[; ;Probador1.c: 42:         while (RE0 == 0) {
+"44
+[; ;Probador1.c: 44:         while (RE0 == 0) {
 [e $U 99  ]
 [e :U 100 ]
 {
-"43
-[; ;Probador1.c: 43:             if (xx == 1) {
+"45
+[; ;Probador1.c: 45:             if (xx == 1) {
 [e $ ! == -> _xx `i -> 1 `i 102  ]
 {
-"44
-[; ;Probador1.c: 44:                 break;
+"46
+[; ;Probador1.c: 46:                 break;
 [e $U 101  ]
-"45
-[; ;Probador1.c: 45:             }
+"47
+[; ;Probador1.c: 47:             }
 }
 [e :U 102 ]
-"46
-[; ;Probador1.c: 46:             continue;
+"48
+[; ;Probador1.c: 48:             continue;
 [e $U 99  ]
-"47
-[; ;Probador1.c: 47:         }
+"49
+[; ;Probador1.c: 49:         }
 }
 [e :U 99 ]
-"42
-[; ;Probador1.c: 42:         while (RE0 == 0) {
+"44
+[; ;Probador1.c: 44:         while (RE0 == 0) {
 [e $ == -> _RE0 `i -> 0 `i 100  ]
 [e :U 101 ]
-"48
-[; ;Probador1.c: 48:         xx = 1;
-[e = _xx -> -> 1 `i `a ]
 "50
-[; ;Probador1.c: 50:         switch (puerto) {
+[; ;Probador1.c: 50:         xx = 1;
+[e = _xx -> -> 1 `i `a ]
+"52
+[; ;Probador1.c: 52:         switch (puerto) {
 [e $U 104  ]
 {
-"51
-[; ;Probador1.c: 51:             case 0:
+"53
+[; ;Probador1.c: 53:             case 0:
 [e :U 105 ]
-"52
-[; ;Probador1.c: 52:                 for (char i = 0; i < 7; i++) {
+"54
+[; ;Probador1.c: 54:                 for (unsigned char i = 0; i < 7; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -320,65 +320,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 107  ]
 [e :U 106 ]
 {
-"53
-[; ;Probador1.c: 53:                     PORTA = (1 << i);
-[e = _PORTA -> << -> 1 `i -> _i `i `uc ]
-"54
-[; ;Probador1.c: 54:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
 "55
-[; ;Probador1.c: 55:                 }
+[; ;Probador1.c: 55:                     PORTA = (1 << i);
+[e = _PORTA -> << -> 1 `i -> _i `i `uc ]
+"56
+[; ;Probador1.c: 56:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+"57
+[; ;Probador1.c: 57:                 }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 7 `i 106  ]
 [e :U 107 ]
 }
-"56
-[; ;Probador1.c: 56:                 while (1) {
+"58
+[; ;Probador1.c: 58:                 while (1) {
 [e :U 110 ]
 {
-"57
-[; ;Probador1.c: 57:                     if (RE1 == 1) {
+"59
+[; ;Probador1.c: 59:                     if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 112  ]
 {
-"58
-[; ;Probador1.c: 58:                         puerto = 0;
-[e = _puerto -> -> 0 `i `uc ]
-"59
-[; ;Probador1.c: 59:                         break;
-[e $U 111  ]
 "60
-[; ;Probador1.c: 60:                     }
+[; ;Probador1.c: 60:                         puerto = 0;
+[e = _puerto -> -> 0 `i `uc ]
+"61
+[; ;Probador1.c: 61:                         break;
+[e $U 111  ]
+"62
+[; ;Probador1.c: 62:                     }
 }
 [e :U 112 ]
-"61
-[; ;Probador1.c: 61:                     if (RE0 == 1) {
+"63
+[; ;Probador1.c: 63:                     if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 113  ]
 {
-"62
-[; ;Probador1.c: 62:                         puerto = 1;
-[e = _puerto -> -> 1 `i `uc ]
-"63
-[; ;Probador1.c: 63:                         break;
-[e $U 111  ]
 "64
-[; ;Probador1.c: 64:                     }
+[; ;Probador1.c: 64:                         puerto = 1;
+[e = _puerto -> -> 1 `i `uc ]
+"65
+[; ;Probador1.c: 65:                         break;
+[e $U 111  ]
+"66
+[; ;Probador1.c: 66:                     }
 }
 [e :U 113 ]
-"65
-[; ;Probador1.c: 65:                 }
+"67
+[; ;Probador1.c: 67:                 }
 }
 [e :U 109 ]
 [e $U 110  ]
 [e :U 111 ]
-"66
-[; ;Probador1.c: 66:                 break;
-[e $U 103  ]
 "68
-[; ;Probador1.c: 68:             case 1:
+[; ;Probador1.c: 68:                 break;
+[e $U 103  ]
+"70
+[; ;Probador1.c: 70:             case 1:
 [e :U 114 ]
-"69
-[; ;Probador1.c: 69:                 for (char i = 0; i < 9; i++) {
+"71
+[; ;Probador1.c: 71:                 for (unsigned char i = 0; i < 9; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -386,65 +386,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 116  ]
 [e :U 115 ]
 {
-"70
-[; ;Probador1.c: 70:                     PORTB = (1 << i);
-[e = _PORTB -> << -> 1 `i -> _i `i `uc ]
-"71
-[; ;Probador1.c: 71:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
 "72
-[; ;Probador1.c: 72:                 }
+[; ;Probador1.c: 72:                     PORTB = (1 << i);
+[e = _PORTB -> << -> 1 `i -> _i `i `uc ]
+"73
+[; ;Probador1.c: 73:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+"74
+[; ;Probador1.c: 74:                 }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 9 `i 115  ]
 [e :U 116 ]
 }
-"73
-[; ;Probador1.c: 73:                 while (1) {
+"75
+[; ;Probador1.c: 75:                 while (1) {
 [e :U 119 ]
 {
-"74
-[; ;Probador1.c: 74:                     if (RE1 == 1) {
+"76
+[; ;Probador1.c: 76:                     if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 121  ]
 {
-"75
-[; ;Probador1.c: 75:                         puerto = 1;
-[e = _puerto -> -> 1 `i `uc ]
-"76
-[; ;Probador1.c: 76:                         break;
-[e $U 120  ]
 "77
-[; ;Probador1.c: 77:                     }
+[; ;Probador1.c: 77:                         puerto = 1;
+[e = _puerto -> -> 1 `i `uc ]
+"78
+[; ;Probador1.c: 78:                         break;
+[e $U 120  ]
+"79
+[; ;Probador1.c: 79:                     }
 }
 [e :U 121 ]
-"78
-[; ;Probador1.c: 78:                     if (RE0 == 1) {
+"80
+[; ;Probador1.c: 80:                     if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 122  ]
 {
-"79
-[; ;Probador1.c: 79:                         puerto = 2;
-[e = _puerto -> -> 2 `i `uc ]
-"80
-[; ;Probador1.c: 80:                         break;
-[e $U 120  ]
 "81
-[; ;Probador1.c: 81:                     }
+[; ;Probador1.c: 81:                         puerto = 2;
+[e = _puerto -> -> 2 `i `uc ]
+"82
+[; ;Probador1.c: 82:                         break;
+[e $U 120  ]
+"83
+[; ;Probador1.c: 83:                     }
 }
 [e :U 122 ]
-"82
-[; ;Probador1.c: 82:                 }
+"84
+[; ;Probador1.c: 84:                 }
 }
 [e :U 118 ]
 [e $U 119  ]
 [e :U 120 ]
-"83
-[; ;Probador1.c: 83:                 break;
-[e $U 103  ]
 "85
-[; ;Probador1.c: 85:             case 2:
+[; ;Probador1.c: 85:                 break;
+[e $U 103  ]
+"87
+[; ;Probador1.c: 87:             case 2:
 [e :U 123 ]
-"86
-[; ;Probador1.c: 86:                 for (char i = 0; i < 9; i++) {
+"88
+[; ;Probador1.c: 88:                 for (unsigned char i = 0; i < 9; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -452,65 +452,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 125  ]
 [e :U 124 ]
 {
-"87
-[; ;Probador1.c: 87:                     PORTC = (1 << i);
-[e = _PORTC -> << -> 1 `i -> _i `i `uc ]
-"88
-[; ;Probador1.c: 88:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
 "89
-[; ;Probador1.c: 89:                 }
+[; ;Probador1.c: 89:                     PORTC = (1 << i);
+[e = _PORTC -> << -> 1 `i -> _i `i `uc ]
+"90
+[; ;Probador1.c: 90:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+"91
+[; ;Probador1.c: 91:                 }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 9 `i 124  ]
 [e :U 125 ]
 }
-"90
-[; ;Probador1.c: 90:                 while (1) {
+"92
+[; ;Probador1.c: 92:                 while (1) {
 [e :U 128 ]
 {
-"91
-[; ;Probador1.c: 91:                     if (RE1 == 1) {
+"93
+[; ;Probador1.c: 93:                     if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 130  ]
 {
-"92
-[; ;Probador1.c: 92:                         puerto = 2;
-[e = _puerto -> -> 2 `i `uc ]
-"93
-[; ;Probador1.c: 93:                         break;
-[e $U 129  ]
 "94
-[; ;Probador1.c: 94:                     }
+[; ;Probador1.c: 94:                         puerto = 2;
+[e = _puerto -> -> 2 `i `uc ]
+"95
+[; ;Probador1.c: 95:                         break;
+[e $U 129  ]
+"96
+[; ;Probador1.c: 96:                     }
 }
 [e :U 130 ]
-"95
-[; ;Probador1.c: 95:                     if (RE0 == 1) {
+"97
+[; ;Probador1.c: 97:                     if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 131  ]
 {
-"96
-[; ;Probador1.c: 96:                         puerto = 3;
-[e = _puerto -> -> 3 `i `uc ]
-"97
-[; ;Probador1.c: 97:                         break;
-[e $U 129  ]
 "98
-[; ;Probador1.c: 98:                     }
+[; ;Probador1.c: 98:                         puerto = 3;
+[e = _puerto -> -> 3 `i `uc ]
+"99
+[; ;Probador1.c: 99:                         break;
+[e $U 129  ]
+"100
+[; ;Probador1.c: 100:                     }
 }
 [e :U 131 ]
-"99
-[; ;Probador1.c: 99:                 }
+"101
+[; ;Probador1.c: 101:                 }
 }
 [e :U 127 ]
 [e $U 128  ]
 [e :U 129 ]
-"100
-[; ;Probador1.c: 100:                 break;
-[e $U 103  ]
 "102
-[; ;Probador1.c: 102:             case 3:
+[; ;Probador1.c: 102:                 break;
+[e $U 103  ]
+"104
+[; ;Probador1.c: 104:             case 3:
 [e :U 132 ]
-"103
-[; ;Probador1.c: 103:                 for (char i = 0; i < 9; i++) {
+"105
+[; ;Probador1.c: 105:                 for (unsigned char i = 0; i < 9; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -518,68 +518,68 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 134  ]
 [e :U 133 ]
 {
-"104
-[; ;Probador1.c: 104:                     PORTD = (1 << i);
-[e = _PORTD -> << -> 1 `i -> _i `i `uc ]
-"105
-[; ;Probador1.c: 105:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
 "106
-[; ;Probador1.c: 106:                 }
+[; ;Probador1.c: 106:                     PORTD = (1 << i);
+[e = _PORTD -> << -> 1 `i -> _i `i `uc ]
+"107
+[; ;Probador1.c: 107:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+"108
+[; ;Probador1.c: 108:                 }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 9 `i 133  ]
 [e :U 134 ]
 }
-"107
-[; ;Probador1.c: 107:                 while (1) {
+"109
+[; ;Probador1.c: 109:                 while (1) {
 [e :U 137 ]
 {
-"108
-[; ;Probador1.c: 108:                     if (RE1 == 1) {
+"110
+[; ;Probador1.c: 110:                     if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 139  ]
 {
-"109
-[; ;Probador1.c: 109:                         puerto = 3;
-[e = _puerto -> -> 3 `i `uc ]
-"110
-[; ;Probador1.c: 110:                         break;
-[e $U 138  ]
 "111
-[; ;Probador1.c: 111:                     }
+[; ;Probador1.c: 111:                         puerto = 3;
+[e = _puerto -> -> 3 `i `uc ]
+"112
+[; ;Probador1.c: 112:                         break;
+[e $U 138  ]
+"113
+[; ;Probador1.c: 113:                     }
 }
 [e :U 139 ]
-"112
-[; ;Probador1.c: 112:                     if (RE0 == 1) {
+"114
+[; ;Probador1.c: 114:                     if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 140  ]
 {
-"113
-[; ;Probador1.c: 113:                         puerto = 4;
-[e = _puerto -> -> 4 `i `uc ]
-"114
-[; ;Probador1.c: 114:                         porte_sal();
-[e ( _porte_sal ..  ]
 "115
-[; ;Probador1.c: 115:                         break;
-[e $U 138  ]
+[; ;Probador1.c: 115:                         puerto = 4;
+[e = _puerto -> -> 4 `i `uc ]
 "116
-[; ;Probador1.c: 116:                     }
+[; ;Probador1.c: 116:                         porte_sal();
+[e ( _porte_sal ..  ]
+"117
+[; ;Probador1.c: 117:                         break;
+[e $U 138  ]
+"118
+[; ;Probador1.c: 118:                     }
 }
 [e :U 140 ]
-"117
-[; ;Probador1.c: 117:                 }
+"119
+[; ;Probador1.c: 119:                 }
 }
 [e :U 136 ]
 [e $U 137  ]
 [e :U 138 ]
-"118
-[; ;Probador1.c: 118:                 break;
-[e $U 103  ]
 "120
-[; ;Probador1.c: 120:             case 4:
+[; ;Probador1.c: 120:                 break;
+[e $U 103  ]
+"122
+[; ;Probador1.c: 122:             case 4:
 [e :U 141 ]
-"121
-[; ;Probador1.c: 121:                 for (char i = 0; i < 4; i++) {
+"123
+[; ;Probador1.c: 123:                 for (unsigned char i = 0; i < 4; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -587,68 +587,68 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 143  ]
 [e :U 142 ]
 {
-"122
-[; ;Probador1.c: 122:                     PORTE = (1 << i);
-[e = _PORTE -> << -> 1 `i -> _i `i `uc ]
-"123
-[; ;Probador1.c: 123:                     _delay((unsigned long)((500)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
 "124
-[; ;Probador1.c: 124:                 }
+[; ;Probador1.c: 124:                     PORTE = (1 << i);
+[e = _PORTE -> << -> 1 `i -> _i `i `uc ]
+"125
+[; ;Probador1.c: 125:                     _delay((unsigned long)((250)*(4000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+"126
+[; ;Probador1.c: 126:                 }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 4 `i 142  ]
 [e :U 143 ]
 }
-"125
-[; ;Probador1.c: 125:                 porte_ent();
+"127
+[; ;Probador1.c: 127:                 porte_ent();
 [e ( _porte_ent ..  ]
-"126
-[; ;Probador1.c: 126:                 while (1) {
+"128
+[; ;Probador1.c: 128:                 while (1) {
 [e :U 146 ]
 {
-"127
-[; ;Probador1.c: 127:                     if (RE1 == 1) {
+"129
+[; ;Probador1.c: 129:                     if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 148  ]
 {
-"128
-[; ;Probador1.c: 128:                         puerto = 4;
-[e = _puerto -> -> 4 `i `uc ]
-"129
-[; ;Probador1.c: 129:                         porte_sal();
-[e ( _porte_sal ..  ]
 "130
-[; ;Probador1.c: 130:                         break;
-[e $U 147  ]
+[; ;Probador1.c: 130:                         puerto = 4;
+[e = _puerto -> -> 4 `i `uc ]
 "131
-[; ;Probador1.c: 131:                     }
+[; ;Probador1.c: 131:                         porte_sal();
+[e ( _porte_sal ..  ]
+"132
+[; ;Probador1.c: 132:                         break;
+[e $U 147  ]
+"133
+[; ;Probador1.c: 133:                     }
 }
 [e :U 148 ]
-"132
-[; ;Probador1.c: 132:                     if (RE0 == 1) {
+"134
+[; ;Probador1.c: 134:                     if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 149  ]
 {
-"133
-[; ;Probador1.c: 133:                         puerto = 0;
-[e = _puerto -> -> 0 `i `uc ]
-"134
-[; ;Probador1.c: 134:                         break;
-[e $U 147  ]
 "135
-[; ;Probador1.c: 135:                     }
+[; ;Probador1.c: 135:                         puerto = 0;
+[e = _puerto -> -> 0 `i `uc ]
+"136
+[; ;Probador1.c: 136:                         break;
+[e $U 147  ]
+"137
+[; ;Probador1.c: 137:                     }
 }
 [e :U 149 ]
-"136
-[; ;Probador1.c: 136:                 }
+"138
+[; ;Probador1.c: 138:                 }
 }
 [e :U 145 ]
 [e $U 146  ]
 [e :U 147 ]
-"137
-[; ;Probador1.c: 137:                 break;
+"139
+[; ;Probador1.c: 139:                 break;
 [e $U 103  ]
-"138
-[; ;Probador1.c: 138:         }
+"140
+[; ;Probador1.c: 140:         }
 }
 [e $U 103  ]
 [e :U 104 ]
@@ -659,82 +659,82 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 141
  103 ]
 [e :U 103 ]
-"139
-[; ;Probador1.c: 139:     }
+"141
+[; ;Probador1.c: 141:     }
 }
 [e :U 96 ]
 [e $U 97  ]
 [e :U 98 ]
-"140
-[; ;Probador1.c: 140:     _delay((unsigned long)((500)*(4000000UL/4000.0)));
+"142
+[; ;Probador1.c: 142:     _delay((unsigned long)((500)*(4000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"141
-[; ;Probador1.c: 141: }
+"143
+[; ;Probador1.c: 143: }
 [e :UE 95 ]
 }
-"143
-[; ;Probador1.c: 143: void port_conf(void) {
+"145
+[; ;Probador1.c: 145: void port_conf(void) {
 [v _port_conf `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_conf ]
 [f ]
-"144
-[; ;Probador1.c: 144:     puerto = 0;
-[e = _puerto -> -> 0 `i `uc ]
-"145
-[; ;Probador1.c: 145:     TRISA = 0b00000000;
-[e = _TRISA -> -> 0 `i `uc ]
 "146
-[; ;Probador1.c: 146:     TRISB = 0b00000000;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;Probador1.c: 146:     puerto = 0;
+[e = _puerto -> -> 0 `i `uc ]
 "147
-[; ;Probador1.c: 147:     TRISC = 0b00000000;
-[e = _TRISC -> -> 0 `i `uc ]
+[; ;Probador1.c: 147:     TRISA = 0b00000000;
+[e = _TRISA -> -> 0 `i `uc ]
 "148
-[; ;Probador1.c: 148:     TRISD = 0b00000000;
-[e = _TRISD -> -> 0 `i `uc ]
+[; ;Probador1.c: 148:     TRISB = 0b00000000;
+[e = _TRISB -> -> 0 `i `uc ]
 "149
-[; ;Probador1.c: 149:     ADCON1 = 0b00000111;
-[e = _ADCON1 -> -> 7 `i `uc ]
+[; ;Probador1.c: 149:     TRISC = 0b00000000;
+[e = _TRISC -> -> 0 `i `uc ]
 "150
-[; ;Probador1.c: 150:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;Probador1.c: 150:     TRISD = 0b00000000;
+[e = _TRISD -> -> 0 `i `uc ]
 "151
-[; ;Probador1.c: 151:     PORTC = 0;
-[e = _PORTC -> -> 0 `i `uc ]
+[; ;Probador1.c: 151:     ADCON1 = 0b00000111;
+[e = _ADCON1 -> -> 7 `i `uc ]
 "152
-[; ;Probador1.c: 152:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;Probador1.c: 152:     PORTB = 0;
+[e = _PORTB -> -> 0 `i `uc ]
 "153
-[; ;Probador1.c: 153:     PORTE = 0;
-[e = _PORTE -> -> 0 `i `uc ]
+[; ;Probador1.c: 153:     PORTC = 0;
+[e = _PORTC -> -> 0 `i `uc ]
 "154
-[; ;Probador1.c: 154: }
+[; ;Probador1.c: 154:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"155
+[; ;Probador1.c: 155:     PORTE = 0;
+[e = _PORTE -> -> 0 `i `uc ]
+"156
+[; ;Probador1.c: 156: }
 [e :UE 150 ]
 }
-"156
-[; ;Probador1.c: 156: void porte_ent(void) {
+"158
+[; ;Probador1.c: 158: void porte_ent(void) {
 [v _porte_ent `(v ~T0 @X0 1 ef ]
 {
 [e :U _porte_ent ]
 [f ]
-"157
-[; ;Probador1.c: 157:     TRISE = 0b00000011;
+"159
+[; ;Probador1.c: 159:     TRISE = 0b00000011;
 [e = _TRISE -> -> 3 `i `uc ]
-"158
-[; ;Probador1.c: 158: }
+"160
+[; ;Probador1.c: 160: }
 [e :UE 151 ]
 }
-"160
-[; ;Probador1.c: 160: void porte_sal(void) {
+"162
+[; ;Probador1.c: 162: void porte_sal(void) {
 [v _porte_sal `(v ~T0 @X0 1 ef ]
 {
 [e :U _porte_sal ]
 [f ]
-"161
-[; ;Probador1.c: 161:     TRISE = 0b00000000;
+"163
+[; ;Probador1.c: 163:     TRISE = 0b00000000;
 [e = _TRISE -> -> 0 `i `uc ]
-"162
-[; ;Probador1.c: 162: }
+"164
+[; ;Probador1.c: 164: }
 [e :UE 152 ]
 }

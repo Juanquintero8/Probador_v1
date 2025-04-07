@@ -1868,8 +1868,8 @@ extern __bank0 __bit __timeout;
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-# 29 "Probador1.c"
-char puerto;
+# 31 "Probador1.c"
+unsigned char puerto;
 _Bool xx = 0;
 
 void port_conf(void);
@@ -1892,9 +1892,9 @@ void main(void) {
 
         switch (puerto) {
             case 0:
-                for (char i = 0; i < 7; i++) {
+                for (unsigned char i = 0; i < 7; i++) {
                     PORTA = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
                 }
                 while (1) {
                     if (RE1 == 1) {
@@ -1909,9 +1909,9 @@ void main(void) {
                 break;
 
             case 1:
-                for (char i = 0; i < 9; i++) {
+                for (unsigned char i = 0; i < 9; i++) {
                     PORTB = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
                 }
                 while (1) {
                     if (RE1 == 1) {
@@ -1926,9 +1926,9 @@ void main(void) {
                 break;
 
             case 2:
-                for (char i = 0; i < 9; i++) {
+                for (unsigned char i = 0; i < 9; i++) {
                     PORTC = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
                 }
                 while (1) {
                     if (RE1 == 1) {
@@ -1943,9 +1943,9 @@ void main(void) {
                 break;
 
             case 3:
-                for (char i = 0; i < 9; i++) {
+                for (unsigned char i = 0; i < 9; i++) {
                     PORTD = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
                 }
                 while (1) {
                     if (RE1 == 1) {
@@ -1961,9 +1961,9 @@ void main(void) {
                 break;
 
             case 4:
-                for (char i = 0; i < 4; i++) {
+                for (unsigned char i = 0; i < 4; i++) {
                     PORTE = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
+                    _delay((unsigned long)((250)*(4000000UL/4000.0)));
                 }
                 porte_ent();
                 while (1) {
