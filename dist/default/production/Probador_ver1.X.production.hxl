@@ -1,32 +1,35 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- dist/default/debug\Probador_ver1.X.debug.hex
- -Odist/default/debug\Probador_ver1.X.debug.hex
- -logfile=dist/default/debug\Probador_ver1.X.debug.hxl
+ dist/default/production\Probador_ver1.X.production.hex
+ -Odist/default/production\Probador_ver1.X.production.hex
+ -logfile=dist/default/production\Probador_ver1.X.production.hxl
  -addressing=2
 
 ### Memory Usage ###
  Intel Hex-file ranges:
-  0h - 5h		(dist/default/debug\Probador_ver1.X.debug.hex)
-  C72h - FFFh		(dist/default/debug\Probador_ver1.X.debug.hex)
-  4000h - 4007h		(dist/default/debug\Probador_ver1.X.debug.hex)
-  400Eh - 400Fh		(dist/default/debug\Probador_ver1.X.debug.hex)
+  0h - 5h		(dist/default/production\Probador_ver1.X.production.hex)
+  C4Ch - FFFh		(dist/default/production\Probador_ver1.X.production.hex)
+  4000h - 4007h		(dist/default/production\Probador_ver1.X.production.hex)
+  400Eh - 400Fh		(dist/default/production\Probador_ver1.X.production.hex)
  Unused ranges:
-  6h - C71h
+  6h - C4Bh
   1000h - 3FFFh
   4008h - 400Dh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Intel Hex-file         (dist/default/debug\Probador_ver1.X.debug.hex)
+  H1 = Intel Hex-file         (dist/default/production\Probador_ver1.X.production.hex)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-00000C70 | -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000C40 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
+00000C50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000C60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000C70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000C80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000C90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000CA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

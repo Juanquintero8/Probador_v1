@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/debug\Probador_ver1.X.debug.hex">
+  <executable name="dist/default/production\Probador_ver1.X.production.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
-      <used>458</used>
-      <free>7734</free>
+      <used>477</used>
+      <free>7715</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>368</length>
-      <used>18</used>
-      <free>350</free>
+      <used>19</used>
+      <free>349</free>
     </memory>
   </executable>
 </project>
