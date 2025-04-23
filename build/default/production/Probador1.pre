@@ -1450,7 +1450,7 @@ typedef unsigned char bool;
 
 # 31
 unsigned char puerto = 0, mask, port_act, nro_pin = 7, incremento = 0;
-bool xx = 0, prueba = 1, caso = 0;
+bool xx = 0, prueba = 0, caso = 0;
 
 void port_conf_r1(void);
 void port_conf_r2(void);
@@ -1528,7 +1528,6 @@ if (RE0 == 1) {
 puerto = 2;
 break;
 }
-break;
 }
 break;
 } else {
@@ -1678,7 +1677,7 @@ break;
 }
 _delay((unsigned long)((250)*(4000000UL/4000.0)));
 
-# 275
+# 274
 }
 
 void port_conf_r2(void) {

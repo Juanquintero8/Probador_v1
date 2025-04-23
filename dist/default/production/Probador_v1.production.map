@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v1.36\dat\en_msgs.txt -cs \
   -h+dist/default/production\Probador_v1.production.sym \
   --cmf=dist/default/production\Probador_v1.production.cmf -z -Q16F877A \
-  -oC:\Users\JUANQU~1\AppData\Local\Temp\s7sk.2 \
+  -oC:\Users\JUANQU~1\AppData\Local\Temp\s5go.2 \
   -Mdist/default/production/Probador_v1.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=0110h-016fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -pfunctab=CODE -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\JUANQU~1\AppData\Local\Temp\s7sk.obj \
+  -DENTRY=2 -k C:\Users\JUANQU~1\AppData\Local\Temp\s5go.obj \
   dist/default/production\Probador_v1.production.obj 
 
 Object code version is 3.11
@@ -28,39 +28,39 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\JUANQU~1\AppData\Local\Temp\s7sk.obj
+C:\Users\JUANQU~1\AppData\Local\Temp\s5go.obj
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\Probador_v1.production.obj
-                cinit                               7ED      7ED       13      FDA       0
-                text6                               54E      54E       84      A9C       0
-                text5                               53C      53C       12      A78       0
-                text4                               52D      52D        F      A5A       0
-                text3                               51F      51F        E      A3E       0
-                text2                               51A      51A        5      A34       0
-                text1                               516      516        4      A2C       0
-                maintext                            5D2      5D2      21B      BA4       0
+                cinit                               7F2      7F2        E      FE4       0
+                text6                               553      553       84      AA6       0
+                text5                               541      541       12      A82       0
+                text4                               532      532        F      A64       0
+                text3                               524      524        E      A48       0
+                text2                               51F      51F        5      A3E       0
+                text1                               51B      51B        4      A36       0
+                maintext                            5D7      5D7      21B      BAE       0
                 cstackCOMMON                         70       70        D       70       1
-                dataBANK0                            24       24        2       20       1
-                bssBANK0                             20       20        4       20       1
+                dataBANK0                            26       26        1       20       1
+                bssBANK0                             20       20        5       20       1
                 bssCOMMON                            7D       7D        1       70       1
-                nvBANK0                              26       26        1       20       1
-                idataBANK0                          514      514        2      A28       0
+                nvBANK0                              25       25        1       20       1
+                idataBANK0                          51A      51A        1      A34       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                              0        0        3         0
-                cinit                               7ED      7ED       13         0
-                text6                               54E      54E       84         0
-                text5                               53C      53C       12         0
-                text4                               52D      52D        F         0
-                text3                               51F      51F        E         0
-                text2                               51A      51A        5         0
-                text1                               516      516        4         0
-                maintext                            5D2      5D2      21B         0
-                idataBANK0                          514      514        2         0
+                cinit                               7F2      7F2        E         0
+                text6                               553      553       84         0
+                text5                               541      541       12         0
+                text4                               532      532        F         0
+                text3                               524      524        E         0
+                text2                               51F      51F        5         0
+                text1                               51B      51B        4         0
+                maintext                            5D7      5D7      21B         0
+                idataBANK0                          51A      51A        1         0
 
         CLASS   STRCODE        
 
@@ -75,9 +75,9 @@ TOTAL           Name                               Link     Load   Length     Sp
                 bssCOMMON                            7D       7D        1         1
 
         CLASS   BANK0          
-                dataBANK0                            24       24        2         1
-                bssBANK0                             20       20        4         1
-                nvBANK0                              26       26        1         1
+                dataBANK0                            26       26        1         1
+                bssBANK0                             20       20        5         1
+                nvBANK0                              25       25        1         1
 
         CLASS   BANK1          
 
@@ -112,15 +112,15 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
                 bssBANK0                       000020  000007  000027        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
-                idataBANK0                     000514  000002  000516       A28       0  CODE        2
-                text1                          000516  000004  00051A       A2C       0  CODE        2
-                text2                          00051A  000005  00051F       A34       0  CODE        2
-                text3                          00051F  00000E  00052D       A3E       0  CODE        2
-                text4                          00052D  00000F  00053C       A5A       0  CODE        2
-                text5                          00053C  000012  00054E       A78       0  CODE        2
-                text6                          00054E  000084  0005D2       A9C       0  CODE        2
-                maintext                       0005D2  00021B  0007ED       BA4       0  CODE        2
-                cinit                          0007ED  000013  000800       FDA       0  CODE        2
+                idataBANK0                     00051A  000001  00051B       A34       0  CODE        2
+                text1                          00051B  000004  00051F       A36       0  CODE        2
+                text2                          00051F  000005  000524       A3E       0  CODE        2
+                text3                          000524  00000E  000532       A48       0  CODE        2
+                text4                          000532  00000F  000541       A64       0  CODE        2
+                text5                          000541  000012  000553       A82       0  CODE        2
+                text6                          000553  000084  0005D7       AA6       0  CODE        2
+                maintext                       0005D7  00021B  0007F2       BAE       0  CODE        2
+                cinit                          0007F2  00000E  000800       FE4       0  CODE        2
                 config                         002007  000001  002008      400E       0  CONFIG      2
 
 
@@ -131,12 +131,12 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0003-0513            511           2
+        CODE             0003-0519            517           2
                          0800-1FFF            800
-        CONST            0003-0513            100           2
+        CONST            0003-0519            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0003-0513            100           2
+        ENTRY            0003-0519            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0027-006F             49           1
@@ -148,9 +148,9 @@ UNUSED ADDRESS RANGES
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
-        STRCODE          0003-0513            511           2
+        STRCODE          0003-0519            517           2
                          0800-1FFF           1800
-        STRING           0003-0513            100           2
+        STRING           0003-0519            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -162,7 +162,7 @@ _PORTB                   (abs)        0006
 _PORTC                   (abs)        0007
 _PORTD                   (abs)        0008
 _PORTE                   (abs)        0009
-_Prueba_sal              text5        053C
+_Prueba_sal              text5        0541
 _RE0                     (abs)        0048
 _RE1                     (abs)        0049
 _RE2                     (abs)        004A
@@ -223,7 +223,7 @@ __Lbank2                 bank2        0000
 __Lbank3                 bank3        0000
 __LbssBANK0              bssBANK0     0000
 __LbssCOMMON             bssCOMMON    0000
-__Lcinit                 cinit        07ED
+__Lcinit                 cinit        07F2
 __Lclrtext               clrtext      0000
 __Lcode                  code         0000
 __Lcommon                common       0000
@@ -260,28 +260,28 @@ __S3                     (abs)        0000
 ___int_sp                stack        0000
 ___latbits               (abs)        0002
 ___sp                    stack        0000
-__end_of_Prueba_sal      text5        054E
+__end_of_Prueba_sal      text5        0553
 __end_of__initialization cinit        07FC
-__end_of_main            maintext     07ED
-__end_of_port_conf_r1    text4        053C
-__end_of_port_conf_r2    text3        052D
-__end_of_porte_ent       text2        051F
-__end_of_porte_sal       text1        051A
-__end_of_salidas         text6        05D2
-__initialization         cinit        07ED
+__end_of_main            maintext     07F2
+__end_of_port_conf_r1    text4        0541
+__end_of_port_conf_r2    text3        0532
+__end_of_porte_ent       text2        0524
+__end_of_porte_sal       text1        051F
+__end_of_salidas         text6        05D7
+__initialization         cinit        07F2
 __pbssBANK0              bssBANK0     0020
 __pbssCOMMON             bssCOMMON    007D
 __pcstackCOMMON          cstackCOMMON 0070
-__pdataBANK0             dataBANK0    0024
-__pidataBANK0            idataBANK0   0514
-__pmaintext              maintext     05D2
-__pnvBANK0               nvBANK0      0026
-__ptext1                 text1        0516
-__ptext2                 text2        051A
-__ptext3                 text3        051F
-__ptext4                 text4        052D
-__ptext5                 text5        053C
-__ptext6                 text6        054E
+__pdataBANK0             dataBANK0    0026
+__pidataBANK0            idataBANK0   051A
+__pmaintext              maintext     05D7
+__pnvBANK0               nvBANK0      0025
+__ptext1                 text1        051B
+__ptext2                 text2        051F
+__ptext3                 text3        0524
+__ptext4                 text4        0532
+__ptext5                 text5        0541
+__ptext6                 text6        0553
 __size_of_Prueba_sal     (abs)        0000
 __size_of_main           (abs)        0000
 __size_of_port_conf_r1   (abs)        0000
@@ -290,18 +290,18 @@ __size_of_porte_ent      (abs)        0000
 __size_of_porte_sal      (abs)        0000
 __size_of_salidas        (abs)        0000
 _incremento              bssCOMMON    007D
-_main                    maintext     05D2
+_main                    maintext     05D7
 _mask                    bssBANK0     0021
-_nro_pin                 dataBANK0    0024
-_port_act                nvBANK0      0026
-_port_conf_r1            text4        052D
-_port_conf_r2            text3        051F
-_porte_ent               text2        051A
-_porte_sal               text1        0516
-_prueba                  dataBANK0    0025
-_puerto                  bssBANK0     0022
-_salidas                 text6        054E
-_xx                      bssBANK0     0023
+_nro_pin                 dataBANK0    0026
+_port_act                nvBANK0      0025
+_port_conf_r1            text4        0532
+_port_conf_r2            text3        0524
+_porte_ent               text2        051F
+_porte_sal               text1        051B
+_prueba                  bssBANK0     0022
+_puerto                  bssBANK0     0023
+_salidas                 text6        0553
+_xx                      bssBANK0     0024
 btemp                    (abs)        007E
 end_of_initialization    cinit        07FC
 intlevel0                functab      0000
@@ -325,7 +325,7 @@ salidas@i                cstackCOMMON 0072
 stackhi                  (abs)        0000
 stacklo                  (abs)        0000
 start                    init         0000
-start_initialization     cinit        07ED
+start_initialization     cinit        07F2
 ttemp                    (abs)        007E
 ttemp0                   (abs)        007E
 ttemp1                   (abs)        0081
@@ -383,7 +383,7 @@ Total ram usage:        8 bytes
 
  *************** function _porte_sal *****************
  Defined at:
-		line 302 in file "Probador1.c"
+		line 301 in file "Probador1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -412,7 +412,7 @@ Total ram usage:        0 bytes
 
  *************** function _porte_ent *****************
  Defined at:
-		line 298 in file "Probador1.c"
+		line 297 in file "Probador1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -441,7 +441,7 @@ Total ram usage:        0 bytes
 
  *************** function _port_conf_r2 *****************
  Defined at:
-		line 277 in file "Probador1.c"
+		line 276 in file "Probador1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -470,7 +470,7 @@ Total ram usage:        0 bytes
 
  *************** function _port_conf_r1 *****************
  Defined at:
-		line 285 in file "Probador1.c"
+		line 284 in file "Probador1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -499,7 +499,7 @@ Total ram usage:        0 bytes
 
  *************** function _Prueba_sal *****************
  Defined at:
-		line 306 in file "Probador1.c"
+		line 305 in file "Probador1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -529,7 +529,7 @@ Total ram usage:        2 bytes
 
  *************** function _salidas *****************
  Defined at:
-		line 312 in file "Probador1.c"
+		line 311 in file "Probador1.c"
  Parameters:    Size  Location     Type
   i               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -561,18 +561,18 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 Probador1.c
-		_porte_ent     		CODE           	051A	0000	6
-		_main          		CODE           	05D2	0000	540
-		_port_conf_r1  		CODE           	052D	0000	16
-		_port_conf_r2  		CODE           	051F	0000	15
-		_Prueba_sal    		CODE           	053C	0000	19
-		_porte_sal     		CODE           	0516	0000	5
-		_salidas       		CODE           	054E	0000	133
+		_porte_ent     		CODE           	051F	0000	6
+		_main          		CODE           	05D7	0000	540
+		_port_conf_r1  		CODE           	0532	0000	16
+		_port_conf_r2  		CODE           	0524	0000	15
+		_Prueba_sal    		CODE           	0541	0000	19
+		_porte_sal     		CODE           	051B	0000	5
+		_salidas       		CODE           	0553	0000	133
 
 Probador1.c estimated size: 734
 
 shared
-		__initialization		CODE           	07ED	0000	16
+		__initialization		CODE           	07F2	0000	11
 
-shared estimated size: 16
+shared estimated size: 11
 

@@ -29,7 +29,7 @@
 #define tiempo_prueba 150
 
 unsigned char puerto = puertoa, mask, port_act, nro_pin = 7, incremento = 0;
-bool xx = 0, prueba = 1, caso = 0;
+bool xx = 0, prueba = 0, caso = 0;
 
 void port_conf_r1(void);
 void port_conf_r2(void);
@@ -107,7 +107,6 @@ void main(void) {
                             puerto = puertoc;
                             break;
                         }
-                        break;
                     }
                     break;
                 } else { //////RUTINA PARA PROBAR LAS ENTRADAS/////

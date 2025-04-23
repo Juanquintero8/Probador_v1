@@ -13,17 +13,17 @@
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
 "41 C:\Users\Juan Quintero\probador\Probador_v1\Probador1.c
 [v _main main `(v  1 e 1 0 ]
-"277
+"276
 [v _port_conf_r2 port_conf_r2 `(v  1 e 1 0 ]
-"285
+"284
 [v _port_conf_r1 port_conf_r1 `(v  1 e 1 0 ]
-"298
+"297
 [v _porte_ent porte_ent `(v  1 e 1 0 ]
-"302
+"301
 [v _porte_sal porte_sal `(v  1 e 1 0 ]
-"306
+"305
 [v _Prueba_sal Prueba_sal `(v  1 e 1 0 ]
-"312
+"311
 [v _salidas salidas `(v  1 e 1 0 ]
 "160 C:\Program Files\Microchip\xc8\v1.36\include\pic16f877a.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -65,50 +65,50 @@
 "41
 [v _main main `(v  1 e 1 0 ]
 {
-"237
+"236
 [v main@i_77 i `uc  1 a 1 12 ]
-"196
+"195
 [v main@i_76 i `uc  1 a 1 11 ]
-"156
+"155
 [v main@i_75 i `uc  1 a 1 10 ]
-"117
+"116
 [v main@i_74 i `uc  1 a 1 9 ]
 "78
 [v main@i i `uc  1 a 1 8 ]
-"275
+"274
 } 0
-"302
+"301
 [v _porte_sal porte_sal `(v  1 e 1 0 ]
 {
-"304
+"303
 } 0
-"298
+"297
 [v _porte_ent porte_ent `(v  1 e 1 0 ]
 {
-"300
+"299
 } 0
-"277
+"276
 [v _port_conf_r2 port_conf_r2 `(v  1 e 1 0 ]
 {
-"283
+"282
 } 0
-"285
+"284
 [v _port_conf_r1 port_conf_r1 `(v  1 e 1 0 ]
 {
-"296
+"295
 } 0
-"306
+"305
 [v _Prueba_sal Prueba_sal `(v  1 e 1 0 ]
 {
-"307
+"306
 [v Prueba_sal@i i `uc  1 a 1 4 ]
-"310
+"309
 } 0
-"312
+"311
 [v _salidas salidas `(v  1 e 1 0 ]
 {
 [v salidas@i i `uc  1 a 1 wreg ]
 [v salidas@i i `uc  1 a 1 wreg ]
 [v salidas@i i `uc  1 a 1 2 ]
-"335
+"334
 } 0
