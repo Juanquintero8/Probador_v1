@@ -26,7 +26,8 @@
 #define puertod 3
 #define puertoe 4
 
-#define tiempo_prueba 150
+#define tiempo_prueba 300
+#define tiempo_prueba1 150
 
 unsigned char puerto = puertoa, mask, port_act, nro_pin = 7, incremento = 0;
 bool xx = 0, prueba = 0, caso = 0;
@@ -224,6 +225,7 @@ void main(void) {
                         }
                         if (pul_ok == 1) {
                             puerto = puertoa;
+                            prueba = 1;
                             nro_pin = 7;
                             break;
                         }
@@ -243,14 +245,16 @@ void main(void) {
                                 mask = (1 << incremento);
                                 incremento++;
                             }
-                            if (incremento == 3) {
+                            if (incremento == 4) {
                                 puerto = puertoa;
+                                nro_pin = 7;
+                                prueba = 0;
                                 break;
                             }
                         }
-
+                        break;
                     }
-                    break;
+
                 }
         }
     }
@@ -312,23 +316,23 @@ void salidas(unsigned char i) {
     switch (puerto) {
         case puertoa:
             PORTA = (1 << i);
-            __delay_ms(tiempo_prueba);
+            __delay_ms(tiempo_prueba1);
             break;
         case puertob:
             PORTB = (1 << i);
-            __delay_ms(tiempo_prueba);
+            __delay_ms(tiempo_prueba1);
             break;
         case puertoc:
             PORTC = (1 << i);
-            __delay_ms(tiempo_prueba);
+            __delay_ms(tiempo_prueba1);
             break;
         case puertod:
             PORTD = (1 << i);
-            __delay_ms(tiempo_prueba);
+            __delay_ms(tiempo_prueba1);
             break;
         case puertoe:
             PORTE = (1 << i);
-            __delay_ms(tiempo_prueba);
+            __delay_ms(tiempo_prueba1);
             break;
     }
 }
