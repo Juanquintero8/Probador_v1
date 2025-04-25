@@ -1869,8 +1869,8 @@ extern __bank0 __bit __timeout;
 #pragma config WRT = OFF
 #pragma config CP = OFF
 # 32 "Probador1.c"
-unsigned char puerto = 0, mask, port_act, nro_pin = 7, incremento = 0;
-_Bool xx = 0, prueba = 0, caso = 0;
+unsigned char puerto = 0, mask, port_act, nro_pin = 7, incremento = 0, prueba = 0;
+_Bool xx = 0, caso = 0;
 
 void port_conf_r1(void);
 void port_conf_r2(void);
@@ -1887,6 +1887,7 @@ void main(void) {
 
     while (1) {
 
+
         while (RE0 == 0) {
             if (xx == 1) {
                 break;
@@ -1894,6 +1895,7 @@ void main(void) {
             continue;
         }
         xx = 1;
+
         switch (puerto) {
             case 0:
                 if (prueba == 0) {
@@ -1934,6 +1936,8 @@ void main(void) {
                         break;
                     }
                 }
+                break;
+
 
 
             case 1:
@@ -2088,7 +2092,7 @@ void main(void) {
                             if (incremento == 4) {
                                 puerto = 0;
                                 nro_pin = 7;
-                                prueba = 0;
+                                prueba = 2;
                                 break;
                             }
                         }
@@ -2097,9 +2101,22 @@ void main(void) {
 
                 }
         }
+        if (prueba == 2) {
+            port_conf_r1();
+            porte_sal();
+            for (unsigned char i; i < 3; i++) {
+                PORTE = 0xFF;
+                _delay((unsigned long)((1000)*(4000000UL/4000.0)));
+                PORTE = 0;
+                _delay((unsigned long)((1000)*(4000000UL/4000.0)));
+
+            }
+            prueba = 0;
+            xx = 0;
+        }
     }
     _delay((unsigned long)((250)*(4000000UL/4000.0)));
-# 278 "Probador1.c"
+# 295 "Probador1.c"
 }
 
 void port_conf_r2(void) {
@@ -2111,7 +2128,6 @@ void port_conf_r2(void) {
 }
 
 void port_conf_r1(void) {
-
     TRISA = 0b00000000;
     TRISB = 0b00000000;
     TRISC = 0b00000000;

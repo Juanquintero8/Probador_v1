@@ -29,8 +29,8 @@
 #define tiempo_prueba 300
 #define tiempo_prueba1 150
 
-unsigned char puerto = puertoa, mask, port_act, nro_pin = 7, incremento = 0;
-bool xx = 0, prueba = 0, caso = 0;
+unsigned char puerto = puertoa, mask, port_act, nro_pin = 7, incremento = 0, prueba = 0;
+bool xx = 0, caso = 0;
 
 void port_conf_r1(void);
 void port_conf_r2(void);
@@ -46,6 +46,7 @@ void main(void) {
     puerto = puertoa;
 
     while (1) {
+        
         //ESPERA A QUE SE OPRIMA EL BOTON OK PARA EMPEZAR
         while (pul_ok == 0) {
             if (xx == 1) {
@@ -54,6 +55,7 @@ void main(void) {
             continue;
         }
         xx = 1; // variable que indica que se comenzo a probar las salidas
+
         switch (puerto) {
             case puertoa: //prueba las salidas del puerto A
                 if (prueba == 0) {
@@ -94,6 +96,8 @@ void main(void) {
                         break;
                     }
                 }
+                break;
+
 
 
             case puertob: // prueba las salidas del puerto B  
@@ -248,7 +252,7 @@ void main(void) {
                             if (incremento == 4) {
                                 puerto = puertoa;
                                 nro_pin = 7;
-                                prueba = 0;
+                                prueba = 2;
                                 break;
                             }
                         }
@@ -256,6 +260,19 @@ void main(void) {
                     }
 
                 }
+        }
+        if (prueba == 2) { // RUTINA FINAL          
+            port_conf_r1();
+            porte_sal();
+            for (unsigned char i; i < 3; i++) {
+                PORTE = 0xFF;
+                __delay_ms(1000);
+                PORTE = 0;
+                __delay_ms(1000);
+                
+            }
+            prueba = 0;
+            xx = 0;
         }
     }
     __delay_ms(250);
@@ -286,7 +303,6 @@ void port_conf_r2(void) {
 }
 
 void port_conf_r1(void) {
-    //puerto = puertoa;
     TRISA = 0b00000000;
     TRISB = 0b00000000;
     TRISC = 0b00000000;
