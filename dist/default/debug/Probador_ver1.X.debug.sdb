@@ -11,10 +11,20 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"34 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+"41 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 [v _main main `(v  1 e 1 0 ]
-"123
-[v _Port_config Port_config `(v  1 e 1 0 ]
+"194
+[v _port_conf_r2 port_conf_r2 `(v  1 e 1 0 ]
+"202
+[v _port_conf_r1 port_conf_r1 `(v  1 e 1 0 ]
+"215
+[v _porte_ent porte_ent `(v  1 e 1 0 ]
+"219
+[v _porte_sal porte_sal `(v  1 e 1 0 ]
+"223
+[v _Prueba_sal Prueba_sal `(v  1 e 1 0 ]
+"229
+[v _salidas salidas `(v  1 e 1 0 ]
 "167 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
 "217
@@ -23,6 +33,8 @@
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
 "341
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"403
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
 "1326
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1376
@@ -39,25 +51,56 @@
 [v _RE0 RE0 `VEb  1 e 0 @72 ]
 "2781
 [v _RE1 RE1 `VEb  1 e 0 @73 ]
-"29 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
+"2784
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"31 C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 [v _puerto puerto `uc  1 e 1 0 ]
-"30
+[v _mask mask `uc  1 e 1 0 ]
+[v _port_act port_act `uc  1 e 1 0 ]
+[v _nro_pin nro_pin `uc  1 e 1 0 ]
+"32
 [v _xx xx `a  1 e 1 0 ]
-"34
+"41
 [v _main main `(v  1 e 1 0 ]
 {
-"103
-[v main@i_54 i `uc  1 a 1 6 ]
-"86
-[v main@i_53 i `uc  1 a 1 5 ]
-"69
-[v main@i_52 i `uc  1 a 1 4 ]
-"52
-[v main@i i `uc  1 a 1 3 ]
-"121
+"113
+[v main@i_79 i `uc  1 a 1 9 ]
+"76
+[v main@i i `uc  1 a 1 8 ]
+"192
 } 0
-"123
-[v _Port_config Port_config `(v  1 e 1 0 ]
+"219
+[v _porte_sal porte_sal `(v  1 e 1 0 ]
 {
-"133
+"221
+} 0
+"215
+[v _porte_ent porte_ent `(v  1 e 1 0 ]
+{
+"217
+} 0
+"194
+[v _port_conf_r2 port_conf_r2 `(v  1 e 1 0 ]
+{
+"200
+} 0
+"202
+[v _port_conf_r1 port_conf_r1 `(v  1 e 1 0 ]
+{
+"213
+} 0
+"223
+[v _Prueba_sal Prueba_sal `(v  1 e 1 0 ]
+{
+"224
+[v Prueba_sal@i i `uc  1 a 1 4 ]
+"227
+} 0
+"229
+[v _salidas salidas `(v  1 e 1 0 ]
+{
+[v salidas@i i `uc  1 a 1 wreg ]
+[v salidas@i i `uc  1 a 1 wreg ]
+[v salidas@i i `uc  1 a 1 2 ]
+"252
 } 0

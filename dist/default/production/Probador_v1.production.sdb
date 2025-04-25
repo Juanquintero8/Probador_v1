@@ -1,0 +1,114 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v1.36\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.36\sources\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.36\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"41 C:\Users\Juan Quintero\probador\Probador_v1\Probador1.c
+[v _main main `(v  1 e 1 0 ]
+"276
+[v _port_conf_r2 port_conf_r2 `(v  1 e 1 0 ]
+"284
+[v _port_conf_r1 port_conf_r1 `(v  1 e 1 0 ]
+"297
+[v _porte_ent porte_ent `(v  1 e 1 0 ]
+"301
+[v _porte_sal porte_sal `(v  1 e 1 0 ]
+"305
+[v _Prueba_sal Prueba_sal `(v  1 e 1 0 ]
+"311
+[v _salidas salidas `(v  1 e 1 0 ]
+"160 C:\Program Files\Microchip\xc8\v1.36\include\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"209
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"270
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"331
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"392
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1288
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1337
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1398
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1459
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1520
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"2175
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2579
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"2581
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"2583
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"31 C:\Users\Juan Quintero\probador\Probador_v1\Probador1.c
+[v _puerto puerto `uc  1 e 1 0 ]
+[v _mask mask `uc  1 e 1 0 ]
+[v _port_act port_act `uc  1 e 1 0 ]
+[v _nro_pin nro_pin `uc  1 e 1 0 ]
+[v _incremento incremento `uc  1 e 1 0 ]
+"32
+[v _xx xx `uc  1 e 1 0 ]
+[v _prueba prueba `uc  1 e 1 0 ]
+"41
+[v _main main `(v  1 e 1 0 ]
+{
+"236
+[v main@i_77 i `uc  1 a 1 12 ]
+"195
+[v main@i_76 i `uc  1 a 1 11 ]
+"155
+[v main@i_75 i `uc  1 a 1 10 ]
+"116
+[v main@i_74 i `uc  1 a 1 9 ]
+"78
+[v main@i i `uc  1 a 1 8 ]
+"274
+} 0
+"301
+[v _porte_sal porte_sal `(v  1 e 1 0 ]
+{
+"303
+} 0
+"297
+[v _porte_ent porte_ent `(v  1 e 1 0 ]
+{
+"299
+} 0
+"276
+[v _port_conf_r2 port_conf_r2 `(v  1 e 1 0 ]
+{
+"282
+} 0
+"284
+[v _port_conf_r1 port_conf_r1 `(v  1 e 1 0 ]
+{
+"295
+} 0
+"305
+[v _Prueba_sal Prueba_sal `(v  1 e 1 0 ]
+{
+"306
+[v Prueba_sal@i i `uc  1 a 1 4 ]
+"309
+} 0
+"311
+[v _salidas salidas `(v  1 e 1 0 ]
+{
+[v salidas@i i `uc  1 a 1 wreg ]
+[v salidas@i i `uc  1 a 1 wreg ]
+[v salidas@i i `uc  1 a 1 2 ]
+"334
+} 0

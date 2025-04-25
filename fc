@@ -1,0 +1,41 @@
+[33mcommit 894a18e00f3b7616cf5d8b30c87fb30e9fa4472e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Fri Apr 4 10:24:47 2025 -0400
+
+    Puerto E configurado
+
+[33mcommit 36d0520ac3ce14d21173475f8944509446907073[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Wed Apr 2 23:13:58 2025 -0400
+
+    Confiurado el puerto D
+
+[33mcommit b3d4e76d2ba0f258c2bc3da0166ef5203e1d9f6f[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Wed Apr 2 22:55:09 2025 -0400
+
+    Ya hace todo en el puerto C
+
+[33mcommit e8ac84c1e92d8bd905e29dd5482ac79e9aa06e3a[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Wed Apr 2 22:51:34 2025 -0400
+
+    ya prueba el puerto A y B; y tiene la funcion de los botones
+
+[33mcommit c0069f12eecd8fb2f59429dc145d4c0c06805f2b[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Tue Apr 1 22:36:52 2025 -0400
+
+    Prueba salidas puerto A y B
+
+[33mcommit 7272311f45734acc94101be0078696c199864ccd[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Tue Apr 1 10:12:58 2025 -0400
+
+    Se mueve en secuencia rl port a
+
+[33mcommit d606c5e88078460a1adb222eee60f3ea1fd44b08[m
+Author: Juan Quintero <ninojuan07@gmail.com>
+Date:   Tue Apr 1 09:35:07 2025 -0400
+
+    inicio

@@ -1868,17 +1868,22 @@ extern __bank0 __bit __timeout;
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-# 29 "Probador1.c"
-char puerto;
-_Bool xx = 0;
+# 31 "Probador1.c"
+unsigned char puerto, mask, port_act, nro_pin = 7;
+_Bool xx = 0, prueba = 1;
 
-void Port_config(void);
+void port_conf_r1(void);
+void port_conf_r2(void);
+void porte_ent(void);
+void porte_sal(void);
+void Prueba_sal(void);
+void salidas(unsigned char i);
 
 void main(void) {
+    port_conf_r1();
+    porte_ent();
+    port_act = PORTA;
     puerto = 0;
-    Port_config();
-
-
 
     while (1) {
 
@@ -1889,47 +1894,79 @@ void main(void) {
             continue;
         }
         xx = 1;
-
         switch (puerto) {
             case 0:
-                for (char i = 0; i < 7; i++) {
-                    PORTA = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
-                }
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 0;
-                        break;
+                if (prueba == 0) {
+                    port_conf_r1();
+                    porte_ent();
+                    Prueba_sal();
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 0;
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 1;
+                            nro_pin = 9;
+                            break;
+                        }
                     }
-                    if (RE0 == 1) {
-                        puerto = 1;
-                        break;
+                    break;
+                } else {
+                    port_conf_r2();
+                    for (unsigned char i = 0; i < nro_pin ; i++) {
+                        mask = (1 << i);
+                        while (1) {
+                            if (PORTA & mask) {
+                                RE2 = 1;
+                                _delay((unsigned long)((150)*(4000000UL/4000.0)));
+                            }
+                            else {
+                                RE2 = 0;
+                            }
+                            break;
+                        }
                     }
+                    mask = 0;
+                    puerto = 1;
+                    nro_pin = 9;
+                    break;
                 }
-                break;
-
             case 1:
-                for (char i = 0; i < 9; i++) {
-                    PORTB = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
-                }
-                while (1) {
-                    if (RE1 == 1) {
-                        puerto = 1;
+                if (prueba == 0) {
+                    port_conf_r1();
+                    porte_ent();
+                    Prueba_sal();
+                    while (1) {
+                        if (RE1 == 1) {
+                            puerto = 1;
+                            break;
+                        }
+                        if (RE0 == 1) {
+                            puerto = 2;
+                            break;
+                        }
                         break;
                     }
-                    if (RE0 == 1) {
-                        puerto = 2;
-                        break;
+                    break;
+                } else {
+                    port_conf_r2();
+                    for (unsigned char i = 0; i < nro_pin ; i++) {
+                        mask = (1 << i);
+                        if (PORTB & mask) {
+                            RE2 = 1;
+                            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+                        } else {
+                            RE2 = 0;
+                        }
                     }
+                    puerto = 2;
+                    break;
                 }
-                break;
+
 
             case 2:
-                for (char i = 0; i < 9; i++) {
-                    PORTC = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
-                }
+                Prueba_sal();
                 while (1) {
                     if (RE1 == 1) {
                         puerto = 2;
@@ -1943,34 +1980,99 @@ void main(void) {
                 break;
 
             case 3:
-                for (char i = 0; i < 9; i++) {
-                    PORTD = (1 << i);
-                    _delay((unsigned long)((500)*(4000000UL/4000.0)));
-                }
+                Prueba_sal();
                 while (1) {
                     if (RE1 == 1) {
                         puerto = 3;
                         break;
                     }
                     if (RE0 == 1) {
-                        puerto = 3;
+                        puerto = 4;
+                        nro_pin = 4;
+                        porte_sal();
+                        break;
+                    }
+                }
+                break;
+
+            case 4:
+                Prueba_sal();
+                porte_ent();
+                while (1) {
+                    if (RE1 == 1) {
+                        puerto = 4;
+                        porte_sal();
+                        break;
+                    }
+                    if (RE0 == 1) {
+                        puerto = 0;
+                        nro_pin = 7;
                         break;
                     }
                 }
                 break;
         }
+        _delay((unsigned long)((250)*(4000000UL/4000.0)));
+# 191 "Probador1.c"
     }
-    _delay((unsigned long)((500)*(4000000UL/4000.0)));
 }
 
-void Port_config(void) {
-    TRISA = 0b0000000;
-    TRISB = 0b0000000;
-    TRISC = 0b0000000;
-    TRISD = 0b0000000;
-    TRISE = 0b00000111;
+void port_conf_r2(void) {
+    TRISA = 0xFF;
+    TRISB = 0xFF;
+    TRISC = 0xFF;
+    TRISD = 0xFF;
+    PORTE = 0x00;
+}
+
+void port_conf_r1(void) {
+    puerto = 0;
+    TRISA = 0b00000000;
+    TRISB = 0b00000000;
+    TRISC = 0b00000000;
+    TRISD = 0b00000000;
     ADCON1 = 0b00000111;
     PORTB = 0;
     PORTC = 0;
     PORTD = 0;
+    PORTE = 0;
+}
+
+void porte_ent(void) {
+    TRISE = 0b00000011;
+}
+
+void porte_sal(void) {
+    TRISE = 0b00000000;
+}
+
+void Prueba_sal(void) {
+    for (unsigned char i = 0; i < nro_pin; i++) {
+        salidas(i);
+    }
+}
+
+void salidas(unsigned char i) {
+    switch (puerto) {
+        case 0:
+            PORTA = (1 << i);
+            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            break;
+        case 1:
+            PORTB = (1 << i);
+            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            break;
+        case 2:
+            PORTC = (1 << i);
+            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            break;
+        case 3:
+            PORTD = (1 << i);
+            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            break;
+        case 4:
+            PORTE = (1 << i);
+            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            break;
+    }
 }
