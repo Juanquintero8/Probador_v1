@@ -1858,6 +1858,105 @@ extern __bank0 __bit __timeout;
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdbool.h" 1 3
 # 2 "Probador1.c" 2
 
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 1 3
+
+
+
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\__size_t.h" 1 3
+
+
+
+typedef unsigned size_t;
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 2 3
+
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\__null.h" 1 3
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 2 3
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdarg.h" 1 3
+
+
+
+
+
+
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+# 11 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 2 3
+# 43 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 3
+struct __prbuf
+{
+ char * ptr;
+ void (* func)(char);
+};
+# 85 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\errno.h" 1 3
+# 29 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\conio.h" 2 3
+
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 85 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 2 3
+
+
+
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+# 180 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c90\\stdio.h" 3
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+# 3 "Probador1.c" 2
+
 
 
 #pragma config FOSC = XT
@@ -1868,7 +1967,7 @@ extern __bank0 __bit __timeout;
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-# 32 "Probador1.c"
+# 33 "Probador1.c"
 unsigned char puerto = 0, mask, port_act, nro_pin = 7, incremento = 0, prueba = 0;
 _Bool xx = 0, caso = 0;
 
@@ -1879,7 +1978,84 @@ void porte_sal(void);
 void Prueba_sal(void);
 void salidas(unsigned char i);
 
+
+
+void UART_Init(void) {
+    TXSTAbits.BRGH = 1;
+    SPBRG = 25;
+    RCSTAbits.SPEN = 1;
+    TXSTAbits.TXEN = 1;
+    RCSTAbits.CREN = 1;
+}
+
+void UART_Write(char data) {
+    while (!TXSTAbits.TRMT);
+    TXREG = data;
+}
+
+void putch(char data) {
+    UART_Write(data);
+}
+
+
+void ADC_Init(void) {
+    ADCON1 = 0b11000000;
+    ADCON0 = 0b01000001;
+    _delay((unsigned long)((10)*(4000000UL/4000.0)));
+}
+
+unsigned int ADC_Read(unsigned char channel) {
+    ADCON0 &= 0x11000101;
+    ADCON0 |= channel <<3;
+    _delay((unsigned long)((2)*(4000000UL/4000.0)));
+    GO_nDONE = 1;
+    while(GO_nDONE);
+    return ((ADRESH << 8) + ADRESL);
+}
+
+
 void main(void) {
+    UART_Init();
+    ADC_Init();
+    TRISB = 0b00000000;
+
+
+    printf("inicio");
+
+    while (1) {
+
+        unsigned int valor = ADC_Read(0);
+        printf("AN7 = %u\r\n", valor);
+        if (valor >= 0 & valor < 125 ){
+            PORTB = 0b010000000;
+        }
+        if (valor >= 125 & valor < 250 ){
+            PORTB = 0b11000000;
+        }
+        if (valor >= 250 & valor < 375 ){
+            PORTB = 0b11100000;
+        }
+        if (valor >= 375 & valor < 500 ){
+            PORTB = 0b11110000;
+        }
+        if (valor >= 500 & valor < 625 ){
+            PORTB = 0b11111000;
+        }
+        if (valor >= 625 & valor < 750 ){
+            PORTB = 0b11111100;
+        }
+        if (valor >= 750 & valor < 875 ){
+            PORTB = 0b11111110;
+        }
+        if (valor >= 875 & valor < 1025 ){
+            PORTB = 0b11111111;
+        }
+
+        _delay((unsigned long)((500)*(4000000UL/4000.0)));
+    }
+}
+# 138 "Probador1.c"
+void main1(void) {
     port_conf_r1();
     porte_ent();
     port_act = PORTA;
@@ -2116,7 +2292,7 @@ void main(void) {
         }
     }
     _delay((unsigned long)((250)*(4000000UL/4000.0)));
-# 295 "Probador1.c"
+# 391 "Probador1.c"
 }
 
 void port_conf_r2(void) {

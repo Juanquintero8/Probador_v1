@@ -1,5 +1,6 @@
 #include <xc.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 // Configuración del microcontrolador (Fuses)
 #pragma config FOSC = XT     // Oscilador XT (Cristal de 4 MHz)
@@ -39,11 +40,109 @@ void porte_sal(void);
 void Prueba_sal(void);
 void salidas(unsigned char i);
 
+
+// ===== UART =====
+void UART_Init(void) {
+    TXSTAbits.BRGH = 1;    // Alta velocidad
+    SPBRG = 25;            // 9600 baudios para 4 MHz y BRGH=1
+    RCSTAbits.SPEN = 1;    // Habilita el puerto serie (TX/ RX)
+    TXSTAbits.TXEN = 1;    // Habilita transmisión
+    RCSTAbits.CREN = 1;    // Habilita recepción
+}
+
+void UART_Write(char data) {
+    while (!TXSTAbits.TRMT);  // Espera que el buffer esté vacío
+    TXREG = data;
+}
+
+void putch(char data) {
+    UART_Write(data);
+}
+
+// ===== ADC =====
+void ADC_Init(void) {
+    ADCON1 = 0b11000000;           // AN7 analógico, resto digital
+    ADCON0 = 0b01000001;       // Canal 7 (AN7), ADON=1, Fosc/16
+    __delay_ms(10);            // Tiempo para estabilizar
+}
+
+unsigned int ADC_Read(unsigned char channel) {
+    ADCON0 &= 0x11000101; //Clearing the Channel Selection Bits
+    ADCON0 |= channel <<3; //Setting the required Bits
+    __delay_ms(2);           // Tiempo de adquisición
+    GO_nDONE = 1;            // Inicia conversión
+    while(GO_nDONE);         // Espera a que termine
+    return ((ADRESH << 8) + ADRESL);  // Devuelve resultado 10 bits
+}
+
+// ===== MAIN =====
 void main(void) {
+    UART_Init();
+    ADC_Init();
+    TRISB = 0b00000000; // todo el puerto B con salidas
+    //TRISA0 = 1; 
+    
+    printf("inicio");
+
+    while (1) {
+        
+        unsigned int valor = ADC_Read(0);
+        printf("AN7 = %u\r\n", valor);
+        if (valor >= 0 & valor < 125 ){
+            PORTB = 0b010000000;
+        }
+        if (valor >= 125 & valor < 250 ){
+            PORTB = 0b11000000;
+        }
+        if (valor >= 250 & valor < 375 ){
+            PORTB = 0b11100000;
+        }
+        if (valor >= 375 & valor < 500 ){
+            PORTB = 0b11110000;
+        }
+        if (valor >= 500 & valor < 625 ){
+            PORTB = 0b11111000;
+        }
+        if (valor >= 625 & valor < 750 ){
+            PORTB = 0b11111100;
+        }
+        if (valor >= 750 & valor < 875 ){
+            PORTB = 0b11111110;
+        }
+        if (valor >= 875 & valor < 1025 ){
+            PORTB = 0b11111111;
+        }
+        
+        __delay_ms(500);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void main1(void) { //BUCLE PRINCIPAL
     port_conf_r1();
     porte_ent();
     port_act = PORTA;
     puerto = puertoa;
+    UART_Init();
+    ADC_Init();
+    TRISB = 0b00000000; // todo el puerto B con salidas
 
     while (1) {
         
