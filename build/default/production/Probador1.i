@@ -1967,7 +1967,7 @@ extern int printf(const char *, ...);
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-# 33 "Probador1.c"
+# 34 "Probador1.c"
 unsigned char puerto = 0, mask, port_act, nro_pin = 7, incremento = 0, prueba = 0;
 _Bool xx = 0, caso = 0;
 
@@ -2014,7 +2014,7 @@ unsigned int ADC_Read(unsigned char channel) {
 }
 
 
-void main(void) {
+void ADC(void) {
     UART_Init();
     ADC_Init();
     TRISB = 0b00000000;
@@ -2022,7 +2022,7 @@ void main(void) {
 
     printf("inicio");
 
-    while (1) {
+    for(unsigned int i; i <(3*60/0.150);i++) {
 
         unsigned int valor = ADC_Read(0);
         printf("AN7 = %u\r\n", valor);
@@ -2051,11 +2051,11 @@ void main(void) {
             PORTB = 0b11111111;
         }
 
-        _delay((unsigned long)((500)*(4000000UL/4000.0)));
+        _delay((unsigned long)((150)*(4000000UL/4000.0)));
     }
 }
-# 138 "Probador1.c"
-void main1(void) {
+# 139 "Probador1.c"
+void main(void) {
     port_conf_r1();
     porte_ent();
     port_act = PORTA;
@@ -2277,7 +2277,13 @@ void main1(void) {
 
                 }
         }
-        if (prueba == 2) {
+
+        if (prueba == 2){
+            ADC();
+            prueba = 3;
+        }
+
+        if (prueba == 3) {
             port_conf_r1();
             porte_sal();
             for (unsigned char i; i < 3; i++) {
@@ -2292,7 +2298,6 @@ void main1(void) {
         }
     }
     _delay((unsigned long)((250)*(4000000UL/4000.0)));
-# 391 "Probador1.c"
 }
 
 void port_conf_r2(void) {

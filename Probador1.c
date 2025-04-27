@@ -19,6 +19,7 @@
 #define pul_ok RE0
 #define pul_no RE1
 #define ledok RB0
+#define MIN 3
 
 //CASOS
 #define puertoa 0
@@ -61,7 +62,7 @@ void putch(char data) {
 
 // ===== ADC =====
 void ADC_Init(void) {
-    ADCON1 = 0b11000000;           // AN7 analógico, resto digital
+    ADCON1 = 0b11000000;           // AN analógico, resto digital
     ADCON0 = 0b01000001;       // Canal 7 (AN7), ADON=1, Fosc/16
     __delay_ms(10);            // Tiempo para estabilizar
 }
@@ -76,7 +77,7 @@ unsigned int ADC_Read(unsigned char channel) {
 }
 
 // ===== MAIN =====
-void main(void) {
+void ADC(void) {
     UART_Init();
     ADC_Init();
     TRISB = 0b00000000; // todo el puerto B con salidas
@@ -84,7 +85,7 @@ void main(void) {
     
     printf("inicio");
 
-    while (1) {
+    for(unsigned int i; i <(MIN*60/0.150);i++) { /// REPITE ESTE BUCLE POR 3 MINUTOS
         
         unsigned int valor = ADC_Read(0);
         printf("AN7 = %u\r\n", valor);
@@ -113,7 +114,7 @@ void main(void) {
             PORTB = 0b11111111;
         }
         
-        __delay_ms(500);
+        __delay_ms(150);
     }
 }
 
@@ -135,14 +136,11 @@ void main(void) {
 
 
 
-void main1(void) { //BUCLE PRINCIPAL
+void main(void) { //BUCLE PRINCIPAL
     port_conf_r1();
     porte_ent();
     port_act = PORTA;
     puerto = puertoa;
-    UART_Init();
-    ADC_Init();
-    TRISB = 0b00000000; // todo el puerto B con salidas
 
     while (1) {
         
@@ -360,7 +358,13 @@ void main1(void) { //BUCLE PRINCIPAL
 
                 }
         }
-        if (prueba == 2) { // RUTINA FINAL          
+        
+        if (prueba == 2){
+            ADC();
+            prueba = 3;
+        }
+        
+        if (prueba == 3) { // RUTINA FINAL          
             port_conf_r1();
             porte_sal();
             for (unsigned char i; i < 3; i++) {
@@ -375,22 +379,6 @@ void main1(void) { //BUCLE PRINCIPAL
         }
     }
     __delay_ms(250);
-    /*       } else {
-            
-
-                for (unsigned char i = 0; i < 6; i++) { // Solo RA0 a RA5
-                    mask = (1 << i); // Máscara para verificar un solo bit
-
-                    if (PORTA & mask) { // Si el pin está en alto
-                        RD0 = 1;
-                        __delay_ms(tiempo_prueba);
-                    } else {
-                        RD0 = 0; // Apaga RD0
-                    }
-                    __delay_ms(150);
-                }
-
-                    }*/
 }
 
 void port_conf_r2(void) {
