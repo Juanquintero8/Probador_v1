@@ -13,7 +13,7 @@
 #pragma config CP = OFF      // Protección de código desactivada
 
 
-#define _XTAL_FREQ 4000000UL
+#define _XTAL_FREQ 8000000UL
 #define salida  0
 #define entrada 1
 #define pul_ok RE0
@@ -117,23 +117,6 @@ void ADC(void) {
         __delay_ms(150);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 void main(void) { //BUCLE PRINCIPAL

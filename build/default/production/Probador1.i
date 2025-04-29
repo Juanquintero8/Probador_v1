@@ -2001,13 +2001,13 @@ void putch(char data) {
 void ADC_Init(void) {
     ADCON1 = 0b11000000;
     ADCON0 = 0b01000001;
-    _delay((unsigned long)((10)*(4000000UL/4000.0)));
+    _delay((unsigned long)((10)*(8000000UL/4000.0)));
 }
 
 unsigned int ADC_Read(unsigned char channel) {
     ADCON0 &= 0x11000101;
     ADCON0 |= channel <<3;
-    _delay((unsigned long)((2)*(4000000UL/4000.0)));
+    _delay((unsigned long)((2)*(8000000UL/4000.0)));
     GO_nDONE = 1;
     while(GO_nDONE);
     return ((ADRESH << 8) + ADRESL);
@@ -2051,10 +2051,11 @@ void ADC(void) {
             PORTB = 0b11111111;
         }
 
-        _delay((unsigned long)((150)*(4000000UL/4000.0)));
+        _delay((unsigned long)((150)*(8000000UL/4000.0)));
     }
 }
-# 139 "Probador1.c"
+
+
 void main(void) {
     port_conf_r1();
     porte_ent();
@@ -2098,9 +2099,9 @@ void main(void) {
                         while (1) {
                             if (PORTA & mask) {
                                 RE2 = 1;
-                                _delay((unsigned long)((300)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((300)*(8000000UL/4000.0)));
                                 RE2 = 0;
-                                _delay((unsigned long)((50)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((50)*(8000000UL/4000.0)));
                                 mask = (1 << incremento);
                                 incremento++;
                             }
@@ -2138,9 +2139,9 @@ void main(void) {
                         while (1) {
                             if (PORTB & mask) {
                                 RE2 = 1;
-                                _delay((unsigned long)((300)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((300)*(8000000UL/4000.0)));
                                 RE2 = 0;
-                                _delay((unsigned long)((50)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((50)*(8000000UL/4000.0)));
                                 mask = (1 << incremento);
                                 incremento++;
                             }
@@ -2177,9 +2178,9 @@ void main(void) {
                         while (1) {
                             if (PORTC & mask) {
                                 RE2 = 1;
-                                _delay((unsigned long)((300)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((300)*(8000000UL/4000.0)));
                                 RE2 = 0;
-                                _delay((unsigned long)((50)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((50)*(8000000UL/4000.0)));
                                 mask = (1 << incremento);
                                 incremento++;
                             }
@@ -2217,9 +2218,9 @@ void main(void) {
                         while (1) {
                             if (PORTD & mask) {
                                 RE2 = 1;
-                                _delay((unsigned long)((300)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((300)*(8000000UL/4000.0)));
                                 RE2 = 0;
-                                _delay((unsigned long)((50)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((50)*(8000000UL/4000.0)));
                                 mask = (1 << incremento);
                                 incremento++;
                             }
@@ -2259,9 +2260,9 @@ void main(void) {
                         while (1) {
                             if (PORTE & mask) {
                                 RE2 = 1;
-                                _delay((unsigned long)((300)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((300)*(8000000UL/4000.0)));
                                 RE2 = 0;
-                                _delay((unsigned long)((50)*(4000000UL/4000.0)));
+                                _delay((unsigned long)((50)*(8000000UL/4000.0)));
                                 mask = (1 << incremento);
                                 incremento++;
                             }
@@ -2288,16 +2289,16 @@ void main(void) {
             porte_sal();
             for (unsigned char i; i < 3; i++) {
                 PORTE = 0xFF;
-                _delay((unsigned long)((1000)*(4000000UL/4000.0)));
+                _delay((unsigned long)((1000)*(8000000UL/4000.0)));
                 PORTE = 0;
-                _delay((unsigned long)((1000)*(4000000UL/4000.0)));
+                _delay((unsigned long)((1000)*(8000000UL/4000.0)));
 
             }
             prueba = 0;
             xx = 0;
         }
     }
-    _delay((unsigned long)((250)*(4000000UL/4000.0)));
+    _delay((unsigned long)((250)*(8000000UL/4000.0)));
 }
 
 void port_conf_r2(void) {
@@ -2338,23 +2339,23 @@ void salidas(unsigned char i) {
     switch (puerto) {
         case 0:
             PORTA = (1 << i);
-            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            _delay((unsigned long)((150)*(8000000UL/4000.0)));
             break;
         case 1:
             PORTB = (1 << i);
-            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            _delay((unsigned long)((150)*(8000000UL/4000.0)));
             break;
         case 2:
             PORTC = (1 << i);
-            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            _delay((unsigned long)((150)*(8000000UL/4000.0)));
             break;
         case 3:
             PORTD = (1 << i);
-            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            _delay((unsigned long)((150)*(8000000UL/4000.0)));
             break;
         case 4:
             PORTE = (1 << i);
-            _delay((unsigned long)((150)*(4000000UL/4000.0)));
+            _delay((unsigned long)((150)*(8000000UL/4000.0)));
             break;
     }
 }

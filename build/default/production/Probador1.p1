@@ -425,8 +425,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 66:     ADCON0 = 0b01000001;
 [e = _ADCON0 -> -> 65 `i `uc ]
 "67
-[; ;Probador1.c: 67:     _delay((unsigned long)((10)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+[; ;Probador1.c: 67:     _delay((unsigned long)((10)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "68
 [; ;Probador1.c: 68: }
 [e :UE 102 ]
@@ -445,8 +445,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 72:     ADCON0 |= channel <<3;
 [e =| _ADCON0 -> << -> _channel `i -> 3 `i `Vuc ]
 "73
-[; ;Probador1.c: 73:     _delay((unsigned long)((2)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+[; ;Probador1.c: 73:     _delay((unsigned long)((2)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "74
 [; ;Probador1.c: 74:     GO_nDONE = 1;
 [e = _GO_nDONE -> -> 1 `i `b ]
@@ -587,8 +587,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 118 ]
 "117
-[; ;Probador1.c: 117:         _delay((unsigned long)((150)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
+[; ;Probador1.c: 117:         _delay((unsigned long)((150)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "118
 [; ;Probador1.c: 118:     }
 }
@@ -601,795 +601,795 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 107 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"139
-[; ;Probador1.c: 139: void main(void) {
+"122
+[; ;Probador1.c: 122: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"140
-[; ;Probador1.c: 140:     port_conf_r1();
+"123
+[; ;Probador1.c: 123:     port_conf_r1();
 [e ( _port_conf_r1 ..  ]
-"141
-[; ;Probador1.c: 141:     porte_ent();
+"124
+[; ;Probador1.c: 124:     porte_ent();
 [e ( _porte_ent ..  ]
-"142
-[; ;Probador1.c: 142:     port_act = PORTA;
+"125
+[; ;Probador1.c: 125:     port_act = PORTA;
 [e = _port_act _PORTA ]
-"143
-[; ;Probador1.c: 143:     puerto = 0;
+"126
+[; ;Probador1.c: 126:     puerto = 0;
 [e = _puerto -> -> 0 `i `uc ]
-"145
-[; ;Probador1.c: 145:     while (1) {
+"128
+[; ;Probador1.c: 128:     while (1) {
 [e :U 121 ]
 {
-"148
-[; ;Probador1.c: 148:         while (RE0 == 0) {
+"131
+[; ;Probador1.c: 131:         while (RE0 == 0) {
 [e $U 123  ]
 [e :U 124 ]
 {
-"149
-[; ;Probador1.c: 149:             if (xx == 1) {
+"132
+[; ;Probador1.c: 132:             if (xx == 1) {
 [e $ ! == -> _xx `i -> 1 `i 126  ]
 {
-"150
-[; ;Probador1.c: 150:                 break;
+"133
+[; ;Probador1.c: 133:                 break;
 [e $U 125  ]
-"151
-[; ;Probador1.c: 151:             }
+"134
+[; ;Probador1.c: 134:             }
 }
 [e :U 126 ]
-"152
-[; ;Probador1.c: 152:             continue;
+"135
+[; ;Probador1.c: 135:             continue;
 [e $U 123  ]
-"153
-[; ;Probador1.c: 153:         }
+"136
+[; ;Probador1.c: 136:         }
 }
 [e :U 123 ]
-"148
-[; ;Probador1.c: 148:         while (RE0 == 0) {
+"131
+[; ;Probador1.c: 131:         while (RE0 == 0) {
 [e $ == -> _RE0 `i -> 0 `i 124  ]
 [e :U 125 ]
-"154
-[; ;Probador1.c: 154:         xx = 1;
+"137
+[; ;Probador1.c: 137:         xx = 1;
 [e = _xx -> -> 1 `i `a ]
-"156
-[; ;Probador1.c: 156:         switch (puerto) {
+"139
+[; ;Probador1.c: 139:         switch (puerto) {
 [e $U 128  ]
 {
-"157
-[; ;Probador1.c: 157:             case 0:
+"140
+[; ;Probador1.c: 140:             case 0:
 [e :U 129 ]
-"158
-[; ;Probador1.c: 158:                 if (prueba == 0) {
+"141
+[; ;Probador1.c: 141:                 if (prueba == 0) {
 [e $ ! == -> _prueba `i -> 0 `i 130  ]
 {
-"159
-[; ;Probador1.c: 159:                     port_conf_r1();
+"142
+[; ;Probador1.c: 142:                     port_conf_r1();
 [e ( _port_conf_r1 ..  ]
-"160
-[; ;Probador1.c: 160:                     porte_ent();
+"143
+[; ;Probador1.c: 143:                     porte_ent();
 [e ( _porte_ent ..  ]
-"161
-[; ;Probador1.c: 161:                     Prueba_sal();
+"144
+[; ;Probador1.c: 144:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
-"162
-[; ;Probador1.c: 162:                     while (1) {
+"145
+[; ;Probador1.c: 145:                     while (1) {
 [e :U 132 ]
 {
-"163
-[; ;Probador1.c: 163:                         if (RE1 == 1) {
+"146
+[; ;Probador1.c: 146:                         if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 134  ]
 {
-"164
-[; ;Probador1.c: 164:                             puerto = 0;
+"147
+[; ;Probador1.c: 147:                             puerto = 0;
 [e = _puerto -> -> 0 `i `uc ]
-"165
-[; ;Probador1.c: 165:                             break;
+"148
+[; ;Probador1.c: 148:                             break;
 [e $U 133  ]
-"166
-[; ;Probador1.c: 166:                         }
+"149
+[; ;Probador1.c: 149:                         }
 }
 [e :U 134 ]
-"167
-[; ;Probador1.c: 167:                         if (RE0 == 1) {
+"150
+[; ;Probador1.c: 150:                         if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 135  ]
 {
-"168
-[; ;Probador1.c: 168:                             puerto = 1;
+"151
+[; ;Probador1.c: 151:                             puerto = 1;
 [e = _puerto -> -> 1 `i `uc ]
-"169
-[; ;Probador1.c: 169:                             nro_pin = 9;
+"152
+[; ;Probador1.c: 152:                             nro_pin = 9;
 [e = _nro_pin -> -> 9 `i `uc ]
-"170
-[; ;Probador1.c: 170:                             break;
+"153
+[; ;Probador1.c: 153:                             break;
 [e $U 133  ]
-"171
-[; ;Probador1.c: 171:                         }
+"154
+[; ;Probador1.c: 154:                         }
 }
 [e :U 135 ]
-"172
-[; ;Probador1.c: 172:                     }
+"155
+[; ;Probador1.c: 155:                     }
 }
 [e :U 131 ]
 [e $U 132  ]
 [e :U 133 ]
-"173
-[; ;Probador1.c: 173:                     break;
+"156
+[; ;Probador1.c: 156:                     break;
 [e $U 127  ]
-"174
-[; ;Probador1.c: 174:                 } else {
+"157
+[; ;Probador1.c: 157:                 } else {
 }
 [e $U 136  ]
 [e :U 130 ]
 {
-"175
-[; ;Probador1.c: 175:                     port_conf_r2();
+"158
+[; ;Probador1.c: 158:                     port_conf_r2();
 [e ( _port_conf_r2 ..  ]
-"176
-[; ;Probador1.c: 176:                     mask = 1;
+"159
+[; ;Probador1.c: 159:                     mask = 1;
 [e = _mask -> -> 1 `i `uc ]
-"177
-[; ;Probador1.c: 177:                     incremento = 1;
+"160
+[; ;Probador1.c: 160:                     incremento = 1;
 [e = _incremento -> -> 1 `i `uc ]
-"178
-[; ;Probador1.c: 178:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
+"161
+[; ;Probador1.c: 161:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 140  ]
 [e :U 137 ]
 {
-"179
-[; ;Probador1.c: 179:                         while (1) {
+"162
+[; ;Probador1.c: 162:                         while (1) {
 [e :U 142 ]
 {
-"180
-[; ;Probador1.c: 180:                             if (PORTA & mask) {
+"163
+[; ;Probador1.c: 163:                             if (PORTA & mask) {
 [e $ ! != & -> _PORTA `i -> _mask `i -> 0 `i 144  ]
 {
-"181
-[; ;Probador1.c: 181:                                 RE2 = 1;
+"164
+[; ;Probador1.c: 164:                                 RE2 = 1;
 [e = _RE2 -> -> 1 `i `b ]
-"182
-[; ;Probador1.c: 182:                                 _delay((unsigned long)((300)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"183
-[; ;Probador1.c: 183:                                 RE2 = 0;
+"165
+[; ;Probador1.c: 165:                                 _delay((unsigned long)((300)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"166
+[; ;Probador1.c: 166:                                 RE2 = 0;
 [e = _RE2 -> -> 0 `i `b ]
-"184
-[; ;Probador1.c: 184:                                 _delay((unsigned long)((50)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"185
-[; ;Probador1.c: 185:                                 mask = (1 << incremento);
+"167
+[; ;Probador1.c: 167:                                 _delay((unsigned long)((50)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"168
+[; ;Probador1.c: 168:                                 mask = (1 << incremento);
 [e = _mask -> << -> 1 `i -> _incremento `i `uc ]
-"186
-[; ;Probador1.c: 186:                                 incremento++;
+"169
+[; ;Probador1.c: 169:                                 incremento++;
 [e ++ _incremento -> -> 1 `i `uc ]
-"187
-[; ;Probador1.c: 187:                             }
+"170
+[; ;Probador1.c: 170:                             }
 }
 [e :U 144 ]
-"188
-[; ;Probador1.c: 188:                             if (incremento == 7) {
+"171
+[; ;Probador1.c: 171:                             if (incremento == 7) {
 [e $ ! == -> _incremento `i -> 7 `i 145  ]
 {
-"189
-[; ;Probador1.c: 189:                                 puerto = 1;
+"172
+[; ;Probador1.c: 172:                                 puerto = 1;
 [e = _puerto -> -> 1 `i `uc ]
-"190
-[; ;Probador1.c: 190:                                 break;
+"173
+[; ;Probador1.c: 173:                                 break;
 [e $U 143  ]
-"191
-[; ;Probador1.c: 191:                             }
+"174
+[; ;Probador1.c: 174:                             }
 }
 [e :U 145 ]
-"192
-[; ;Probador1.c: 192:                         }
+"175
+[; ;Probador1.c: 175:                         }
 }
 [e :U 141 ]
 [e $U 142  ]
 [e :U 143 ]
-"193
-[; ;Probador1.c: 193:                         break;
+"176
+[; ;Probador1.c: 176:                         break;
 [e $U 138  ]
-"194
-[; ;Probador1.c: 194:                     }
+"177
+[; ;Probador1.c: 177:                     }
 }
 [e = _i _incremento ]
 [e :U 140 ]
 [e $ < -> _i `i -> _nro_pin `i 137  ]
 [e :U 138 ]
 }
-"195
-[; ;Probador1.c: 195:                 }
+"178
+[; ;Probador1.c: 178:                 }
 }
 [e :U 136 ]
-"196
-[; ;Probador1.c: 196:                 break;
+"179
+[; ;Probador1.c: 179:                 break;
 [e $U 127  ]
-"200
-[; ;Probador1.c: 200:             case 1:
+"183
+[; ;Probador1.c: 183:             case 1:
 [e :U 146 ]
-"201
-[; ;Probador1.c: 201:                 if (prueba == 0) {
+"184
+[; ;Probador1.c: 184:                 if (prueba == 0) {
 [e $ ! == -> _prueba `i -> 0 `i 147  ]
 {
-"202
-[; ;Probador1.c: 202:                     Prueba_sal();
+"185
+[; ;Probador1.c: 185:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
-"203
-[; ;Probador1.c: 203:                     while (1) {
+"186
+[; ;Probador1.c: 186:                     while (1) {
 [e :U 149 ]
 {
-"204
-[; ;Probador1.c: 204:                         if (RE1 == 1) {
+"187
+[; ;Probador1.c: 187:                         if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 151  ]
 {
-"205
-[; ;Probador1.c: 205:                             puerto = 1;
+"188
+[; ;Probador1.c: 188:                             puerto = 1;
 [e = _puerto -> -> 1 `i `uc ]
-"206
-[; ;Probador1.c: 206:                             break;
+"189
+[; ;Probador1.c: 189:                             break;
 [e $U 150  ]
-"207
-[; ;Probador1.c: 207:                         }
+"190
+[; ;Probador1.c: 190:                         }
 }
 [e :U 151 ]
-"208
-[; ;Probador1.c: 208:                         if (RE0 == 1) {
+"191
+[; ;Probador1.c: 191:                         if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 152  ]
 {
-"209
-[; ;Probador1.c: 209:                             puerto = 2;
+"192
+[; ;Probador1.c: 192:                             puerto = 2;
 [e = _puerto -> -> 2 `i `uc ]
-"210
-[; ;Probador1.c: 210:                             break;
+"193
+[; ;Probador1.c: 193:                             break;
 [e $U 150  ]
-"211
-[; ;Probador1.c: 211:                         }
+"194
+[; ;Probador1.c: 194:                         }
 }
 [e :U 152 ]
-"212
-[; ;Probador1.c: 212:                     }
+"195
+[; ;Probador1.c: 195:                     }
 }
 [e :U 148 ]
 [e $U 149  ]
 [e :U 150 ]
-"213
-[; ;Probador1.c: 213:                     break;
+"196
+[; ;Probador1.c: 196:                     break;
 [e $U 127  ]
-"214
-[; ;Probador1.c: 214:                 } else {
+"197
+[; ;Probador1.c: 197:                 } else {
 }
 [e $U 153  ]
 [e :U 147 ]
 {
-"215
-[; ;Probador1.c: 215:                     incremento = 1;
+"198
+[; ;Probador1.c: 198:                     incremento = 1;
 [e = _incremento -> -> 1 `i `uc ]
-"216
-[; ;Probador1.c: 216:                     nro_pin = 9;
+"199
+[; ;Probador1.c: 199:                     nro_pin = 9;
 [e = _nro_pin -> -> 9 `i `uc ]
-"217
-[; ;Probador1.c: 217:                     mask = 1;
+"200
+[; ;Probador1.c: 200:                     mask = 1;
 [e = _mask -> -> 1 `i `uc ]
-"218
-[; ;Probador1.c: 218:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
+"201
+[; ;Probador1.c: 201:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 157  ]
 [e :U 154 ]
 {
-"219
-[; ;Probador1.c: 219:                         while (1) {
+"202
+[; ;Probador1.c: 202:                         while (1) {
 [e :U 159 ]
 {
-"220
-[; ;Probador1.c: 220:                             if (PORTB & mask) {
+"203
+[; ;Probador1.c: 203:                             if (PORTB & mask) {
 [e $ ! != & -> _PORTB `i -> _mask `i -> 0 `i 161  ]
 {
-"221
-[; ;Probador1.c: 221:                                 RE2 = 1;
+"204
+[; ;Probador1.c: 204:                                 RE2 = 1;
 [e = _RE2 -> -> 1 `i `b ]
-"222
-[; ;Probador1.c: 222:                                 _delay((unsigned long)((300)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"223
-[; ;Probador1.c: 223:                                 RE2 = 0;
+"205
+[; ;Probador1.c: 205:                                 _delay((unsigned long)((300)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"206
+[; ;Probador1.c: 206:                                 RE2 = 0;
 [e = _RE2 -> -> 0 `i `b ]
-"224
-[; ;Probador1.c: 224:                                 _delay((unsigned long)((50)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"225
-[; ;Probador1.c: 225:                                 mask = (1 << incremento);
+"207
+[; ;Probador1.c: 207:                                 _delay((unsigned long)((50)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"208
+[; ;Probador1.c: 208:                                 mask = (1 << incremento);
 [e = _mask -> << -> 1 `i -> _incremento `i `uc ]
-"226
-[; ;Probador1.c: 226:                                 incremento++;
+"209
+[; ;Probador1.c: 209:                                 incremento++;
 [e ++ _incremento -> -> 1 `i `uc ]
-"227
-[; ;Probador1.c: 227:                             }
+"210
+[; ;Probador1.c: 210:                             }
 }
 [e :U 161 ]
-"228
-[; ;Probador1.c: 228:                             if (incremento == 9) {
+"211
+[; ;Probador1.c: 211:                             if (incremento == 9) {
 [e $ ! == -> _incremento `i -> 9 `i 162  ]
 {
-"229
-[; ;Probador1.c: 229:                                 puerto = 2;
+"212
+[; ;Probador1.c: 212:                                 puerto = 2;
 [e = _puerto -> -> 2 `i `uc ]
-"230
-[; ;Probador1.c: 230:                                 break;
+"213
+[; ;Probador1.c: 213:                                 break;
 [e $U 160  ]
-"231
-[; ;Probador1.c: 231:                             }
+"214
+[; ;Probador1.c: 214:                             }
 }
 [e :U 162 ]
-"232
-[; ;Probador1.c: 232:                         }
+"215
+[; ;Probador1.c: 215:                         }
 }
 [e :U 158 ]
 [e $U 159  ]
 [e :U 160 ]
-"234
-[; ;Probador1.c: 234:                     }
+"217
+[; ;Probador1.c: 217:                     }
 }
 [e = _i _incremento ]
 [e :U 157 ]
 [e $ < -> _i `i -> _nro_pin `i 154  ]
 [e :U 155 ]
 }
-"235
-[; ;Probador1.c: 235:                     break;
+"218
+[; ;Probador1.c: 218:                     break;
 [e $U 127  ]
-"236
-[; ;Probador1.c: 236:                 }
+"219
+[; ;Probador1.c: 219:                 }
 }
 [e :U 153 ]
-"239
-[; ;Probador1.c: 239:             case 2:
+"222
+[; ;Probador1.c: 222:             case 2:
 [e :U 163 ]
-"240
-[; ;Probador1.c: 240:                 if (prueba == 0) {
+"223
+[; ;Probador1.c: 223:                 if (prueba == 0) {
 [e $ ! == -> _prueba `i -> 0 `i 164  ]
 {
-"241
-[; ;Probador1.c: 241:                     Prueba_sal();
+"224
+[; ;Probador1.c: 224:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
-"242
-[; ;Probador1.c: 242:                     while (1) {
+"225
+[; ;Probador1.c: 225:                     while (1) {
 [e :U 166 ]
 {
-"243
-[; ;Probador1.c: 243:                         if (RE1 == 1) {
+"226
+[; ;Probador1.c: 226:                         if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 168  ]
 {
-"244
-[; ;Probador1.c: 244:                             puerto = 2;
+"227
+[; ;Probador1.c: 227:                             puerto = 2;
 [e = _puerto -> -> 2 `i `uc ]
-"245
-[; ;Probador1.c: 245:                             break;
+"228
+[; ;Probador1.c: 228:                             break;
 [e $U 167  ]
-"246
-[; ;Probador1.c: 246:                         }
+"229
+[; ;Probador1.c: 229:                         }
 }
 [e :U 168 ]
-"247
-[; ;Probador1.c: 247:                         if (RE0 == 1) {
+"230
+[; ;Probador1.c: 230:                         if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 169  ]
 {
-"248
-[; ;Probador1.c: 248:                             puerto = 3;
+"231
+[; ;Probador1.c: 231:                             puerto = 3;
 [e = _puerto -> -> 3 `i `uc ]
-"249
-[; ;Probador1.c: 249:                             break;
+"232
+[; ;Probador1.c: 232:                             break;
 [e $U 167  ]
-"250
-[; ;Probador1.c: 250:                         }
+"233
+[; ;Probador1.c: 233:                         }
 }
 [e :U 169 ]
-"251
-[; ;Probador1.c: 251:                     }
+"234
+[; ;Probador1.c: 234:                     }
 }
 [e :U 165 ]
 [e $U 166  ]
 [e :U 167 ]
-"252
-[; ;Probador1.c: 252:                     break;
+"235
+[; ;Probador1.c: 235:                     break;
 [e $U 127  ]
-"253
-[; ;Probador1.c: 253:                 } else {
+"236
+[; ;Probador1.c: 236:                 } else {
 }
 [e $U 170  ]
 [e :U 164 ]
 {
-"254
-[; ;Probador1.c: 254:                     incremento = 1;
+"237
+[; ;Probador1.c: 237:                     incremento = 1;
 [e = _incremento -> -> 1 `i `uc ]
-"255
-[; ;Probador1.c: 255:                     nro_pin = 9;
+"238
+[; ;Probador1.c: 238:                     nro_pin = 9;
 [e = _nro_pin -> -> 9 `i `uc ]
-"256
-[; ;Probador1.c: 256:                     mask = 1;
+"239
+[; ;Probador1.c: 239:                     mask = 1;
 [e = _mask -> -> 1 `i `uc ]
-"257
-[; ;Probador1.c: 257:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
+"240
+[; ;Probador1.c: 240:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 174  ]
 [e :U 171 ]
 {
-"258
-[; ;Probador1.c: 258:                         while (1) {
+"241
+[; ;Probador1.c: 241:                         while (1) {
 [e :U 176 ]
 {
-"259
-[; ;Probador1.c: 259:                             if (PORTC & mask) {
+"242
+[; ;Probador1.c: 242:                             if (PORTC & mask) {
 [e $ ! != & -> _PORTC `i -> _mask `i -> 0 `i 178  ]
 {
-"260
-[; ;Probador1.c: 260:                                 RE2 = 1;
+"243
+[; ;Probador1.c: 243:                                 RE2 = 1;
 [e = _RE2 -> -> 1 `i `b ]
-"261
-[; ;Probador1.c: 261:                                 _delay((unsigned long)((300)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"262
-[; ;Probador1.c: 262:                                 RE2 = 0;
+"244
+[; ;Probador1.c: 244:                                 _delay((unsigned long)((300)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"245
+[; ;Probador1.c: 245:                                 RE2 = 0;
 [e = _RE2 -> -> 0 `i `b ]
-"263
-[; ;Probador1.c: 263:                                 _delay((unsigned long)((50)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"264
-[; ;Probador1.c: 264:                                 mask = (1 << incremento);
+"246
+[; ;Probador1.c: 246:                                 _delay((unsigned long)((50)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"247
+[; ;Probador1.c: 247:                                 mask = (1 << incremento);
 [e = _mask -> << -> 1 `i -> _incremento `i `uc ]
-"265
-[; ;Probador1.c: 265:                                 incremento++;
+"248
+[; ;Probador1.c: 248:                                 incremento++;
 [e ++ _incremento -> -> 1 `i `uc ]
-"266
-[; ;Probador1.c: 266:                             }
+"249
+[; ;Probador1.c: 249:                             }
 }
 [e :U 178 ]
-"267
-[; ;Probador1.c: 267:                             if (incremento == 9) {
+"250
+[; ;Probador1.c: 250:                             if (incremento == 9) {
 [e $ ! == -> _incremento `i -> 9 `i 179  ]
 {
-"268
-[; ;Probador1.c: 268:                                 puerto = 3;
+"251
+[; ;Probador1.c: 251:                                 puerto = 3;
 [e = _puerto -> -> 3 `i `uc ]
-"269
-[; ;Probador1.c: 269:                                 break;
+"252
+[; ;Probador1.c: 252:                                 break;
 [e $U 177  ]
-"270
-[; ;Probador1.c: 270:                             }
+"253
+[; ;Probador1.c: 253:                             }
 }
 [e :U 179 ]
-"271
-[; ;Probador1.c: 271:                         }
+"254
+[; ;Probador1.c: 254:                         }
 }
 [e :U 175 ]
 [e $U 176  ]
 [e :U 177 ]
-"273
-[; ;Probador1.c: 273:                     }
+"256
+[; ;Probador1.c: 256:                     }
 }
 [e = _i _incremento ]
 [e :U 174 ]
 [e $ < -> _i `i -> _nro_pin `i 171  ]
 [e :U 172 ]
 }
-"274
-[; ;Probador1.c: 274:                     break;
+"257
+[; ;Probador1.c: 257:                     break;
 [e $U 127  ]
-"275
-[; ;Probador1.c: 275:                 }
+"258
+[; ;Probador1.c: 258:                 }
 }
 [e :U 170 ]
-"277
-[; ;Probador1.c: 277:             case 3:
+"260
+[; ;Probador1.c: 260:             case 3:
 [e :U 180 ]
-"278
-[; ;Probador1.c: 278:                 if (prueba == 0) {
+"261
+[; ;Probador1.c: 261:                 if (prueba == 0) {
 [e $ ! == -> _prueba `i -> 0 `i 181  ]
 {
-"279
-[; ;Probador1.c: 279:                     Prueba_sal();
+"262
+[; ;Probador1.c: 262:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
-"280
-[; ;Probador1.c: 280:                     while (1) {
+"263
+[; ;Probador1.c: 263:                     while (1) {
 [e :U 183 ]
 {
-"281
-[; ;Probador1.c: 281:                         if (RE1 == 1) {
+"264
+[; ;Probador1.c: 264:                         if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 185  ]
 {
-"282
-[; ;Probador1.c: 282:                             puerto = 3;
+"265
+[; ;Probador1.c: 265:                             puerto = 3;
 [e = _puerto -> -> 3 `i `uc ]
-"283
-[; ;Probador1.c: 283:                             break;
+"266
+[; ;Probador1.c: 266:                             break;
 [e $U 184  ]
-"284
-[; ;Probador1.c: 284:                         }
+"267
+[; ;Probador1.c: 267:                         }
 }
 [e :U 185 ]
-"285
-[; ;Probador1.c: 285:                         if (RE0 == 1) {
+"268
+[; ;Probador1.c: 268:                         if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 186  ]
 {
-"286
-[; ;Probador1.c: 286:                             puerto = 4;
+"269
+[; ;Probador1.c: 269:                             puerto = 4;
 [e = _puerto -> -> 4 `i `uc ]
-"287
-[; ;Probador1.c: 287:                             nro_pin = 4;
+"270
+[; ;Probador1.c: 270:                             nro_pin = 4;
 [e = _nro_pin -> -> 4 `i `uc ]
-"288
-[; ;Probador1.c: 288:                             porte_sal();
+"271
+[; ;Probador1.c: 271:                             porte_sal();
 [e ( _porte_sal ..  ]
-"289
-[; ;Probador1.c: 289:                             break;
+"272
+[; ;Probador1.c: 272:                             break;
 [e $U 184  ]
-"290
-[; ;Probador1.c: 290:                         }
+"273
+[; ;Probador1.c: 273:                         }
 }
 [e :U 186 ]
-"291
-[; ;Probador1.c: 291:                     }
+"274
+[; ;Probador1.c: 274:                     }
 }
 [e :U 182 ]
 [e $U 183  ]
 [e :U 184 ]
-"292
-[; ;Probador1.c: 292:                     break;
+"275
+[; ;Probador1.c: 275:                     break;
 [e $U 127  ]
-"293
-[; ;Probador1.c: 293:                 } else {
+"276
+[; ;Probador1.c: 276:                 } else {
 }
 [e $U 187  ]
 [e :U 181 ]
 {
-"294
-[; ;Probador1.c: 294:                     incremento = 1;
+"277
+[; ;Probador1.c: 277:                     incremento = 1;
 [e = _incremento -> -> 1 `i `uc ]
-"295
-[; ;Probador1.c: 295:                     nro_pin = 9;
+"278
+[; ;Probador1.c: 278:                     nro_pin = 9;
 [e = _nro_pin -> -> 9 `i `uc ]
-"296
-[; ;Probador1.c: 296:                     mask = 1;
+"279
+[; ;Probador1.c: 279:                     mask = 1;
 [e = _mask -> -> 1 `i `uc ]
-"297
-[; ;Probador1.c: 297:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
+"280
+[; ;Probador1.c: 280:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 191  ]
 [e :U 188 ]
 {
-"298
-[; ;Probador1.c: 298:                         while (1) {
+"281
+[; ;Probador1.c: 281:                         while (1) {
 [e :U 193 ]
 {
-"299
-[; ;Probador1.c: 299:                             if (PORTD & mask) {
+"282
+[; ;Probador1.c: 282:                             if (PORTD & mask) {
 [e $ ! != & -> _PORTD `i -> _mask `i -> 0 `i 195  ]
 {
-"300
-[; ;Probador1.c: 300:                                 RE2 = 1;
+"283
+[; ;Probador1.c: 283:                                 RE2 = 1;
 [e = _RE2 -> -> 1 `i `b ]
-"301
-[; ;Probador1.c: 301:                                 _delay((unsigned long)((300)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"302
-[; ;Probador1.c: 302:                                 RE2 = 0;
+"284
+[; ;Probador1.c: 284:                                 _delay((unsigned long)((300)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"285
+[; ;Probador1.c: 285:                                 RE2 = 0;
 [e = _RE2 -> -> 0 `i `b ]
-"303
-[; ;Probador1.c: 303:                                 _delay((unsigned long)((50)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"304
-[; ;Probador1.c: 304:                                 mask = (1 << incremento);
+"286
+[; ;Probador1.c: 286:                                 _delay((unsigned long)((50)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"287
+[; ;Probador1.c: 287:                                 mask = (1 << incremento);
 [e = _mask -> << -> 1 `i -> _incremento `i `uc ]
-"305
-[; ;Probador1.c: 305:                                 incremento++;
+"288
+[; ;Probador1.c: 288:                                 incremento++;
 [e ++ _incremento -> -> 1 `i `uc ]
-"306
-[; ;Probador1.c: 306:                             }
+"289
+[; ;Probador1.c: 289:                             }
 }
 [e :U 195 ]
-"307
-[; ;Probador1.c: 307:                             if (incremento == 9) {
+"290
+[; ;Probador1.c: 290:                             if (incremento == 9) {
 [e $ ! == -> _incremento `i -> 9 `i 196  ]
 {
-"308
-[; ;Probador1.c: 308:                                 puerto = 4;
+"291
+[; ;Probador1.c: 291:                                 puerto = 4;
 [e = _puerto -> -> 4 `i `uc ]
-"309
-[; ;Probador1.c: 309:                                 break;
+"292
+[; ;Probador1.c: 292:                                 break;
 [e $U 194  ]
-"310
-[; ;Probador1.c: 310:                             }
+"293
+[; ;Probador1.c: 293:                             }
 }
 [e :U 196 ]
-"311
-[; ;Probador1.c: 311:                         }
+"294
+[; ;Probador1.c: 294:                         }
 }
 [e :U 192 ]
 [e $U 193  ]
 [e :U 194 ]
-"313
-[; ;Probador1.c: 313:                     }
+"296
+[; ;Probador1.c: 296:                     }
 }
 [e = _i _incremento ]
 [e :U 191 ]
 [e $ < -> _i `i -> _nro_pin `i 188  ]
 [e :U 189 ]
 }
-"314
-[; ;Probador1.c: 314:                     break;
+"297
+[; ;Probador1.c: 297:                     break;
 [e $U 127  ]
-"315
-[; ;Probador1.c: 315:                 }
+"298
+[; ;Probador1.c: 298:                 }
 }
 [e :U 187 ]
-"317
-[; ;Probador1.c: 317:             case 4:
+"300
+[; ;Probador1.c: 300:             case 4:
 [e :U 197 ]
-"318
-[; ;Probador1.c: 318:                 if (prueba == 0) {
+"301
+[; ;Probador1.c: 301:                 if (prueba == 0) {
 [e $ ! == -> _prueba `i -> 0 `i 198  ]
 {
-"319
-[; ;Probador1.c: 319:                     Prueba_sal();
+"302
+[; ;Probador1.c: 302:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
-"320
-[; ;Probador1.c: 320:                     porte_ent();
+"303
+[; ;Probador1.c: 303:                     porte_ent();
 [e ( _porte_ent ..  ]
-"321
-[; ;Probador1.c: 321:                     while (1) {
+"304
+[; ;Probador1.c: 304:                     while (1) {
 [e :U 200 ]
 {
-"322
-[; ;Probador1.c: 322:                         if (RE1 == 1) {
+"305
+[; ;Probador1.c: 305:                         if (RE1 == 1) {
 [e $ ! == -> _RE1 `i -> 1 `i 202  ]
 {
-"323
-[; ;Probador1.c: 323:                             puerto = 4;
+"306
+[; ;Probador1.c: 306:                             puerto = 4;
 [e = _puerto -> -> 4 `i `uc ]
-"324
-[; ;Probador1.c: 324:                             porte_sal();
+"307
+[; ;Probador1.c: 307:                             porte_sal();
 [e ( _porte_sal ..  ]
-"325
-[; ;Probador1.c: 325:                             break;
+"308
+[; ;Probador1.c: 308:                             break;
 [e $U 201  ]
-"326
-[; ;Probador1.c: 326:                         }
+"309
+[; ;Probador1.c: 309:                         }
 }
 [e :U 202 ]
-"327
-[; ;Probador1.c: 327:                         if (RE0 == 1) {
+"310
+[; ;Probador1.c: 310:                         if (RE0 == 1) {
 [e $ ! == -> _RE0 `i -> 1 `i 203  ]
 {
-"328
-[; ;Probador1.c: 328:                             puerto = 0;
+"311
+[; ;Probador1.c: 311:                             puerto = 0;
 [e = _puerto -> -> 0 `i `uc ]
-"329
-[; ;Probador1.c: 329:                             prueba = 1;
+"312
+[; ;Probador1.c: 312:                             prueba = 1;
 [e = _prueba -> -> 1 `i `uc ]
-"330
-[; ;Probador1.c: 330:                             nro_pin = 7;
+"313
+[; ;Probador1.c: 313:                             nro_pin = 7;
 [e = _nro_pin -> -> 7 `i `uc ]
-"331
-[; ;Probador1.c: 331:                             break;
+"314
+[; ;Probador1.c: 314:                             break;
 [e $U 201  ]
-"332
-[; ;Probador1.c: 332:                         }
+"315
+[; ;Probador1.c: 315:                         }
 }
 [e :U 203 ]
-"333
-[; ;Probador1.c: 333:                     }
+"316
+[; ;Probador1.c: 316:                     }
 }
 [e :U 199 ]
 [e $U 200  ]
 [e :U 201 ]
-"334
-[; ;Probador1.c: 334:                     break;
+"317
+[; ;Probador1.c: 317:                     break;
 [e $U 127  ]
-"335
-[; ;Probador1.c: 335:                 } else {
+"318
+[; ;Probador1.c: 318:                 } else {
 }
 [e $U 204  ]
 [e :U 198 ]
 {
-"336
-[; ;Probador1.c: 336:                     incremento = 1;
+"319
+[; ;Probador1.c: 319:                     incremento = 1;
 [e = _incremento -> -> 1 `i `uc ]
-"337
-[; ;Probador1.c: 337:                     nro_pin = 3;
+"320
+[; ;Probador1.c: 320:                     nro_pin = 3;
 [e = _nro_pin -> -> 3 `i `uc ]
-"338
-[; ;Probador1.c: 338:                     mask = 1;
+"321
+[; ;Probador1.c: 321:                     mask = 1;
 [e = _mask -> -> 1 `i `uc ]
-"339
-[; ;Probador1.c: 339:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
+"322
+[; ;Probador1.c: 322:                     for (unsigned char i = 0; i < nro_pin; i = incremento) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 208  ]
 [e :U 205 ]
 {
-"340
-[; ;Probador1.c: 340:                         while (1) {
+"323
+[; ;Probador1.c: 323:                         while (1) {
 [e :U 210 ]
 {
-"341
-[; ;Probador1.c: 341:                             if (PORTE & mask) {
+"324
+[; ;Probador1.c: 324:                             if (PORTE & mask) {
 [e $ ! != & -> _PORTE `i -> _mask `i -> 0 `i 212  ]
 {
-"342
-[; ;Probador1.c: 342:                                 RE2 = 1;
+"325
+[; ;Probador1.c: 325:                                 RE2 = 1;
 [e = _RE2 -> -> 1 `i `b ]
-"343
-[; ;Probador1.c: 343:                                 _delay((unsigned long)((300)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"344
-[; ;Probador1.c: 344:                                 RE2 = 0;
+"326
+[; ;Probador1.c: 326:                                 _delay((unsigned long)((300)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"327
+[; ;Probador1.c: 327:                                 RE2 = 0;
 [e = _RE2 -> -> 0 `i `b ]
-"345
-[; ;Probador1.c: 345:                                 _delay((unsigned long)((50)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"346
-[; ;Probador1.c: 346:                                 mask = (1 << incremento);
+"328
+[; ;Probador1.c: 328:                                 _delay((unsigned long)((50)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"329
+[; ;Probador1.c: 329:                                 mask = (1 << incremento);
 [e = _mask -> << -> 1 `i -> _incremento `i `uc ]
-"347
-[; ;Probador1.c: 347:                                 incremento++;
+"330
+[; ;Probador1.c: 330:                                 incremento++;
 [e ++ _incremento -> -> 1 `i `uc ]
-"348
-[; ;Probador1.c: 348:                             }
+"331
+[; ;Probador1.c: 331:                             }
 }
 [e :U 212 ]
-"349
-[; ;Probador1.c: 349:                             if (incremento == 4) {
+"332
+[; ;Probador1.c: 332:                             if (incremento == 4) {
 [e $ ! == -> _incremento `i -> 4 `i 213  ]
 {
-"350
-[; ;Probador1.c: 350:                                 puerto = 0;
+"333
+[; ;Probador1.c: 333:                                 puerto = 0;
 [e = _puerto -> -> 0 `i `uc ]
-"351
-[; ;Probador1.c: 351:                                 nro_pin = 7;
+"334
+[; ;Probador1.c: 334:                                 nro_pin = 7;
 [e = _nro_pin -> -> 7 `i `uc ]
-"352
-[; ;Probador1.c: 352:                                 prueba = 2;
+"335
+[; ;Probador1.c: 335:                                 prueba = 2;
 [e = _prueba -> -> 2 `i `uc ]
-"353
-[; ;Probador1.c: 353:                                 break;
+"336
+[; ;Probador1.c: 336:                                 break;
 [e $U 211  ]
-"354
-[; ;Probador1.c: 354:                             }
+"337
+[; ;Probador1.c: 337:                             }
 }
 [e :U 213 ]
-"355
-[; ;Probador1.c: 355:                         }
+"338
+[; ;Probador1.c: 338:                         }
 }
 [e :U 209 ]
 [e $U 210  ]
 [e :U 211 ]
-"356
-[; ;Probador1.c: 356:                         break;
+"339
+[; ;Probador1.c: 339:                         break;
 [e $U 206  ]
-"357
-[; ;Probador1.c: 357:                     }
+"340
+[; ;Probador1.c: 340:                     }
 }
 [e = _i _incremento ]
 [e :U 208 ]
 [e $ < -> _i `i -> _nro_pin `i 205  ]
 [e :U 206 ]
 }
-"359
-[; ;Probador1.c: 359:                 }
+"342
+[; ;Probador1.c: 342:                 }
 }
 [e :U 204 ]
-"360
-[; ;Probador1.c: 360:         }
+"343
+[; ;Probador1.c: 343:         }
 }
 [e $U 127  ]
 [e :U 128 ]
@@ -1400,270 +1400,270 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 197
  127 ]
 [e :U 127 ]
-"362
-[; ;Probador1.c: 362:         if (prueba == 2){
+"345
+[; ;Probador1.c: 345:         if (prueba == 2){
 [e $ ! == -> _prueba `i -> 2 `i 214  ]
 {
-"363
-[; ;Probador1.c: 363:             ADC();
+"346
+[; ;Probador1.c: 346:             ADC();
 [e ( _ADC ..  ]
-"364
-[; ;Probador1.c: 364:             prueba = 3;
+"347
+[; ;Probador1.c: 347:             prueba = 3;
 [e = _prueba -> -> 3 `i `uc ]
-"365
-[; ;Probador1.c: 365:         }
+"348
+[; ;Probador1.c: 348:         }
 }
 [e :U 214 ]
-"367
-[; ;Probador1.c: 367:         if (prueba == 3) {
+"350
+[; ;Probador1.c: 350:         if (prueba == 3) {
 [e $ ! == -> _prueba `i -> 3 `i 215  ]
 {
-"368
-[; ;Probador1.c: 368:             port_conf_r1();
+"351
+[; ;Probador1.c: 351:             port_conf_r1();
 [e ( _port_conf_r1 ..  ]
-"369
-[; ;Probador1.c: 369:             porte_sal();
+"352
+[; ;Probador1.c: 352:             porte_sal();
 [e ( _porte_sal ..  ]
-"370
-[; ;Probador1.c: 370:             for (unsigned char i; i < 3; i++) {
+"353
+[; ;Probador1.c: 353:             for (unsigned char i; i < 3; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e $ < -> _i `i -> 3 `i 216  ]
 [e $U 217  ]
 [e :U 216 ]
 {
-"371
-[; ;Probador1.c: 371:                 PORTE = 0xFF;
+"354
+[; ;Probador1.c: 354:                 PORTE = 0xFF;
 [e = _PORTE -> -> 255 `i `uc ]
-"372
-[; ;Probador1.c: 372:                 _delay((unsigned long)((1000)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"373
-[; ;Probador1.c: 373:                 PORTE = 0;
+"355
+[; ;Probador1.c: 355:                 _delay((unsigned long)((1000)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"356
+[; ;Probador1.c: 356:                 PORTE = 0;
 [e = _PORTE -> -> 0 `i `uc ]
-"374
-[; ;Probador1.c: 374:                 _delay((unsigned long)((1000)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"376
-[; ;Probador1.c: 376:             }
+"357
+[; ;Probador1.c: 357:                 _delay((unsigned long)((1000)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"359
+[; ;Probador1.c: 359:             }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 3 `i 216  ]
 [e :U 217 ]
 }
-"377
-[; ;Probador1.c: 377:             prueba = 0;
+"360
+[; ;Probador1.c: 360:             prueba = 0;
 [e = _prueba -> -> 0 `i `uc ]
-"378
-[; ;Probador1.c: 378:             xx = 0;
+"361
+[; ;Probador1.c: 361:             xx = 0;
 [e = _xx -> -> 0 `i `a ]
-"379
-[; ;Probador1.c: 379:         }
+"362
+[; ;Probador1.c: 362:         }
 }
 [e :U 215 ]
-"380
-[; ;Probador1.c: 380:     }
+"363
+[; ;Probador1.c: 363:     }
 }
 [e :U 120 ]
 [e $U 121  ]
 [e :U 122 ]
-"381
-[; ;Probador1.c: 381:     _delay((unsigned long)((250)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"382
-[; ;Probador1.c: 382: }
+"364
+[; ;Probador1.c: 364:     _delay((unsigned long)((250)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"365
+[; ;Probador1.c: 365: }
 [e :UE 119 ]
 }
-"384
-[; ;Probador1.c: 384: void port_conf_r2(void) {
+"367
+[; ;Probador1.c: 367: void port_conf_r2(void) {
 [v _port_conf_r2 `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_conf_r2 ]
 [f ]
-"385
-[; ;Probador1.c: 385:     TRISA = 0xFF;
+"368
+[; ;Probador1.c: 368:     TRISA = 0xFF;
 [e = _TRISA -> -> 255 `i `uc ]
-"386
-[; ;Probador1.c: 386:     TRISB = 0xFF;
+"369
+[; ;Probador1.c: 369:     TRISB = 0xFF;
 [e = _TRISB -> -> 255 `i `uc ]
-"387
-[; ;Probador1.c: 387:     TRISC = 0xFF;
+"370
+[; ;Probador1.c: 370:     TRISC = 0xFF;
 [e = _TRISC -> -> 255 `i `uc ]
-"388
-[; ;Probador1.c: 388:     TRISD = 0xFF;
+"371
+[; ;Probador1.c: 371:     TRISD = 0xFF;
 [e = _TRISD -> -> 255 `i `uc ]
-"389
-[; ;Probador1.c: 389:     PORTE = 0x00;
+"372
+[; ;Probador1.c: 372:     PORTE = 0x00;
 [e = _PORTE -> -> 0 `i `uc ]
-"390
-[; ;Probador1.c: 390: }
+"373
+[; ;Probador1.c: 373: }
 [e :UE 219 ]
 }
-"392
-[; ;Probador1.c: 392: void port_conf_r1(void) {
+"375
+[; ;Probador1.c: 375: void port_conf_r1(void) {
 [v _port_conf_r1 `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_conf_r1 ]
 [f ]
-"393
-[; ;Probador1.c: 393:     TRISA = 0b00000000;
+"376
+[; ;Probador1.c: 376:     TRISA = 0b00000000;
 [e = _TRISA -> -> 0 `i `uc ]
-"394
-[; ;Probador1.c: 394:     TRISB = 0b00000000;
+"377
+[; ;Probador1.c: 377:     TRISB = 0b00000000;
 [e = _TRISB -> -> 0 `i `uc ]
-"395
-[; ;Probador1.c: 395:     TRISC = 0b00000000;
+"378
+[; ;Probador1.c: 378:     TRISC = 0b00000000;
 [e = _TRISC -> -> 0 `i `uc ]
-"396
-[; ;Probador1.c: 396:     TRISD = 0b00000000;
+"379
+[; ;Probador1.c: 379:     TRISD = 0b00000000;
 [e = _TRISD -> -> 0 `i `uc ]
-"397
-[; ;Probador1.c: 397:     ADCON1 = 0b00000111;
+"380
+[; ;Probador1.c: 380:     ADCON1 = 0b00000111;
 [e = _ADCON1 -> -> 7 `i `uc ]
-"398
-[; ;Probador1.c: 398:     PORTB = 0;
+"381
+[; ;Probador1.c: 381:     PORTB = 0;
 [e = _PORTB -> -> 0 `i `uc ]
-"399
-[; ;Probador1.c: 399:     PORTC = 0;
+"382
+[; ;Probador1.c: 382:     PORTC = 0;
 [e = _PORTC -> -> 0 `i `uc ]
-"400
-[; ;Probador1.c: 400:     PORTD = 0;
+"383
+[; ;Probador1.c: 383:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"401
-[; ;Probador1.c: 401:     PORTE = 0;
+"384
+[; ;Probador1.c: 384:     PORTE = 0;
 [e = _PORTE -> -> 0 `i `uc ]
-"402
-[; ;Probador1.c: 402: }
+"385
+[; ;Probador1.c: 385: }
 [e :UE 220 ]
 }
-"404
-[; ;Probador1.c: 404: void porte_ent(void) {
+"387
+[; ;Probador1.c: 387: void porte_ent(void) {
 [v _porte_ent `(v ~T0 @X0 1 ef ]
 {
 [e :U _porte_ent ]
 [f ]
-"405
-[; ;Probador1.c: 405:     TRISE = 0b00000011;
+"388
+[; ;Probador1.c: 388:     TRISE = 0b00000011;
 [e = _TRISE -> -> 3 `i `uc ]
-"406
-[; ;Probador1.c: 406: }
+"389
+[; ;Probador1.c: 389: }
 [e :UE 221 ]
 }
-"408
-[; ;Probador1.c: 408: void porte_sal(void) {
+"391
+[; ;Probador1.c: 391: void porte_sal(void) {
 [v _porte_sal `(v ~T0 @X0 1 ef ]
 {
 [e :U _porte_sal ]
 [f ]
-"409
-[; ;Probador1.c: 409:     TRISE = 0b00000000;
+"392
+[; ;Probador1.c: 392:     TRISE = 0b00000000;
 [e = _TRISE -> -> 0 `i `uc ]
-"410
-[; ;Probador1.c: 410: }
+"393
+[; ;Probador1.c: 393: }
 [e :UE 222 ]
 }
-"412
-[; ;Probador1.c: 412: void Prueba_sal(void) {
+"395
+[; ;Probador1.c: 395: void Prueba_sal(void) {
 [v _Prueba_sal `(v ~T0 @X0 1 ef ]
 {
 [e :U _Prueba_sal ]
 [f ]
-"413
-[; ;Probador1.c: 413:     for (unsigned char i = 0; i < nro_pin; i++) {
+"396
+[; ;Probador1.c: 396:     for (unsigned char i = 0; i < nro_pin; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 227  ]
 [e :U 224 ]
 {
-"414
-[; ;Probador1.c: 414:         salidas(i);
+"397
+[; ;Probador1.c: 397:         salidas(i);
 [e ( _salidas (1 _i ]
-"415
-[; ;Probador1.c: 415:     }
+"398
+[; ;Probador1.c: 398:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e :U 227 ]
 [e $ < -> _i `i -> _nro_pin `i 224  ]
 [e :U 225 ]
 }
-"416
-[; ;Probador1.c: 416: }
+"399
+[; ;Probador1.c: 399: }
 [e :UE 223 ]
 }
-"418
-[; ;Probador1.c: 418: void salidas(unsigned char i) {
+"401
+[; ;Probador1.c: 401: void salidas(unsigned char i) {
 [v _salidas `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _salidas ]
 [v _i `uc ~T0 @X0 1 r1 ]
 [f ]
-"419
-[; ;Probador1.c: 419:     switch (puerto) {
+"402
+[; ;Probador1.c: 402:     switch (puerto) {
 [e $U 230  ]
 {
-"420
-[; ;Probador1.c: 420:         case 0:
+"403
+[; ;Probador1.c: 403:         case 0:
 [e :U 231 ]
-"421
-[; ;Probador1.c: 421:             PORTA = (1 << i);
+"404
+[; ;Probador1.c: 404:             PORTA = (1 << i);
 [e = _PORTA -> << -> 1 `i -> _i `i `uc ]
-"422
-[; ;Probador1.c: 422:             _delay((unsigned long)((150)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"423
-[; ;Probador1.c: 423:             break;
+"405
+[; ;Probador1.c: 405:             _delay((unsigned long)((150)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"406
+[; ;Probador1.c: 406:             break;
 [e $U 229  ]
-"424
-[; ;Probador1.c: 424:         case 1:
+"407
+[; ;Probador1.c: 407:         case 1:
 [e :U 232 ]
-"425
-[; ;Probador1.c: 425:             PORTB = (1 << i);
+"408
+[; ;Probador1.c: 408:             PORTB = (1 << i);
 [e = _PORTB -> << -> 1 `i -> _i `i `uc ]
-"426
-[; ;Probador1.c: 426:             _delay((unsigned long)((150)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"427
-[; ;Probador1.c: 427:             break;
+"409
+[; ;Probador1.c: 409:             _delay((unsigned long)((150)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"410
+[; ;Probador1.c: 410:             break;
 [e $U 229  ]
-"428
-[; ;Probador1.c: 428:         case 2:
+"411
+[; ;Probador1.c: 411:         case 2:
 [e :U 233 ]
-"429
-[; ;Probador1.c: 429:             PORTC = (1 << i);
+"412
+[; ;Probador1.c: 412:             PORTC = (1 << i);
 [e = _PORTC -> << -> 1 `i -> _i `i `uc ]
-"430
-[; ;Probador1.c: 430:             _delay((unsigned long)((150)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"431
-[; ;Probador1.c: 431:             break;
+"413
+[; ;Probador1.c: 413:             _delay((unsigned long)((150)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"414
+[; ;Probador1.c: 414:             break;
 [e $U 229  ]
-"432
-[; ;Probador1.c: 432:         case 3:
+"415
+[; ;Probador1.c: 415:         case 3:
 [e :U 234 ]
-"433
-[; ;Probador1.c: 433:             PORTD = (1 << i);
+"416
+[; ;Probador1.c: 416:             PORTD = (1 << i);
 [e = _PORTD -> << -> 1 `i -> _i `i `uc ]
-"434
-[; ;Probador1.c: 434:             _delay((unsigned long)((150)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"435
-[; ;Probador1.c: 435:             break;
+"417
+[; ;Probador1.c: 417:             _delay((unsigned long)((150)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"418
+[; ;Probador1.c: 418:             break;
 [e $U 229  ]
-"436
-[; ;Probador1.c: 436:         case 4:
+"419
+[; ;Probador1.c: 419:         case 4:
 [e :U 235 ]
-"437
-[; ;Probador1.c: 437:             PORTE = (1 << i);
+"420
+[; ;Probador1.c: 420:             PORTE = (1 << i);
 [e = _PORTE -> << -> 1 `i -> _i `i `uc ]
-"438
-[; ;Probador1.c: 438:             _delay((unsigned long)((150)*(4000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 4000000 `ul `d .4000.0 `ul ]
-"439
-[; ;Probador1.c: 439:             break;
+"421
+[; ;Probador1.c: 421:             _delay((unsigned long)((150)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"422
+[; ;Probador1.c: 422:             break;
 [e $U 229  ]
-"440
-[; ;Probador1.c: 440:     }
+"423
+[; ;Probador1.c: 423:     }
 }
 [e $U 229  ]
 [e :U 230 ]
@@ -1674,8 +1674,8 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 235
  229 ]
 [e :U 229 ]
-"441
-[; ;Probador1.c: 441: }
+"424
+[; ;Probador1.c: 424: }
 [e :UE 228 ]
 }
 [p f _printf 8389632 ]
