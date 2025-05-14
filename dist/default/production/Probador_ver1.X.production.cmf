@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+$C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 idloc IDLOC 5 2000 2000 4 2 1
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
@@ -87,19 +87,19 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Probador_ver1.X.production.o
-7F0 cinit CODE >496:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F0 cinit CODE >499:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F0 cinit CODE >534:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F5 cinit CODE >535:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F6 cinit CODE >539:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F7 cinit CODE >540:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F8 cinit CODE >541:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7F9 cinit CODE >542:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7FA cinit CODE >543:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7FB cinit CODE >544:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7FC cinit CODE >550:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7FC cinit CODE >552:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
-7FD cinit CODE >553:C:\Users\kada9\AppData\Local\Temp\xcAs1sg.s
+7F0 cinit CODE >488:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F0 cinit CODE >491:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F0 cinit CODE >526:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F5 cinit CODE >527:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F6 cinit CODE >531:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F7 cinit CODE >532:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F8 cinit CODE >533:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7F9 cinit CODE >534:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7FA cinit CODE >535:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7FB cinit CODE >536:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7FC cinit CODE >542:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7FC cinit CODE >544:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
+7FD cinit CODE >545:C:\Users\kada9\AppData\Local\Temp\xcAsa8g.s
 91 text17 CODE >64:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 91 text17 CODE >65:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
 95 text17 CODE >66:C:\Users\kada9\MPLABXProjects\Probador_ver1.X\Probador1.c
@@ -594,21 +594,21 @@ ADC@valor 31 0 BANK0 1 cstackBANK0 dist/default/production\Probador_ver1.X.produ
 _xx 3C 0 BANK0 1 bssBANK0 dist/default/production\Probador_ver1.X.production.o
 ADC@i 2F 0 BANK0 1 cstackBANK0 dist/default/production\Probador_ver1.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+___sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 _main A26 0 CODE 0 maintext dist/default/production\Probador_ver1.X.production.o
 _mask 3E 0 BANK0 1 bssBANK0 dist/default/production\Probador_ver1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Probador_ver1.X.production.o
-start 0 0 CODE 0 init C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+start 0 0 CODE 0 init C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 printf@c 2B 0 BANK0 1 cstackBANK0 dist/default/production\Probador_ver1.X.production.o
 printf@f 2A 0 BANK0 1 cstackBANK0 dist/default/production\Probador_ver1.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Probador_ver1.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _UART_Write B2 0 CODE 0 text10 dist/default/production\Probador_ver1.X.production.o
@@ -633,8 +633,8 @@ __end_of___lwdiv 2C2 0 CODE 0 text12 dist/default/production\Probador_ver1.X.pro
 __end_of___lwmod 23A 0 CODE 0 text11 dist/default/production\Probador_ver1.X.production.o
 __end_of_ADC_Init 146 0 CODE 0 text17 dist/default/production\Probador_ver1.X.production.o
 __end_of_ADC_Read 1C6 0 CODE 0 text16 dist/default/production\Probador_ver1.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
-___stacklo 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+___stackhi 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
+___stacklo 0 0 ABS 0 - C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 _dpowers 12 0 STRING 0 strings dist/default/production\Probador_ver1.X.production.o
 __end_of_UART_Write CA 0 CODE 0 text10 dist/default/production\Probador_ver1.X.production.o
 __end_of_salidas 38E 0 CODE 0 text6 dist/default/production\Probador_ver1.X.production.o
@@ -649,7 +649,7 @@ __end_of_port_conf_r2 E6 0 CODE 0 text3 dist/default/production\Probador_ver1.X.
 _GO_nDONE FA 0 ABS 0 - dist/default/production\Probador_ver1.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Probador_ver1.X.production.o
 __end_of_printf 7D0 0 CODE 0 text8 dist/default/production\Probador_ver1.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+___int_sp 0 0 STACK 2 stack C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -709,7 +709,7 @@ __end_of_ADC A26 0 CODE 0 text7 dist/default/production\Probador_ver1.X.producti
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\Probador_ver1.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\kada9\AppData\Local\Temp\xcAs1sg.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\kada9\AppData\Local\Temp\xcAsa8g.o
 __end_of___xxtofl 64A 0 CODE 0 text13 dist/default/production\Probador_ver1.X.production.o
 __pdataBANK0 42 0 BANK0 1 dataBANK0 dist/default/production\Probador_ver1.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -

@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 // Configuración del microcontrolador (Fuses)
-#pragma config FOSC = XT     // Oscilador XT (Cristal de 4 MHz)
-#pragma config WDTE = OFF    // Watchdog Timer desactivado
-#pragma config PWRTE = ON    // Power-up Timer activado
-#pragma config BOREN = ON    // Brown-out Reset activado
-#pragma config LVP = OFF     // Low Voltage Programming desactivado
-#pragma config CPD = OFF     // Protección de datos desactivada
-#pragma config WRT = OFF     // Protección de escritura desactivada
-#pragma config CP = OFF      // Protección de código desactivada
+#pragma config FOSC = HS        // Oscilador de alta velocidad (para 8 MHz)
+#pragma config WDTE = OFF       // Desactiva Watchdog Timer
+#pragma config PWRTE = OFF      // Desactiva Power-up Timer
+#pragma config BOREN = ON       // Activa reinicio por caída de voltaje
+#pragma config LVP = OFF        // Desactiva programación por baja tensión
+#pragma config CPD = OFF        // No protege la EEPROM
+#pragma config WRT = OFF        // No protege la memoria de programa
+#pragma config CP = OFF         // No protege el código
 
 
 #define _XTAL_FREQ 8000000UL
@@ -63,7 +63,7 @@ void putch(char data) {
 // ===== ADC =====
 void ADC_Init(void) {
     ADCON1 = 0b11000000;           // AN analógico, resto digital
-    ADCON0 = 0b01000001;       // Canal 7 (AN7), ADON=1, Fosc/16
+    ADCON0 = 0b00001001;       
     __delay_ms(10);            // Tiempo para estabilizar
 }
 
@@ -87,7 +87,7 @@ void ADC(void) {
 
     for(unsigned int i; i <(MIN*60/0.150);i++) { /// REPITE ESTE BUCLE POR 3 MINUTOS
         
-        unsigned int valor = ADC_Read(0);
+        unsigned int valor = ADC_Read(1);
         printf("AN7 = %u\r\n", valor);
         if (valor >= 0 & valor < 125 ){
             PORTB = 0b010000000;
