@@ -88,7 +88,7 @@ void ADC(void) {
     for(unsigned int i; i <(MIN*60/0.150);i++) { /// REPITE ESTE BUCLE POR 3 MINUTOS
         
         unsigned int valor = ADC_Read(1);
-        printf("AN7 = %u\r\n", valor);
+        printf("AN1 = %u\r\n", valor);
         if (valor >= 0 & valor < 125 ){
             PORTB = 0b010000000;
         }
@@ -364,7 +364,7 @@ void main(void) { //BUCLE PRINCIPAL
     __delay_ms(250);
 }
 
-void port_conf_r2(void) {
+void port_conf_r2(void) { //Todos como entradas
     TRISA = 0xFF;
     TRISB = 0xFF;
     TRISC = 0xFF;
@@ -372,7 +372,7 @@ void port_conf_r2(void) {
     PORTE = 0x00;
 }
 
-void port_conf_r1(void) {
+void port_conf_r1(void) { //Pines para la rutina 1, todos como salida
     TRISA = 0b00000000;
     TRISB = 0b00000000;
     TRISC = 0b00000000;
@@ -425,3 +425,4 @@ void salidas(unsigned char i) {
 
 // mask 00000001
 //porta 00000001
+uint8_t carro = 0;

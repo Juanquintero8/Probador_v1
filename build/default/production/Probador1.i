@@ -1924,7 +1924,7 @@ void ADC(void) {
     for(unsigned int i; i <(3*60/0.150);i++) {
 
         unsigned int valor = ADC_Read(1);
-        printf("AN7 = %u\r\n", valor);
+        printf("AN1 = %u\r\n", valor);
         if (valor >= 0 & valor < 125 ){
             PORTB = 0b010000000;
         }
@@ -2258,3 +2258,7 @@ void salidas(unsigned char i) {
             break;
     }
 }
+
+
+
+uint8_t carro = 0;

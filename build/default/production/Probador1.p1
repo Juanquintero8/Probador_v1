@@ -490,7 +490,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _valor `ui ~T0 @X0 1 a ]
 [e = _valor ( _ADC_Read (1 -> -> 1 `i `uc ]
 "91
-[; ;Probador1.c: 91:         printf("AN7 = %u\r\n", valor);
+[; ;Probador1.c: 91:         printf("AN1 = %u\r\n", valor);
 [e ( _printf , (. :s 2C _valor ]
 "92
 [; ;Probador1.c: 92:         if (valor >= 0 & valor < 125 ){
@@ -1672,6 +1672,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 424: }
 [e :UE 223 ]
 }
+"428
+[; ;Probador1.c: 428: uint8_t carro = 0;
+[v _carro `uc ~T0 @X0 1 e ]
+[i _carro
+-> -> 0 `i `uc
+]
 [p f _printf 8389632 ]
 [a 1C 105 110 105 99 105 111 0 ]
-[a 2C 65 78 55 32 61 32 37 117 13 10 0 ]
+[a 2C 65 78 49 32 61 32 37 117 13 10 0 ]
