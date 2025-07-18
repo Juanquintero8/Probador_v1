@@ -1,79 +1,79 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"1994 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1994:     struct {
+"1993 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1993:     struct {
 [s S82 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S82 . TX9D TRMT BRGH . SYNC TXEN TX9 CSRC ]
-"2004
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2004:     struct {
+"2003
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2003:     struct {
 [s S83 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
 [n S83 . TXD8 . nTX8 ]
-"2009
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2009:     struct {
+"2008
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2008:     struct {
 [s S84 :6 `uc 1 :1 `uc 1 ]
 [n S84 . . TX8_9 ]
-"1993
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1993: typedef union {
+"1992
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1992: typedef union {
 [u S81 `S82 1 `S83 1 `S84 1 ]
 [n S81 . . . . ]
-"2014
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2014: extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0x098)));
+"2013
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2013: extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0x098)));
 [v _TXSTAbits `VS81 ~T0 @X0 0 e@152 ]
-"2069
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2069: extern volatile unsigned char SPBRG __attribute__((address(0x099)));
+"2068
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2068: extern volatile unsigned char SPBRG __attribute__((address(0x099)));
 [v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
-"966
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 966:     struct {
+"965
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 965:     struct {
 [s S39 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S39 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
-"976
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 976:     struct {
+"975
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 975:     struct {
 [s S40 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
 [n S40 . RCD8 . RC9 ]
-"981
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 981:     struct {
+"980
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 980:     struct {
 [s S41 :6 `uc 1 :1 `uc 1 ]
 [n S41 . . nRC8 ]
-"985
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 985:     struct {
+"984
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 984:     struct {
 [s S42 :6 `uc 1 :1 `uc 1 ]
 [n S42 . . RC8_9 ]
-"965
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 965: typedef union {
+"964
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 964: typedef union {
 [u S38 `S39 1 `S40 1 `S41 1 `S42 1 ]
 [n S38 . . . . . ]
-"990
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 990: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0x018)));
+"989
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 989: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0x018)));
 [v _RCSTAbits `VS38 ~T0 @X0 0 e@24 ]
-"1055
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1055: extern volatile unsigned char TXREG __attribute__((address(0x019)));
+"1054
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1054: extern volatile unsigned char TXREG __attribute__((address(0x019)));
 [v _TXREG `Vuc ~T0 @X0 0 e@25 ]
-"2083
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2083: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
+"2082
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2082: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
 [v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
-"1155
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1155: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
+"1154
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1154: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
 [v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
-[v F36 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\builtins.h
-[v __delay `JF36 ~T0 @X0 0 e ]
+[v F787 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files\Microchip\xc8\v2.20\pic\include\pic.h
+[v __delay `JF787 ~T0 @X0 0 e ]
 [p i __delay ]
-"2376 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2376: extern volatile __bit GO_nDONE __attribute__((address(0xFA)));
+"2371 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2371: extern volatile __bit GO_nDONE __attribute__((address(0xFA)));
 [v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
-"1148
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1148: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+"1147
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1147: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
 [v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
-"2076
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2076: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
+"2075
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2075: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
 [v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
-"1371
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1371: extern volatile unsigned char TRISB __attribute__((address(0x086)));
-[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
-"195 C:\Program Files\Microchip\xc8\v2.36\pic\include\c90\stdio.h
+"1432
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1432: extern volatile unsigned char TRISC __attribute__((address(0x087)));
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"195 C:\Program Files\Microchip\xc8\v2.20\pic\include\c90\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"217 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 217: extern volatile unsigned char PORTB __attribute__((address(0x006)));
-[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"278 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 278: extern volatile unsigned char PORTC __attribute__((address(0x007)));
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
 [p mainexit ]
 "37 Probador1.c
 [; ;Probador1.c: 37: void port_conf_r1(void);
@@ -81,241 +81,241 @@ Version 4.0 HI-TECH Software Intermediate Code
 "39
 [; ;Probador1.c: 39: void porte_ent(void);
 [v _porte_ent `(v ~T0 @X0 0 ef ]
-"167 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 167: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+"166 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
 [v _PORTA `Vuc ~T0 @X0 0 e@5 ]
-"2571
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2571: extern volatile __bit RE0 __attribute__((address(0x48)));
+"2566
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2566: extern volatile __bit RE0 __attribute__((address(0x48)));
 [v _RE0 `Vb ~T0 @X0 0 e@72 ]
 "41 Probador1.c
 [; ;Probador1.c: 41: void Prueba_sal(void);
 [v _Prueba_sal `(v ~T0 @X0 0 ef ]
-"2574 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2574: extern volatile __bit RE1 __attribute__((address(0x49)));
+"2569 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2569: extern volatile __bit RE1 __attribute__((address(0x49)));
 [v _RE1 `Vb ~T0 @X0 0 e@73 ]
 "38 Probador1.c
 [; ;Probador1.c: 38: void port_conf_r2(void);
 [v _port_conf_r2 `(v ~T0 @X0 0 ef ]
-"2577 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2577: extern volatile __bit RE2 __attribute__((address(0x4A)));
+"2572 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2572: extern volatile __bit RE2 __attribute__((address(0x4A)));
 [v _RE2 `Vb ~T0 @X0 0 e@74 ]
-"279
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 279: extern volatile unsigned char PORTC __attribute__((address(0x007)));
-[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"216
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 216: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
 "40 Probador1.c
 [; ;Probador1.c: 40: void porte_sal(void);
 [v _porte_sal `(v ~T0 @X0 0 ef ]
-"341 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 341: extern volatile unsigned char PORTD __attribute__((address(0x008)));
+"340 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 340: extern volatile unsigned char PORTD __attribute__((address(0x008)));
 [v _PORTD `Vuc ~T0 @X0 0 e@8 ]
-"403
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 403: extern volatile unsigned char PORTE __attribute__((address(0x009)));
+"402
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 402: extern volatile unsigned char PORTE __attribute__((address(0x009)));
 [v _PORTE `Vuc ~T0 @X0 0 e@9 ]
-"1321
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1321: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+"1320
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1320: extern volatile unsigned char TRISA __attribute__((address(0x085)));
 [v _TRISA `Vuc ~T0 @X0 0 e@133 ]
-"1433
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1433: extern volatile unsigned char TRISC __attribute__((address(0x087)));
-[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
-"1495
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1495: extern volatile unsigned char TRISD __attribute__((address(0x088)));
+"1370
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1370: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1494
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1494: extern volatile unsigned char TRISD __attribute__((address(0x088)));
 [v _TRISD `Vuc ~T0 @X0 0 e@136 ]
-"1557
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1557: extern volatile unsigned char TRISE __attribute__((address(0x089)));
+"1556
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1556: extern volatile unsigned char TRISE __attribute__((address(0x089)));
 [v _TRISE `Vuc ~T0 @X0 0 e@137 ]
 "42 Probador1.c
 [; ;Probador1.c: 42: void salidas(unsigned char i);
 [v _salidas `(v ~T0 @X0 0 ef1`uc ]
-"55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 55: __asm("INDF equ 00h");
+"54 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
-"62
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 62: __asm("TMR0 equ 01h");
+"61
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 61: __asm("TMR0 equ 01h");
 [; <" TMR0 equ 01h ;# ">
-"69
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 69: __asm("PCL equ 02h");
+"68
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 68: __asm("PCL equ 02h");
 [; <" PCL equ 02h ;# ">
-"76
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 76: __asm("STATUS equ 03h");
+"75
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 75: __asm("STATUS equ 03h");
 [; <" STATUS equ 03h ;# ">
-"162
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 162: __asm("FSR equ 04h");
+"161
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 161: __asm("FSR equ 04h");
 [; <" FSR equ 04h ;# ">
-"169
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 169: __asm("PORTA equ 05h");
+"168
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 168: __asm("PORTA equ 05h");
 [; <" PORTA equ 05h ;# ">
-"219
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 219: __asm("PORTB equ 06h");
+"218
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 218: __asm("PORTB equ 06h");
 [; <" PORTB equ 06h ;# ">
-"281
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 281: __asm("PORTC equ 07h");
+"280
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 280: __asm("PORTC equ 07h");
 [; <" PORTC equ 07h ;# ">
-"343
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 343: __asm("PORTD equ 08h");
+"342
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 342: __asm("PORTD equ 08h");
 [; <" PORTD equ 08h ;# ">
-"405
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 405: __asm("PORTE equ 09h");
+"404
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 404: __asm("PORTE equ 09h");
 [; <" PORTE equ 09h ;# ">
-"437
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 437: __asm("PCLATH equ 0Ah");
+"436
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 436: __asm("PCLATH equ 0Ah");
 [; <" PCLATH equ 0Ah ;# ">
-"457
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 457: __asm("INTCON equ 0Bh");
+"456
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 456: __asm("INTCON equ 0Bh");
 [; <" INTCON equ 0Bh ;# ">
-"535
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 535: __asm("PIR1 equ 0Ch");
+"534
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 534: __asm("PIR1 equ 0Ch");
 [; <" PIR1 equ 0Ch ;# ">
-"597
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 597: __asm("PIR2 equ 0Dh");
+"596
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 596: __asm("PIR2 equ 0Dh");
 [; <" PIR2 equ 0Dh ;# ">
-"630
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 630: __asm("TMR1 equ 0Eh");
+"629
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 629: __asm("TMR1 equ 0Eh");
 [; <" TMR1 equ 0Eh ;# ">
-"637
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 637: __asm("TMR1L equ 0Eh");
+"636
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 636: __asm("TMR1L equ 0Eh");
 [; <" TMR1L equ 0Eh ;# ">
-"644
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 644: __asm("TMR1H equ 0Fh");
+"643
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 643: __asm("TMR1H equ 0Fh");
 [; <" TMR1H equ 0Fh ;# ">
-"651
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 651: __asm("T1CON equ 010h");
+"650
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 650: __asm("T1CON equ 010h");
 [; <" T1CON equ 010h ;# ">
-"728
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 728: __asm("TMR2 equ 011h");
+"727
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 727: __asm("TMR2 equ 011h");
 [; <" TMR2 equ 011h ;# ">
-"735
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 735: __asm("T2CON equ 012h");
+"734
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 734: __asm("T2CON equ 012h");
 [; <" T2CON equ 012h ;# ">
-"806
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 806: __asm("SSPBUF equ 013h");
+"805
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 805: __asm("SSPBUF equ 013h");
 [; <" SSPBUF equ 013h ;# ">
-"813
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 813: __asm("SSPCON equ 014h");
+"812
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 812: __asm("SSPCON equ 014h");
 [; <" SSPCON equ 014h ;# ">
-"883
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 883: __asm("CCPR1 equ 015h");
+"882
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 882: __asm("CCPR1 equ 015h");
 [; <" CCPR1 equ 015h ;# ">
-"890
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 890: __asm("CCPR1L equ 015h");
+"889
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 889: __asm("CCPR1L equ 015h");
 [; <" CCPR1L equ 015h ;# ">
-"897
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 897: __asm("CCPR1H equ 016h");
+"896
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 896: __asm("CCPR1H equ 016h");
 [; <" CCPR1H equ 016h ;# ">
-"904
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 904: __asm("CCP1CON equ 017h");
+"903
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 903: __asm("CCP1CON equ 017h");
 [; <" CCP1CON equ 017h ;# ">
-"962
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 962: __asm("RCSTA equ 018h");
+"961
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 961: __asm("RCSTA equ 018h");
 [; <" RCSTA equ 018h ;# ">
-"1057
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1057: __asm("TXREG equ 019h");
+"1056
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1056: __asm("TXREG equ 019h");
 [; <" TXREG equ 019h ;# ">
-"1064
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1064: __asm("RCREG equ 01Ah");
+"1063
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1063: __asm("RCREG equ 01Ah");
 [; <" RCREG equ 01Ah ;# ">
-"1071
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1071: __asm("CCPR2 equ 01Bh");
+"1070
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1070: __asm("CCPR2 equ 01Bh");
 [; <" CCPR2 equ 01Bh ;# ">
-"1078
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1078: __asm("CCPR2L equ 01Bh");
+"1077
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1077: __asm("CCPR2L equ 01Bh");
 [; <" CCPR2L equ 01Bh ;# ">
-"1085
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1085: __asm("CCPR2H equ 01Ch");
+"1084
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1084: __asm("CCPR2H equ 01Ch");
 [; <" CCPR2H equ 01Ch ;# ">
-"1092
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1092: __asm("CCP2CON equ 01Dh");
+"1091
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1091: __asm("CCP2CON equ 01Dh");
 [; <" CCP2CON equ 01Dh ;# ">
-"1150
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1150: __asm("ADRESH equ 01Eh");
+"1149
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1149: __asm("ADRESH equ 01Eh");
 [; <" ADRESH equ 01Eh ;# ">
-"1157
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1157: __asm("ADCON0 equ 01Fh");
+"1156
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1156: __asm("ADCON0 equ 01Fh");
 [; <" ADCON0 equ 01Fh ;# ">
-"1253
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1253: __asm("OPTION_REG equ 081h");
+"1252
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1252: __asm("OPTION_REG equ 081h");
 [; <" OPTION_REG equ 081h ;# ">
-"1323
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1323: __asm("TRISA equ 085h");
+"1322
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1322: __asm("TRISA equ 085h");
 [; <" TRISA equ 085h ;# ">
-"1373
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1373: __asm("TRISB equ 086h");
+"1372
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1372: __asm("TRISB equ 086h");
 [; <" TRISB equ 086h ;# ">
-"1435
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1435: __asm("TRISC equ 087h");
+"1434
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1434: __asm("TRISC equ 087h");
 [; <" TRISC equ 087h ;# ">
-"1497
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1497: __asm("TRISD equ 088h");
+"1496
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1496: __asm("TRISD equ 088h");
 [; <" TRISD equ 088h ;# ">
-"1559
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1559: __asm("TRISE equ 089h");
+"1558
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1558: __asm("TRISE equ 089h");
 [; <" TRISE equ 089h ;# ">
-"1616
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1616: __asm("PIE1 equ 08Ch");
+"1615
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1615: __asm("PIE1 equ 08Ch");
 [; <" PIE1 equ 08Ch ;# ">
-"1678
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1678: __asm("PIE2 equ 08Dh");
+"1677
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1677: __asm("PIE2 equ 08Dh");
 [; <" PIE2 equ 08Dh ;# ">
-"1711
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1711: __asm("PCON equ 08Eh");
+"1710
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1710: __asm("PCON equ 08Eh");
 [; <" PCON equ 08Eh ;# ">
-"1745
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1745: __asm("SSPCON2 equ 091h");
+"1744
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1744: __asm("SSPCON2 equ 091h");
 [; <" SSPCON2 equ 091h ;# ">
-"1807
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1807: __asm("PR2 equ 092h");
+"1806
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1806: __asm("PR2 equ 092h");
 [; <" PR2 equ 092h ;# ">
-"1814
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1814: __asm("SSPADD equ 093h");
+"1813
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1813: __asm("SSPADD equ 093h");
 [; <" SSPADD equ 093h ;# ">
-"1821
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1821: __asm("SSPSTAT equ 094h");
+"1820
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1820: __asm("SSPSTAT equ 094h");
 [; <" SSPSTAT equ 094h ;# ">
-"1990
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 1990: __asm("TXSTA equ 098h");
+"1989
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 1989: __asm("TXSTA equ 098h");
 [; <" TXSTA equ 098h ;# ">
-"2071
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2071: __asm("SPBRG equ 099h");
+"2070
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2070: __asm("SPBRG equ 099h");
 [; <" SPBRG equ 099h ;# ">
-"2078
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2078: __asm("ADRESL equ 09Eh");
+"2077
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2077: __asm("ADRESL equ 09Eh");
 [; <" ADRESL equ 09Eh ;# ">
-"2085
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2085: __asm("ADCON1 equ 09Fh");
+"2084
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2084: __asm("ADCON1 equ 09Fh");
 [; <" ADCON1 equ 09Fh ;# ">
-"2138
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2138: __asm("EEDATA equ 010Ch");
+"2137
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2137: __asm("EEDATA equ 010Ch");
 [; <" EEDATA equ 010Ch ;# ">
-"2145
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2145: __asm("EEADR equ 010Dh");
+"2144
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2144: __asm("EEADR equ 010Dh");
 [; <" EEADR equ 010Dh ;# ">
-"2152
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2152: __asm("EEDATH equ 010Eh");
+"2151
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2151: __asm("EEDATH equ 010Eh");
 [; <" EEDATH equ 010Eh ;# ">
-"2159
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2159: __asm("EEADRH equ 010Fh");
+"2158
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2158: __asm("EEADRH equ 010Fh");
 [; <" EEADRH equ 010Fh ;# ">
-"2166
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2166: __asm("EECON1 equ 018Ch");
+"2165
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2165: __asm("EECON1 equ 018Ch");
 [; <" EECON1 equ 018Ch ;# ">
-"2211
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877.h: 2211: __asm("EECON2 equ 018Dh");
+"2210
+[; ;C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877.h: 2210: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 "6 Probador1.c
-[p x FOSC  =  HS         ]
+[p x FOSC = HS ]
 "7
-[p x WDTE  =  OFF        ]
+[p x WDTE = OFF ]
 "8
-[p x PWRTE  =  OFF       ]
+[p x PWRTE = OFF ]
 "9
-[p x BOREN  =  ON        ]
+[p x BOREN = ON ]
 "10
-[p x LVP  =  OFF         ]
+[p x LVP = OFF ]
 "11
-[p x CPD  =  OFF         ]
+[p x CPD = OFF ]
 "12
-[p x WRT  =  OFF         ]
+[p x WRT = OFF ]
 "13
-[p x CP  =  OFF          ]
+[p x CP = OFF ]
 "34
 [; ;Probador1.c: 34: unsigned char puerto = 0, mask, port_act, nro_pin = 7, incremento = 0, prueba = 0;
 [v _puerto `uc ~T0 @X0 1 e ]
@@ -465,15 +465,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _ADC ]
 [f ]
-"81
-[; ;Probador1.c: 81:     UART_Init();
-[e ( _UART_Init ..  ]
 "82
 [; ;Probador1.c: 82:     ADC_Init();
 [e ( _ADC_Init ..  ]
 "83
-[; ;Probador1.c: 83:     TRISB = 0b00000000;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;Probador1.c: 83:     TRISC = 0b00000000;
+[e = _TRISC -> -> 0 `i `uc ]
 "86
 [; ;Probador1.c: 86:     printf("inicio");
 [e ( _printf :s 1C ]
@@ -497,8 +494,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 0 `i `ui < _valor -> -> 125 `i `ui 106  ]
 {
 "93
-[; ;Probador1.c: 93:             PORTB = 0b010000000;
-[e = _PORTB -> -> 128 `i `uc ]
+[; ;Probador1.c: 93:             PORTC = 0b010000000;
+[e = _PORTC -> -> 128 `i `uc ]
 "94
 [; ;Probador1.c: 94:         }
 }
@@ -508,8 +505,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 125 `i `ui < _valor -> -> 250 `i `ui 107  ]
 {
 "96
-[; ;Probador1.c: 96:             PORTB = 0b11000000;
-[e = _PORTB -> -> 192 `i `uc ]
+[; ;Probador1.c: 96:             PORTC = 0b11000000;
+[e = _PORTC -> -> 192 `i `uc ]
 "97
 [; ;Probador1.c: 97:         }
 }
@@ -519,8 +516,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 250 `i `ui < _valor -> -> 375 `i `ui 108  ]
 {
 "99
-[; ;Probador1.c: 99:             PORTB = 0b11100000;
-[e = _PORTB -> -> 224 `i `uc ]
+[; ;Probador1.c: 99:             PORTC = 0b11100000;
+[e = _PORTC -> -> 224 `i `uc ]
 "100
 [; ;Probador1.c: 100:         }
 }
@@ -530,8 +527,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 375 `i `ui < _valor -> -> 500 `i `ui 109  ]
 {
 "102
-[; ;Probador1.c: 102:             PORTB = 0b11110000;
-[e = _PORTB -> -> 240 `i `uc ]
+[; ;Probador1.c: 102:             PORTC = 0b11110000;
+[e = _PORTC -> -> 240 `i `uc ]
 "103
 [; ;Probador1.c: 103:         }
 }
@@ -541,8 +538,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 500 `i `ui < _valor -> -> 625 `i `ui 110  ]
 {
 "105
-[; ;Probador1.c: 105:             PORTB = 0b11111000;
-[e = _PORTB -> -> 248 `i `uc ]
+[; ;Probador1.c: 105:             PORTC = 0b11111000;
+[e = _PORTC -> -> 248 `i `uc ]
 "106
 [; ;Probador1.c: 106:         }
 }
@@ -552,8 +549,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 625 `i `ui < _valor -> -> 750 `i `ui 111  ]
 {
 "108
-[; ;Probador1.c: 108:             PORTB = 0b11111100;
-[e = _PORTB -> -> 252 `i `uc ]
+[; ;Probador1.c: 108:             PORTC = 0b11111100;
+[e = _PORTC -> -> 252 `i `uc ]
 "109
 [; ;Probador1.c: 109:         }
 }
@@ -563,8 +560,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 750 `i `ui < _valor -> -> 875 `i `ui 112  ]
 {
 "111
-[; ;Probador1.c: 111:             PORTB = 0b11111110;
-[e = _PORTB -> -> 254 `i `uc ]
+[; ;Probador1.c: 111:             PORTC = 0b11111110;
+[e = _PORTC -> -> 254 `i `uc ]
 "112
 [; ;Probador1.c: 112:         }
 }
@@ -574,8 +571,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! & >= _valor -> -> 875 `i `ui < _valor -> -> 1025 `i `ui 113  ]
 {
 "114
-[; ;Probador1.c: 114:             PORTB = 0b11111111;
-[e = _PORTB -> -> 255 `i `uc ]
+[; ;Probador1.c: 114:             PORTC = 0b11111111;
+[e = _PORTC -> -> 255 `i `uc ]
 "115
 [; ;Probador1.c: 115:         }
 }
@@ -712,10 +709,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 156:                     break;
 [e $U 122  ]
 "157
-[; ;Probador1.c: 157:                 } else {
+[; ;Probador1.c: 157:                 } else if (prueba == 1) {
 }
 [e $U 131  ]
 [e :U 125 ]
+[e $ ! == -> _prueba `i -> 1 `i 132  ]
 {
 "158
 [; ;Probador1.c: 158:                     port_conf_r2();
@@ -731,16 +729,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 135  ]
-[e :U 132 ]
+[e $U 136  ]
+[e :U 133 ]
 {
 "162
 [; ;Probador1.c: 162:                         while (1) {
-[e :U 137 ]
+[e :U 138 ]
 {
 "163
 [; ;Probador1.c: 163:                             if (PORTA & mask) {
-[e $ ! != & -> _PORTA `i -> _mask `i -> 0 `i 139  ]
+[e $ ! != & -> _PORTA `i -> _mask `i -> 0 `i 140  ]
 {
 "164
 [; ;Probador1.c: 164:                                 RE2 = 1;
@@ -763,101 +761,103 @@ Version 4.0 HI-TECH Software Intermediate Code
 "170
 [; ;Probador1.c: 170:                             }
 }
-[e :U 139 ]
+[e :U 140 ]
 "171
 [; ;Probador1.c: 171:                             if (incremento == 7) {
-[e $ ! == -> _incremento `i -> 7 `i 140  ]
+[e $ ! == -> _incremento `i -> 7 `i 141  ]
 {
 "172
 [; ;Probador1.c: 172:                                 puerto = 1;
 [e = _puerto -> -> 1 `i `uc ]
 "173
 [; ;Probador1.c: 173:                                 break;
-[e $U 138  ]
+[e $U 139  ]
 "174
 [; ;Probador1.c: 174:                             }
 }
-[e :U 140 ]
+[e :U 141 ]
 "175
 [; ;Probador1.c: 175:                         }
 }
-[e :U 136 ]
-[e $U 137  ]
-[e :U 138 ]
+[e :U 137 ]
+[e $U 138  ]
+[e :U 139 ]
 "176
 [; ;Probador1.c: 176:                         break;
-[e $U 133  ]
+[e $U 134  ]
 "177
 [; ;Probador1.c: 177:                     }
 }
 [e = _i _incremento ]
-[e :U 135 ]
-[e $ < -> _i `i -> _nro_pin `i 132  ]
-[e :U 133 ]
+[e :U 136 ]
+[e $ < -> _i `i -> _nro_pin `i 133  ]
+[e :U 134 ]
 }
 "178
 [; ;Probador1.c: 178:                 }
 }
+[e :U 132 ]
 [e :U 131 ]
 "179
 [; ;Probador1.c: 179:                 break;
 [e $U 122  ]
 "183
 [; ;Probador1.c: 183:             case 1:
-[e :U 141 ]
+[e :U 142 ]
 "184
 [; ;Probador1.c: 184:                 if (prueba == 0) {
-[e $ ! == -> _prueba `i -> 0 `i 142  ]
+[e $ ! == -> _prueba `i -> 0 `i 143  ]
 {
 "185
 [; ;Probador1.c: 185:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
 "186
 [; ;Probador1.c: 186:                     while (1) {
-[e :U 144 ]
+[e :U 145 ]
 {
 "187
 [; ;Probador1.c: 187:                         if (RE1 == 1) {
-[e $ ! == -> _RE1 `i -> 1 `i 146  ]
+[e $ ! == -> _RE1 `i -> 1 `i 147  ]
 {
 "188
 [; ;Probador1.c: 188:                             puerto = 1;
 [e = _puerto -> -> 1 `i `uc ]
 "189
 [; ;Probador1.c: 189:                             break;
-[e $U 145  ]
+[e $U 146  ]
 "190
 [; ;Probador1.c: 190:                         }
 }
-[e :U 146 ]
+[e :U 147 ]
 "191
 [; ;Probador1.c: 191:                         if (RE0 == 1) {
-[e $ ! == -> _RE0 `i -> 1 `i 147  ]
+[e $ ! == -> _RE0 `i -> 1 `i 148  ]
 {
 "192
 [; ;Probador1.c: 192:                             puerto = 2;
 [e = _puerto -> -> 2 `i `uc ]
 "193
 [; ;Probador1.c: 193:                             break;
-[e $U 145  ]
+[e $U 146  ]
 "194
 [; ;Probador1.c: 194:                         }
 }
-[e :U 147 ]
+[e :U 148 ]
 "195
 [; ;Probador1.c: 195:                     }
 }
-[e :U 143 ]
-[e $U 144  ]
-[e :U 145 ]
+[e :U 144 ]
+[e $U 145  ]
+[e :U 146 ]
 "196
 [; ;Probador1.c: 196:                     break;
 [e $U 122  ]
 "197
-[; ;Probador1.c: 197:                 } else {
+[; ;Probador1.c: 197:                 } else if (prueba == 1){
 }
-[e $U 148  ]
-[e :U 142 ]
+[e $U 149  ]
+[e :U 143 ]
+[e $ ! == -> _prueba `i -> 1 `i 150  ]
 {
 "198
 [; ;Probador1.c: 198:                     incremento = 1;
@@ -873,16 +873,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 152  ]
-[e :U 149 ]
+[e $U 154  ]
+[e :U 151 ]
 {
 "202
 [; ;Probador1.c: 202:                         while (1) {
-[e :U 154 ]
+[e :U 156 ]
 {
 "203
 [; ;Probador1.c: 203:                             if (PORTB & mask) {
-[e $ ! != & -> _PORTB `i -> _mask `i -> 0 `i 156  ]
+[e $ ! != & -> _PORTB `i -> _mask `i -> 0 `i 158  ]
 {
 "204
 [; ;Probador1.c: 204:                                 RE2 = 1;
@@ -905,34 +905,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "210
 [; ;Probador1.c: 210:                             }
 }
-[e :U 156 ]
+[e :U 158 ]
 "211
 [; ;Probador1.c: 211:                             if (incremento == 9) {
-[e $ ! == -> _incremento `i -> 9 `i 157  ]
+[e $ ! == -> _incremento `i -> 9 `i 159  ]
 {
 "212
 [; ;Probador1.c: 212:                                 puerto = 2;
 [e = _puerto -> -> 2 `i `uc ]
 "213
 [; ;Probador1.c: 213:                                 break;
-[e $U 155  ]
+[e $U 157  ]
 "214
 [; ;Probador1.c: 214:                             }
 }
-[e :U 157 ]
+[e :U 159 ]
 "215
 [; ;Probador1.c: 215:                         }
 }
-[e :U 153 ]
-[e $U 154  ]
 [e :U 155 ]
+[e $U 156  ]
+[e :U 157 ]
 "217
 [; ;Probador1.c: 217:                     }
 }
 [e = _i _incremento ]
+[e :U 154 ]
+[e $ < -> _i `i -> _nro_pin `i 151  ]
 [e :U 152 ]
-[e $ < -> _i `i -> _nro_pin `i 149  ]
-[e :U 150 ]
 }
 "218
 [; ;Probador1.c: 218:                     break;
@@ -940,63 +940,65 @@ Version 4.0 HI-TECH Software Intermediate Code
 "219
 [; ;Probador1.c: 219:                 }
 }
-[e :U 148 ]
+[e :U 150 ]
+[e :U 149 ]
 "222
 [; ;Probador1.c: 222:             case 2:
-[e :U 158 ]
+[e :U 160 ]
 "223
 [; ;Probador1.c: 223:                 if (prueba == 0) {
-[e $ ! == -> _prueba `i -> 0 `i 159  ]
+[e $ ! == -> _prueba `i -> 0 `i 161  ]
 {
 "224
 [; ;Probador1.c: 224:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
 "225
 [; ;Probador1.c: 225:                     while (1) {
-[e :U 161 ]
+[e :U 163 ]
 {
 "226
 [; ;Probador1.c: 226:                         if (RE1 == 1) {
-[e $ ! == -> _RE1 `i -> 1 `i 163  ]
+[e $ ! == -> _RE1 `i -> 1 `i 165  ]
 {
 "227
 [; ;Probador1.c: 227:                             puerto = 2;
 [e = _puerto -> -> 2 `i `uc ]
 "228
 [; ;Probador1.c: 228:                             break;
-[e $U 162  ]
+[e $U 164  ]
 "229
 [; ;Probador1.c: 229:                         }
 }
-[e :U 163 ]
+[e :U 165 ]
 "230
 [; ;Probador1.c: 230:                         if (RE0 == 1) {
-[e $ ! == -> _RE0 `i -> 1 `i 164  ]
+[e $ ! == -> _RE0 `i -> 1 `i 166  ]
 {
 "231
 [; ;Probador1.c: 231:                             puerto = 3;
 [e = _puerto -> -> 3 `i `uc ]
 "232
 [; ;Probador1.c: 232:                             break;
-[e $U 162  ]
+[e $U 164  ]
 "233
 [; ;Probador1.c: 233:                         }
 }
-[e :U 164 ]
+[e :U 166 ]
 "234
 [; ;Probador1.c: 234:                     }
 }
-[e :U 160 ]
-[e $U 161  ]
 [e :U 162 ]
+[e $U 163  ]
+[e :U 164 ]
 "235
 [; ;Probador1.c: 235:                     break;
 [e $U 122  ]
 "236
-[; ;Probador1.c: 236:                 } else {
+[; ;Probador1.c: 236:                 } else if (prueba == 1) {
 }
-[e $U 165  ]
-[e :U 159 ]
+[e $U 167  ]
+[e :U 161 ]
+[e $ ! == -> _prueba `i -> 1 `i 168  ]
 {
 "237
 [; ;Probador1.c: 237:                     incremento = 1;
@@ -1012,16 +1014,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 169  ]
-[e :U 166 ]
+[e $U 172  ]
+[e :U 169 ]
 {
 "241
 [; ;Probador1.c: 241:                         while (1) {
-[e :U 171 ]
+[e :U 174 ]
 {
 "242
 [; ;Probador1.c: 242:                             if (PORTC & mask) {
-[e $ ! != & -> _PORTC `i -> _mask `i -> 0 `i 173  ]
+[e $ ! != & -> _PORTC `i -> _mask `i -> 0 `i 176  ]
 {
 "243
 [; ;Probador1.c: 243:                                 RE2 = 1;
@@ -1044,34 +1046,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "249
 [; ;Probador1.c: 249:                             }
 }
-[e :U 173 ]
+[e :U 176 ]
 "250
 [; ;Probador1.c: 250:                             if (incremento == 9) {
-[e $ ! == -> _incremento `i -> 9 `i 174  ]
+[e $ ! == -> _incremento `i -> 9 `i 177  ]
 {
 "251
 [; ;Probador1.c: 251:                                 puerto = 3;
 [e = _puerto -> -> 3 `i `uc ]
 "252
 [; ;Probador1.c: 252:                                 break;
-[e $U 172  ]
+[e $U 175  ]
 "253
 [; ;Probador1.c: 253:                             }
 }
-[e :U 174 ]
+[e :U 177 ]
 "254
 [; ;Probador1.c: 254:                         }
 }
-[e :U 170 ]
-[e $U 171  ]
-[e :U 172 ]
+[e :U 173 ]
+[e $U 174  ]
+[e :U 175 ]
 "256
 [; ;Probador1.c: 256:                     }
 }
 [e = _i _incremento ]
-[e :U 169 ]
-[e $ < -> _i `i -> _nro_pin `i 166  ]
-[e :U 167 ]
+[e :U 172 ]
+[e $ < -> _i `i -> _nro_pin `i 169  ]
+[e :U 170 ]
 }
 "257
 [; ;Probador1.c: 257:                     break;
@@ -1079,38 +1081,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "258
 [; ;Probador1.c: 258:                 }
 }
-[e :U 165 ]
+[e :U 168 ]
+[e :U 167 ]
 "260
 [; ;Probador1.c: 260:             case 3:
-[e :U 175 ]
+[e :U 178 ]
 "261
 [; ;Probador1.c: 261:                 if (prueba == 0) {
-[e $ ! == -> _prueba `i -> 0 `i 176  ]
+[e $ ! == -> _prueba `i -> 0 `i 179  ]
 {
 "262
 [; ;Probador1.c: 262:                     Prueba_sal();
 [e ( _Prueba_sal ..  ]
 "263
 [; ;Probador1.c: 263:                     while (1) {
-[e :U 178 ]
+[e :U 181 ]
 {
 "264
 [; ;Probador1.c: 264:                         if (RE1 == 1) {
-[e $ ! == -> _RE1 `i -> 1 `i 180  ]
+[e $ ! == -> _RE1 `i -> 1 `i 183  ]
 {
 "265
 [; ;Probador1.c: 265:                             puerto = 3;
 [e = _puerto -> -> 3 `i `uc ]
 "266
 [; ;Probador1.c: 266:                             break;
-[e $U 179  ]
+[e $U 182  ]
 "267
 [; ;Probador1.c: 267:                         }
 }
-[e :U 180 ]
+[e :U 183 ]
 "268
 [; ;Probador1.c: 268:                         if (RE0 == 1) {
-[e $ ! == -> _RE0 `i -> 1 `i 181  ]
+[e $ ! == -> _RE0 `i -> 1 `i 184  ]
 {
 "269
 [; ;Probador1.c: 269:                             puerto = 4;
@@ -1123,25 +1126,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _porte_sal ..  ]
 "272
 [; ;Probador1.c: 272:                             break;
-[e $U 179  ]
+[e $U 182  ]
 "273
 [; ;Probador1.c: 273:                         }
 }
-[e :U 181 ]
+[e :U 184 ]
 "274
 [; ;Probador1.c: 274:                     }
 }
-[e :U 177 ]
-[e $U 178  ]
-[e :U 179 ]
+[e :U 180 ]
+[e $U 181  ]
+[e :U 182 ]
 "275
 [; ;Probador1.c: 275:                     break;
 [e $U 122  ]
 "276
-[; ;Probador1.c: 276:                 } else {
+[; ;Probador1.c: 276:                 } else if (prueba == 1){
 }
-[e $U 182  ]
-[e :U 176 ]
+[e $U 185  ]
+[e :U 179 ]
+[e $ ! == -> _prueba `i -> 1 `i 186  ]
 {
 "277
 [; ;Probador1.c: 277:                     incremento = 1;
@@ -1157,16 +1161,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 186  ]
-[e :U 183 ]
+[e $U 190  ]
+[e :U 187 ]
 {
 "281
 [; ;Probador1.c: 281:                         while (1) {
-[e :U 188 ]
+[e :U 192 ]
 {
 "282
 [; ;Probador1.c: 282:                             if (PORTD & mask) {
-[e $ ! != & -> _PORTD `i -> _mask `i -> 0 `i 190  ]
+[e $ ! != & -> _PORTD `i -> _mask `i -> 0 `i 194  ]
 {
 "283
 [; ;Probador1.c: 283:                                 RE2 = 1;
@@ -1189,34 +1193,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "289
 [; ;Probador1.c: 289:                             }
 }
-[e :U 190 ]
+[e :U 194 ]
 "290
 [; ;Probador1.c: 290:                             if (incremento == 9) {
-[e $ ! == -> _incremento `i -> 9 `i 191  ]
+[e $ ! == -> _incremento `i -> 9 `i 195  ]
 {
 "291
 [; ;Probador1.c: 291:                                 puerto = 4;
 [e = _puerto -> -> 4 `i `uc ]
 "292
 [; ;Probador1.c: 292:                                 break;
-[e $U 189  ]
+[e $U 193  ]
 "293
 [; ;Probador1.c: 293:                             }
 }
-[e :U 191 ]
+[e :U 195 ]
 "294
 [; ;Probador1.c: 294:                         }
 }
-[e :U 187 ]
-[e $U 188  ]
-[e :U 189 ]
+[e :U 191 ]
+[e $U 192  ]
+[e :U 193 ]
 "296
 [; ;Probador1.c: 296:                     }
 }
 [e = _i _incremento ]
-[e :U 186 ]
-[e $ < -> _i `i -> _nro_pin `i 183  ]
-[e :U 184 ]
+[e :U 190 ]
+[e $ < -> _i `i -> _nro_pin `i 187  ]
+[e :U 188 ]
 }
 "297
 [; ;Probador1.c: 297:                     break;
@@ -1224,13 +1228,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "298
 [; ;Probador1.c: 298:                 }
 }
-[e :U 182 ]
+[e :U 186 ]
+[e :U 185 ]
 "300
 [; ;Probador1.c: 300:             case 4:
-[e :U 192 ]
+[e :U 196 ]
 "301
 [; ;Probador1.c: 301:                 if (prueba == 0) {
-[e $ ! == -> _prueba `i -> 0 `i 193  ]
+[e $ ! == -> _prueba `i -> 0 `i 197  ]
 {
 "302
 [; ;Probador1.c: 302:                     Prueba_sal();
@@ -1240,11 +1245,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _porte_ent ..  ]
 "304
 [; ;Probador1.c: 304:                     while (1) {
-[e :U 195 ]
+[e :U 199 ]
 {
 "305
 [; ;Probador1.c: 305:                         if (RE1 == 1) {
-[e $ ! == -> _RE1 `i -> 1 `i 197  ]
+[e $ ! == -> _RE1 `i -> 1 `i 201  ]
 {
 "306
 [; ;Probador1.c: 306:                             puerto = 4;
@@ -1254,14 +1259,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _porte_sal ..  ]
 "308
 [; ;Probador1.c: 308:                             break;
-[e $U 196  ]
+[e $U 200  ]
 "309
 [; ;Probador1.c: 309:                         }
 }
-[e :U 197 ]
+[e :U 201 ]
 "310
 [; ;Probador1.c: 310:                         if (RE0 == 1) {
-[e $ ! == -> _RE0 `i -> 1 `i 198  ]
+[e $ ! == -> _RE0 `i -> 1 `i 202  ]
 {
 "311
 [; ;Probador1.c: 311:                             puerto = 0;
@@ -1274,25 +1279,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _nro_pin -> -> 7 `i `uc ]
 "314
 [; ;Probador1.c: 314:                             break;
-[e $U 196  ]
+[e $U 200  ]
 "315
 [; ;Probador1.c: 315:                         }
 }
-[e :U 198 ]
+[e :U 202 ]
 "316
 [; ;Probador1.c: 316:                     }
 }
-[e :U 194 ]
-[e $U 195  ]
-[e :U 196 ]
+[e :U 198 ]
+[e $U 199  ]
+[e :U 200 ]
 "317
 [; ;Probador1.c: 317:                     break;
 [e $U 122  ]
 "318
-[; ;Probador1.c: 318:                 } else {
+[; ;Probador1.c: 318:                 } else if (prueba == 1){
 }
-[e $U 199  ]
-[e :U 193 ]
+[e $U 203  ]
+[e :U 197 ]
+[e $ ! == -> _prueba `i -> 1 `i 204  ]
 {
 "319
 [; ;Probador1.c: 319:                     incremento = 1;
@@ -1308,16 +1314,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 203  ]
-[e :U 200 ]
+[e $U 208  ]
+[e :U 205 ]
 {
 "323
 [; ;Probador1.c: 323:                         while (1) {
-[e :U 205 ]
+[e :U 210 ]
 {
 "324
 [; ;Probador1.c: 324:                             if (PORTE & mask) {
-[e $ ! != & -> _PORTE `i -> _mask `i -> 0 `i 207  ]
+[e $ ! != & -> _PORTE `i -> _mask `i -> 0 `i 212  ]
 {
 "325
 [; ;Probador1.c: 325:                                 RE2 = 1;
@@ -1340,10 +1346,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "331
 [; ;Probador1.c: 331:                             }
 }
-[e :U 207 ]
+[e :U 212 ]
 "332
 [; ;Probador1.c: 332:                             if (incremento == 4) {
-[e $ ! == -> _incremento `i -> 4 `i 208  ]
+[e $ ! == -> _incremento `i -> 4 `i 213  ]
 {
 "333
 [; ;Probador1.c: 333:                                 puerto = 0;
@@ -1356,47 +1362,48 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _prueba -> -> 2 `i `uc ]
 "336
 [; ;Probador1.c: 336:                                 break;
-[e $U 206  ]
+[e $U 211  ]
 "337
 [; ;Probador1.c: 337:                             }
 }
-[e :U 208 ]
+[e :U 213 ]
 "338
 [; ;Probador1.c: 338:                         }
 }
-[e :U 204 ]
-[e $U 205  ]
-[e :U 206 ]
+[e :U 209 ]
+[e $U 210  ]
+[e :U 211 ]
 "339
 [; ;Probador1.c: 339:                         break;
-[e $U 201  ]
+[e $U 206  ]
 "340
 [; ;Probador1.c: 340:                     }
 }
 [e = _i _incremento ]
-[e :U 203 ]
-[e $ < -> _i `i -> _nro_pin `i 200  ]
-[e :U 201 ]
+[e :U 208 ]
+[e $ < -> _i `i -> _nro_pin `i 205  ]
+[e :U 206 ]
 }
 "342
 [; ;Probador1.c: 342:                 }
 }
-[e :U 199 ]
+[e :U 204 ]
+[e :U 203 ]
 "343
 [; ;Probador1.c: 343:         }
 }
 [e $U 122  ]
 [e :U 123 ]
 [e [\ -> _puerto `i , $ -> 0 `i 124
- , $ -> 1 `i 141
- , $ -> 2 `i 158
- , $ -> 3 `i 175
- , $ -> 4 `i 192
+ , $ -> 1 `i 142
+ , $ -> 2 `i 160
+ , $ -> 3 `i 178
+ , $ -> 4 `i 196
  122 ]
 [e :U 122 ]
 "345
 [; ;Probador1.c: 345:         if (prueba == 2){
-[e $ ! == -> _prueba `i -> 2 `i 209  ]
+[e $ ! == -> _prueba `i -> 2 `i 214  ]
 {
 "346
 [; ;Probador1.c: 346:             ADC();
@@ -1407,10 +1414,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "348
 [; ;Probador1.c: 348:         }
 }
-[e :U 209 ]
+[e :U 214 ]
 "350
 [; ;Probador1.c: 350:         if (prueba == 3) {
-[e $ ! == -> _prueba `i -> 3 `i 210  ]
+[e $ ! == -> _prueba `i -> 3 `i 215  ]
 {
 "351
 [; ;Probador1.c: 351:             port_conf_r1();
@@ -1422,9 +1429,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 353:             for (unsigned char i; i < 3; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
-[e $ < -> _i `i -> 3 `i 211  ]
-[e $U 212  ]
-[e :U 211 ]
+[e $ < -> _i `i -> 3 `i 216  ]
+[e $U 217  ]
+[e :U 216 ]
 {
 "354
 [; ;Probador1.c: 354:                 PORTE = 0xFF;
@@ -1442,8 +1449,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 359:             }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 3 `i 211  ]
-[e :U 212 ]
+[e $ < -> _i `i -> 3 `i 216  ]
+[e :U 217 ]
 }
 "360
 [; ;Probador1.c: 360:             prueba = 0;
@@ -1454,7 +1461,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "362
 [; ;Probador1.c: 362:         }
 }
-[e :U 210 ]
+[e :U 215 ]
 "363
 [; ;Probador1.c: 363:     }
 }
@@ -1491,7 +1498,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _PORTE -> -> 0 `i `uc ]
 "373
 [; ;Probador1.c: 373: }
-[e :UE 214 ]
+[e :UE 219 ]
 }
 "375
 [; ;Probador1.c: 375: void port_conf_r1(void) {
@@ -1528,7 +1535,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _PORTE -> -> 0 `i `uc ]
 "385
 [; ;Probador1.c: 385: }
-[e :UE 215 ]
+[e :UE 220 ]
 }
 "387
 [; ;Probador1.c: 387: void porte_ent(void) {
@@ -1541,7 +1548,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TRISE -> -> 3 `i `uc ]
 "389
 [; ;Probador1.c: 389: }
-[e :UE 216 ]
+[e :UE 221 ]
 }
 "391
 [; ;Probador1.c: 391: void porte_sal(void) {
@@ -1554,7 +1561,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TRISE -> -> 0 `i `uc ]
 "393
 [; ;Probador1.c: 393: }
-[e :UE 217 ]
+[e :UE 222 ]
 }
 "395
 [; ;Probador1.c: 395: void Prueba_sal(void) {
@@ -1567,8 +1574,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $U 222  ]
-[e :U 219 ]
+[e $U 227  ]
+[e :U 224 ]
 {
 "397
 [; ;Probador1.c: 397:         salidas(i);
@@ -1577,13 +1584,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Probador1.c: 398:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 222 ]
-[e $ < -> _i `i -> _nro_pin `i 219  ]
-[e :U 220 ]
+[e :U 227 ]
+[e $ < -> _i `i -> _nro_pin `i 224  ]
+[e :U 225 ]
 }
 "399
 [; ;Probador1.c: 399: }
-[e :UE 218 ]
+[e :UE 223 ]
 }
 "401
 [; ;Probador1.c: 401: void salidas(unsigned char i) {
@@ -1594,11 +1601,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "402
 [; ;Probador1.c: 402:     switch (puerto) {
-[e $U 225  ]
+[e $U 230  ]
 {
 "403
 [; ;Probador1.c: 403:         case 0:
-[e :U 226 ]
+[e :U 231 ]
 "404
 [; ;Probador1.c: 404:             PORTA = (1 << i);
 [e = _PORTA -> << -> 1 `i -> _i `i `uc ]
@@ -1607,10 +1614,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "406
 [; ;Probador1.c: 406:             break;
-[e $U 224  ]
+[e $U 229  ]
 "407
 [; ;Probador1.c: 407:         case 1:
-[e :U 227 ]
+[e :U 232 ]
 "408
 [; ;Probador1.c: 408:             PORTB = (1 << i);
 [e = _PORTB -> << -> 1 `i -> _i `i `uc ]
@@ -1619,10 +1626,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "410
 [; ;Probador1.c: 410:             break;
-[e $U 224  ]
+[e $U 229  ]
 "411
 [; ;Probador1.c: 411:         case 2:
-[e :U 228 ]
+[e :U 233 ]
 "412
 [; ;Probador1.c: 412:             PORTC = (1 << i);
 [e = _PORTC -> << -> 1 `i -> _i `i `uc ]
@@ -1631,10 +1638,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "414
 [; ;Probador1.c: 414:             break;
-[e $U 224  ]
+[e $U 229  ]
 "415
 [; ;Probador1.c: 415:         case 3:
-[e :U 229 ]
+[e :U 234 ]
 "416
 [; ;Probador1.c: 416:             PORTD = (1 << i);
 [e = _PORTD -> << -> 1 `i -> _i `i `uc ]
@@ -1643,10 +1650,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "418
 [; ;Probador1.c: 418:             break;
-[e $U 224  ]
+[e $U 229  ]
 "419
 [; ;Probador1.c: 419:         case 4:
-[e :U 230 ]
+[e :U 235 ]
 "420
 [; ;Probador1.c: 420:             PORTE = (1 << i);
 [e = _PORTE -> << -> 1 `i -> _i `i `uc ]
@@ -1655,29 +1662,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( __delay (1 -> * -> -> 150 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
 "422
 [; ;Probador1.c: 422:             break;
-[e $U 224  ]
+[e $U 229  ]
 "423
 [; ;Probador1.c: 423:     }
 }
-[e $U 224  ]
-[e :U 225 ]
-[e [\ -> _puerto `i , $ -> 0 `i 226
- , $ -> 1 `i 227
- , $ -> 2 `i 228
- , $ -> 3 `i 229
- , $ -> 4 `i 230
- 224 ]
-[e :U 224 ]
+[e $U 229  ]
+[e :U 230 ]
+[e [\ -> _puerto `i , $ -> 0 `i 231
+ , $ -> 1 `i 232
+ , $ -> 2 `i 233
+ , $ -> 3 `i 234
+ , $ -> 4 `i 235
+ 229 ]
+[e :U 229 ]
 "424
 [; ;Probador1.c: 424: }
-[e :UE 223 ]
+[e :UE 228 ]
 }
-"428
-[; ;Probador1.c: 428: uint8_t carro = 0;
-[v _carro `uc ~T0 @X0 1 e ]
-[i _carro
--> -> 0 `i `uc
-]
 [p f _printf 8389632 ]
 [a 1C 105 110 105 99 105 111 0 ]
 [a 2C 65 78 49 32 61 32 37 117 13 10 0 ]

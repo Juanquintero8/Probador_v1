@@ -267,8 +267,8 @@ text2 90 99 CODE 90 0
 text1 88 8F CODE 88 0
 idataBANK0 86 87 CODE 86 0
 %locals
-dist/default/production\Probador_v1.production.o
-C:\Users\usuario\AppData\Local\Temp\s1ss.s
+dist/default/debug\Probador_v1.debug.o
+C:\Users\usuario\AppData\Local\Temp\sd14.s
 486 7F0 0 CODE 0
 489 7F0 0 CODE 0
 524 7F0 0 CODE 0

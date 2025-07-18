@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Probador_ver1.X
+PROJECTNAME=Probador_v1
 
 # Active Configuration
 DEFAULTCONF=default

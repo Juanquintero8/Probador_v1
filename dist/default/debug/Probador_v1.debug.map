@@ -3,23 +3,23 @@ Microchip MPLAB XC8 Compiler V2.20
 Linker command line:
 
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
-  -h+dist/default/production\Probador_v1.production.sym \
-  --cmf=dist/default/production\Probador_v1.production.cmf -z -Q16F877 \
-  -oC:\Users\usuario\AppData\Local\Temp\s1ss.2 --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/production/Probador_v1.production.map -E1 \
-  -ver=XC8 Compiler --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK \
-  -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
-  -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
-  -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
-  -ABANK3=0190h-01EFh -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
+  -h+dist/default/debug\Probador_v1.debug.sym \
+  --cmf=dist/default/debug\Probador_v1.debug.cmf -z -Q16F877 \
+  -oC:\Users\usuario\AppData\Local\Temp\sd14.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/debug/Probador_v1.debug.map -E1 -ver=XC8 Compiler \
+  --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
+  -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
+  -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
+  -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh -ABANK3=0190h-01EFh \
+  -ARAM=020h-06Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh \
   -AABS1=020h-07Fh,0A0h-0EFh,0110h-016Fh,0190h-01EFh -ASFR0=00h-01Fh \
   -ASFR1=080h-09Fh -ASFR2=0100h-010Fh -ASFR3=0180h-018Fh \
   -ACONFIG=02007h-02007h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\usuario\AppData\Local\Temp\s1ss.o \
-  dist/default/production\Probador_v1.production.o 
+  C:\Users\usuario\AppData\Local\Temp\sd14.o \
+  dist/default/debug\Probador_v1.debug.o 
 
 Object code version is 3.11
 
@@ -28,11 +28,11 @@ Machine type is 16F877
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\usuario\AppData\Local\Temp\s1ss.o
+C:\Users\usuario\AppData\Local\Temp\sd14.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        1        0       4
                 idloc                              2000     2000        4        0       5
-dist/default/production\Probador_v1.production.o
+dist/default/debug\Probador_v1.debug.o
                 cinit                               7F0      7F0       10      FE0       0
                 config                             2007     2007        1        0       4
                 idloc                              2000     2000        4        0       5

@@ -78,9 +78,9 @@ unsigned int ADC_Read(unsigned char channel) {
 
 // ===== MAIN =====
 void ADC(void) {
-    UART_Init();
+    //UART_Init();
     ADC_Init();
-    TRISB = 0b00000000; // todo el puerto B con salidas
+    TRISC = 0b00000000; // todo el puerto B con salidas
     //TRISA0 = 1; 
     
     printf("inicio");
@@ -90,28 +90,28 @@ void ADC(void) {
         unsigned int valor = ADC_Read(1);
         printf("AN1 = %u\r\n", valor);
         if (valor >= 0 & valor < 125 ){
-            PORTB = 0b010000000;
+            PORTC = 0b010000000;
         }
         if (valor >= 125 & valor < 250 ){
-            PORTB = 0b11000000;
+            PORTC = 0b11000000;
         }
         if (valor >= 250 & valor < 375 ){
-            PORTB = 0b11100000;
+            PORTC = 0b11100000;
         }
         if (valor >= 375 & valor < 500 ){
-            PORTB = 0b11110000;
+            PORTC = 0b11110000;
         }
         if (valor >= 500 & valor < 625 ){
-            PORTB = 0b11111000;
+            PORTC = 0b11111000;
         }
         if (valor >= 625 & valor < 750 ){
-            PORTB = 0b11111100;
+            PORTC = 0b11111100;
         }
         if (valor >= 750 & valor < 875 ){
-            PORTB = 0b11111110;
+            PORTC = 0b11111110;
         }
         if (valor >= 875 & valor < 1025 ){
-            PORTB = 0b11111111;
+            PORTC = 0b11111111;
         }
         
         __delay_ms(150);
@@ -154,7 +154,7 @@ void main(void) { //BUCLE PRINCIPAL
                         }
                     }
                     break;
-                } else { //////RUTINA PARA PROBAR LAS ENTRADAS/////
+                } else if (prueba == 1) { //////RUTINA PARA PROBAR LAS ENTRADAS/////
                     port_conf_r2();
                     mask = 1;
                     incremento = 1;
@@ -194,7 +194,7 @@ void main(void) { //BUCLE PRINCIPAL
                         }
                     }
                     break;
-                } else { //////RUTINA PARA PROBAR LAS ENTRADAS/////
+                } else if (prueba == 1){ //////RUTINA PARA PROBAR LAS ENTRADAS/////
                     incremento = 1;
                     nro_pin = 9;
                     mask = 1;
@@ -233,7 +233,7 @@ void main(void) { //BUCLE PRINCIPAL
                         }
                     }
                     break;
-                } else { //////RUTINA PARA PROBAR LAS ENTRADAS/////
+                } else if (prueba == 1) { //////RUTINA PARA PROBAR LAS ENTRADAS/////
                     incremento = 1;
                     nro_pin = 9;
                     mask = 1;
@@ -273,7 +273,7 @@ void main(void) { //BUCLE PRINCIPAL
                         }
                     }
                     break;
-                } else { //////RUTINA PARA PROBAR LAS ENTRADAS/////
+                } else if (prueba == 1){ //////RUTINA PARA PROBAR LAS ENTRADAS/////
                     incremento = 1;
                     nro_pin = 9;
                     mask = 1;
@@ -315,7 +315,7 @@ void main(void) { //BUCLE PRINCIPAL
                         }
                     }
                     break;
-                } else { //////RUTINA PARA PROBAR LAS ENTRADAS/////
+                } else if (prueba == 1){ //////RUTINA PARA PROBAR LAS ENTRADAS/////
                     incremento = 1;
                     nro_pin = 3;
                     mask = 1;
@@ -425,4 +425,3 @@ void salidas(unsigned char i) {
 
 // mask 00000001
 //porta 00000001
-uint8_t carro = 0;
