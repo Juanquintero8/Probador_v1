@@ -1,0 +1,13 @@
+# Ignorar carpeta de compilación ESP-IDF
+/build/
+
+# Ignorar configuraciones de IDE
+.vscode/
+.idea/
+
+# Archivos temporales del sistema
+*.log
+*.pyc
+*.pyo
+*.tmp
+.DS_Store
