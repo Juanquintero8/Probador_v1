@@ -1,5 +1,8 @@
 # Ignorar carpeta de compilación ESP-IDF
 /build/
+/dist/
+/nbproject/
+/Project Backups/
 
 # Ignorar configuraciones de IDE
 .vscode/
